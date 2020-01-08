@@ -20,10 +20,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('laptops', 'laptopController');
-
-
-Route::get('/view/import', 'importController@importExportView');
+Route::get('/view/import', 'importController@importExportView')->name('import');
 Route::get('/viewall', 'importController@allView')->name('viewall');
 Route::get('/import/edit/{id}', 'importController@editCsv');
 
