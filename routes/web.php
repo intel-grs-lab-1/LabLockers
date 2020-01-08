@@ -29,5 +29,4 @@ Route::get('/import/edit/{id}', 'importController@editCsv');
 
 Route::any('/import', 'importController@handleImportLaptop');
 Route::post('/import/updatedata/{id}', 'importController@updateImportData');
-Route::get('/import/export/{id}', 'importController@exportCsvData');
 Route::post('/import/insertdata', 'importController@insertImportData')->name('insertdata');

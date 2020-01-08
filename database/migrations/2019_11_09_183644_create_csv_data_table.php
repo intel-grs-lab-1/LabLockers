@@ -20,7 +20,6 @@ class CreateCsvDataTable extends Migration
             $table->string('total_mem_size')->nullable();
             $table->string('drive_capacity')->nullable();
             $table->string('com_serial_number')->nullable();
-            $table->text('drive_des')->nullable();
             $table->text('videocard')->nullable();
             $table->text('network')->nullable();
             $table->text('comments')->nullable();

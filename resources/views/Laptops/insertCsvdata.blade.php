@@ -61,11 +61,6 @@
         </div>
 
         <div class="form-group">
-          <label for="name">Driver Description</label>
-          <textarea rows="4" type="text" class="form-control" name="drive_des">{{@$laptop['drive_des'] }}</textarea>
-        </div>
-
-          <div class="form-group">
           <label for="name">Video Card</label>
           <textarea rows="4" type="text" class="form-control" name="videocard">{{@$laptop['videocard'] }}</textarea>
         </div>
@@ -75,7 +70,7 @@
           <textarea rows="4" type="text" class="form-control" name="network">{{@$laptop['network'] }}</textarea>
         </div>
         <div class="form-group">
-          <label for="name">Comments/label>
+          <label for="name">Comments</label>
           <textarea type="text" class="form-control" name="comments">{{@$laptop['comments'] }}</textarea>
         </div>
         <div class="form-group">

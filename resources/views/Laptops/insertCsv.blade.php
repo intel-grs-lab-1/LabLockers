@@ -13,9 +13,6 @@
       </div><br />
 
     @endif
-
-
-
         <form method="POST" name="updateCsvData" action="{{ url('import/insertdata') }}">
         @csrf
 
@@ -55,20 +52,10 @@
         </div>
 
         <div class="form-group">
-          <label for="name">Dive Capacity</label>
-          <textarea type="text" class="form-control" name="drive_capacity">{{$laptop['drive_capacity'] }}</textarea>
-        </div>
-
-        <div class="form-group">
           <label for="name">Computer Serial Number</label>
           <input type="text" class="form-control" name="com_serial_number" value="{{$laptop['com_serial_number'] }}"/>
         </div>
-
-        <div class="form-group">
-          <label for="name">Driver Description</label>
-          <textarea rows="4" type="text" class="form-control" name="drive_des">{{$laptop['drive_des'] }}</textarea>
-        </div>
-
+        
         <div class="form-group">
           <label for="name">Video Card</label>
           <textarea rows="4" type="text" class="form-control" name="videocard">{{$laptop['videocard'] }}</textarea>
@@ -79,7 +66,7 @@
           <textarea rows="4" type="text" class="form-control" name="network">{{$laptop['network'] }}</textarea>
         </div>
         <div class="form-group">
-          <label for="name">Comments/label>
+          <label for="name">Comments</label>
           <textarea type="text" class="form-control" name="comments">{{$laptop['comments'] }}</textarea>
         </div>
         <div class="form-group">

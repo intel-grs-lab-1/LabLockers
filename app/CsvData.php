@@ -8,7 +8,7 @@ use Response;
 
 class CsvData extends Model
 {
-    protected $fillable = ['com_brand_name' , 'os', 'cpu_brand_name', 'cpu_power_limit', 'total_mem_size', 'drive_capacity', 'com_serial_number','drive_des','videocard','network'];
+    protected $fillable = ['com_brand_name' , 'colour', 'power_supply', 'os', 'cpu_brand_name',  'cpu_power_limit', 'total_mem_size', 'drive_capacity', 'com_serial_number','videocard','network', 'comments', 'location'];
 
     public static function getByid($id)
     {
@@ -33,7 +33,6 @@ class CsvData extends Model
             $cd['total_mem_size'] = $request->total_mem_size;
             $cd['drive_capacity'] = $request->drive_capacity;
             $cd['com_serial_number'] = $request->com_serial_number;
-            $cd['drive_des'] = $request->drive_des;
             $cd['videocard'] = $request->videocard;
             $cd['network'] = $request->network;
             $cd['comments'] = $request->comments;
@@ -60,7 +59,6 @@ class CsvData extends Model
             $cd['total_mem_size'] = $request->total_mem_size;
             $cd['drive_capacity'] = $request->drive_capacity;
             $cd['com_serial_number'] = $request->com_serial_number;
-            $cd['drive_des'] = $request->drive_des;
             $cd['videocard'] = $request->videocard;
             $cd['network'] = $request->network;
             $cd['comments'] = $request->comments;

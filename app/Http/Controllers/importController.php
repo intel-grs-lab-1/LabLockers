@@ -71,7 +71,7 @@ class importController extends Controller
 
             //$key = substr($fileData[0], 0, -1);
             $key = $fileData[0];
-            if ($key == "Computer Name:") {
+            if ($key == "Computer Brand Name:") {
                 $data['com_brand_name'] = $fileData[1];
             }
             if ($key == "Operating System:") {
@@ -82,9 +82,6 @@ class importController extends Controller
             }
             if ($key == "CPU Power Limit 1 - Long Duration:") {
                 $data['cpu_power_limit'] = $fileData[1];
-            }
-            if ($key == "Driver Description:") {
-                    $dd .= $fileData[1] . "\n";
             }
             if ($key == "Total Memory Size:") {
                 $data['total_mem_size'] = $fileData[1];
@@ -144,10 +141,8 @@ class importController extends Controller
                     $netDesc .=$key."\n";
             }
 
-
         }
         fclose($file);
-        $data['drive_des'] = $dd;
         $data['videocard'] = $videoDesc;
         $data['network'] = $netDesc;
         $data['drive_capacity'] = $hddData;
@@ -199,7 +194,6 @@ class importController extends Controller
             'total_mem_size' => 'required',
             'drive_capacity' => 'required',
             'com_serial_number' => 'required',
-            'drive_des' => 'required',
             'videocard' => 'required',
             'network' => 'required',
             'comments' => 'required',

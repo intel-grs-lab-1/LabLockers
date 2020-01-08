@@ -16,12 +16,13 @@
             <th scope="col">CPU Power Limit 1 Long Duration</th>
             <th scope="col">Total Memory Size</th>
             <th scope="col">Drive Capacity</th>
-            <th scope="col">Driver Description</th>
+            <th scope="col">Serial Number</th>
             <th scope="col">Video Card</th>
             <th scope="col">Network</th>
+            <th scope="col">comments</th>
+            <th scope="col">location</th>
             <th scope="col">Edit</th>
             <th scope="col">Delete</th>
-            <th scope="col">Export</th>
         </tr>
         </thead>
         <tbody>
@@ -37,7 +38,7 @@
                 <td>{{$product->cpu_power_limit}}</td>
                 <td>{{$product->total_mem_size}}</td>
                 <td>{{$product->drive_capacity}}</td>
-                <td>{{$product->drive_des}}</td>
+                <td>{{$product->com_serial_number}}</td>
                 <td>{{$product->videocard}}</td>
                 <td>{{$product->network}}</td>
                 <td>{{$product->comments}}</td>
@@ -50,7 +51,6 @@
                         <button class="btn btn-danger" type="submit">Delete</button>
                     </form>
                 </td>
-                <td><a href="{{ url('import/export',$product->id)}}" class="btn btn-primary">Export</a></td>
             </tr>
         @endforeach
             @endif
