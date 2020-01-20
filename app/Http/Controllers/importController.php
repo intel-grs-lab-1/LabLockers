@@ -201,7 +201,7 @@ class importController extends Controller
 
         ]);
         CsvData::updateCsvdata($request, $id);
-        return redirect()->route('import')->with('success', 'Laptop updated successfully');
+        return redirect()->route('viewall')->with('success', 'Laptop updated successfully');
     }
 
     public function insertImportData(Request $request)

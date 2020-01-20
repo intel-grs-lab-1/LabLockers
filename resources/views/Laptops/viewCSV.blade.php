@@ -4,7 +4,7 @@
     @if (Session::has('message'))
         <div class="alert alert-info">{{ Session::get('message') }}</div>
     @endif
-    <table class="table table-bordered">
+    <table class="table table-striped table-bordered" id="kaptop_table" width="100%">
         <thead class="thead-dark">
         <tr>
             <th scope="col">ID #</th>
@@ -56,4 +56,9 @@
             @endif
         </tbody>
     </table>
+    <script type="text/javascript">
+        $(document).ready( function () {
+    $('#kaptop_table').DataTable();
+} );
+    </script>
 @endsection

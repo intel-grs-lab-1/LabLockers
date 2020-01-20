@@ -23,7 +23,7 @@ class CsvData extends Model
     public static function updateCsvdata($request,$id)
     {
         try {
-            $data = array();
+            $cd = array();
             $cd['com_brand_name'] = $request->com_brand_name;
             $cd['colour'] = $request->colour;
             $cd['power_supply'] = $request->power_supply;
@@ -37,8 +37,7 @@ class CsvData extends Model
             $cd['network'] = $request->network;
             $cd['comments'] = $request->comments;
             $cd['location'] = $request->location;
-
-            CsvData::where('id', $id)->update($data);
+            CsvData::where('id',$id)->update($cd);
         } catch (\Exception $e) {
             logger($e->getMessage());
         }
