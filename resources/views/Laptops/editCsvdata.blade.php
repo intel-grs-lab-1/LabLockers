@@ -67,9 +67,13 @@
           <textarea rows="4" type="text" class="form-control" name="videocard">{{@$laptop['videocard'] }}</textarea>
         </div>
 
-          <div class="form-group">
+        <div class="form-group">
           <label for="name">Network</label>
           <textarea rows="4" type="text" class="form-control" name="network">{{@$laptop['network'] }}</textarea>
+        </div>
+        <div class="form-group">
+          <label for="name">owner</label>
+          <textarea rows="4" type="text" class="form-control" name="owner">{{@$laptop['owner'] }}</textarea>
         </div>
         <div class="form-group">
           <label for="name">Comments</label>

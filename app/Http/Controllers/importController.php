@@ -196,6 +196,7 @@ class importController extends Controller
             'com_serial_number' => 'required',
             'videocard' => 'required',
             'network' => 'required',
+            'owner' => 'required',
             'comments' => 'required',
             'location' => 'required',
 
