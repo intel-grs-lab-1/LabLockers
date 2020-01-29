@@ -71,6 +71,9 @@ class importController extends Controller
 
             //$key = substr($fileData[0], 0, -1);
             $key = $fileData[0];
+            if ($key == "System Manufacturer:") {
+                $data['manufacturer'] = $fileData[1];
+            }
             if ($key == "Computer Brand Name:") {
                 $data['com_brand_name'] = $fileData[1];
             }
@@ -83,9 +86,25 @@ class importController extends Controller
             if ($key == "CPU Power Limit 1 - Long Duration:") {
                 $data['cpu_power_limit'] = $fileData[1];
             }
+            if ($key == "CPU Power Limit 2 - Short Duration:") {
+                $data['cpu_power_limit_2'] = $fileData[1];
+            }
             if ($key == "Total Memory Size:") {
                 $data['total_mem_size'] = $fileData[1];
             }
+            if ($key == "Memory Type:") {
+                $data['mem_type'] = $fileData[1];
+            }
+            if ($key == "Maximum Supported Memory Clock:") {
+                $data['mem_speed'] = $fileData[1];
+            }
+            if ($key == "Memory Channels Supported:") {
+                $data['mem_channels'] = $fileData[1];
+            }
+            if ($key == "Designed Capacity:") {
+                $data['battery_cap'] = $fileData[1];
+            }
+            
             if($key == "Drives")
             {
                 $hddFlag = true;
@@ -185,17 +204,31 @@ class importController extends Controller
     {
         logger("update call");
         $request->validate([
+            'manufacturer' => 'required',
             'com_brand_name' => 'required',
             'colour' => 'required',
+            'type' => 'required',
+            'battery_cap' => 'required',
             'power_supply' => 'required',
+            'power_supply_details' => 'required',
             'os' => 'required',
             'cpu_brand_name' => 'required',
             'cpu_power_limit' => 'required',
+            'cpu_power_limit_2' => 'required',
             'total_mem_size' => 'required',
+            'mem_type' => 'required',
+            'mem_speed' => 'required',
+            'mem_channels' => 'required',
+            'screen_size' => 'required',
+            'screen_rez' => 'required',
+            'screen_tech' => 'required',
+            'touchscreen_type' => 'required',
             'drive_capacity' => 'required',
             'com_serial_number' => 'required',
             'videocard' => 'required',
             'network' => 'required',
+            'thunderbolt_pots' => 'required',
+            'accessories' => 'required',
             'owner' => 'required',
             'comments' => 'required',
             'location' => 'required',
@@ -208,22 +241,6 @@ class importController extends Controller
     public function insertImportData(Request $request)
     {
         logger("update call");
-            // $request->validate([
-            //     'com_brand_name' => 'required',
-            //     'colour' => 'required',
-            //     'power_supply' => 'required',
-            //     'os' => 'required',
-            //     'cpu_brand_name' => 'required',
-            //     'cpu_power_limit' => 'required',
-            //     'total_mem_size' => 'required',
-            //     'drive_capacity' => 'required',
-            //     'com_serial_number' => 'required',
-            //     'drive_des' => 'required',
-            //     'videocard' => 'required',
-            //     'network' => 'required',
-            //     'comments' => 'required',
-            //     'location' => 'required',
-            // ]);
         CsvData::insertCsvdata($request);
         return redirect()->route('viewall')->with('success', 'Laptop updated successfully');
     }

@@ -47,15 +47,28 @@
                 <td>{{$product->manufacturer}}</td>
                 <td>{{$product->com_brand_name}}</td>
                 <td>{{$product->colour}}</td>
+                <td>{{$product->type}}</td>
+                <td>{{$product->vattery_cap}}</td>
                 <td>{{$product->power_supply}}</td>
+                <td>{{$product->power_supply_details}}</td>
                 <td>{{$product->os}}</td>
                 <td>{{$product->cpu_brand_name}}</td>
                 <td>{{$product->cpu_power_limit}}</td>
+                <td>{{$product->cpu_power_limit_2}}</td>
                 <td>{{$product->total_mem_size}}</td>
+                <td>{{$product->mem_type}}</td>
+                <td>{{$product->mem_speed}}</td>
+                <td>{{$product->mem_channels}}</td>
+                <td>{{$product->screen_size}}</td>
+                <td>{{$product->screen_rez}}</td>
+                <td>{{$product->screen_tech}}</td>
+                <td>{{$product->touchscreen_type}}</td>
                 <td>{{$product->drive_capacity}}</td>
                 <td>{{$product->com_serial_number}}</td>
                 <td>{{$product->videocard}}</td>
                 <td>{{$product->network}}</td>
+                <td>{{$product->thunderbolt_ports}}</td>
+                <td>{{$product->accessories}}</td>
                 <td>{{$product->owner}}</td>
                 <td>{{$product->location}}</td>
                 <td>{{$product->comments}}</td>
