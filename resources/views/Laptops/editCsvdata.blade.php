@@ -21,7 +21,7 @@
         @csrf
         <div class="form-group">
           <label for="name">Manufacture</label>
-          <input type="text" class="form-control" name="manufacture" value= "{{@$laptop['manufacture'] }}"/>
+          <input type="text" class="form-control" name="manufacturer" value= "{{@$laptop['manufacturer'] }}"/>
         </div>
         <div class="form-group">
           <label for="name">Model</label>

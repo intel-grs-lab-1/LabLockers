@@ -8,21 +8,33 @@
         <thead class="thead-dark">
         <tr>
             <th scope="col">ID #</th>
-            <th scope="col"></th>
-            <th scope="col">Computer Brand Name</th>
+            <th scope="col">Manufacture</th>
+            <th scope="col">Model</th>
             <th scope="col">Colour</th>
+            <th scope="col">Batery capacity</th>
             <th scope="col">Power supply</th>
+            <th scope="col">Details</th>
             <th scope="col">Operating System</th>
             <th scope="col">CPU Brand Name</th>
             <th scope="col">CPU Power Limit 1 Long Duration</th>
+            <th scope="col">CPU Power Limit 2 Short Duration</th>
             <th scope="col">Total Memory Size</th>
+            <th scope="col">Type</th>
+            <th scope="col">Speed</th>
+            <th scope="col">Channels</th>
+            <th scope="col">Screen size</th>
+            <th scope="col">Resolution</th>
+            <th scope="col">Technology</th>
+            <th scope="col">Touchscreen</th>
             <th scope="col">Drive Capacity</th>
             <th scope="col">Serial Number</th>
             <th scope="col">Video Card</th>
             <th scope="col">Network</th>
-            <th scope="col">owner</th>
-            <th scope="col">comments</th>
-            <th scope="col">location</th>
+            <th scope="col">Thunderbolt ports</th>
+            <th scope="col">Accessories</th>
+            <th scope="col">Owner</th>
+            <th scope="col">Location</th>
+            <th scope="col">Comments</th>
             <th scope="col">Edit</th>
             <th scope="col">Delete</th>
         </tr>
@@ -32,6 +44,7 @@
         @foreach($csvData as $product)
             <tr>
                 <th scope="row">{{$product->id}}</th>
+                <td>{{$product->manufacturer}}</td>
                 <td>{{$product->com_brand_name}}</td>
                 <td>{{$product->colour}}</td>
                 <td>{{$product->power_supply}}</td>
@@ -44,8 +57,8 @@
                 <td>{{$product->videocard}}</td>
                 <td>{{$product->network}}</td>
                 <td>{{$product->owner}}</td>
-                <td>{{$product->comments}}</td>
                 <td>{{$product->location}}</td>
+                <td>{{$product->comments}}</td>
                 <td><a href="{{ url('import/edit',$product->id)}}" class="btn btn-primary">Edit</a></td>
                 <td>
                     <form action="{{ url('import/destroy', $product->id)}}" method="post">
