@@ -76,12 +76,12 @@
           <textarea rows="4" type="text" class="form-control" name="owner">{{@$laptop['owner'] }}</textarea>
         </div>
         <div class="form-group">
-          <label for="name">Comments</label>
-          <textarea type="text" class="form-control" name="comments">{{@$laptop['comments'] }}</textarea>
-        </div>
-        <div class="form-group">
           <label for="name">Location</label>
           <textarea type="text" class="form-control" name="location">{{@$laptop['location'] }}</textarea>
+        </div>
+        <div class="form-group">
+          <label for="name">Comments</label>
+          <textarea type="text" class="form-control" name="comments">{{@$laptop['comments'] }}</textarea>
         </div>
         <!-- Update button -->
         <button type="submit" class="btn btn-primary">Update</button>

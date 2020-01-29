@@ -9,7 +9,7 @@ use Response;
 class CsvData extends Model
 {
 
-    protected $fillable = ['manufacturer','com_brand_name' , 'colour','type','battery_cap', 'power_supply','power_supply_details', 'os', 'cpu_brand_name',  'cpu_power_limit','cpu_power_limit_2', 'total_mem_size','mem_type','mem_speed','mem_channels','touchscreen_type', 'drive_capacity', 'com_serial_number','videocard','network','', 'comments', 'location'];
+    protected $fillable = ['manufacturer','com_brand_name' , 'colour','type','battery_cap', 'power_supply','power_supply_details', 'os', 'cpu_brand_name',  'cpu_power_limit','cpu_power_limit_2', 'total_mem_size','mem_type','mem_speed','mem_channels','screen_size','screen_rez','screen_tech','touchscreen_type', 'drive_capacity', 'com_serial_number','videocard','network','thunderbolt_ports','accessories','owner','location', 'comments'];
 
     public static function getByid($id)
     {
@@ -25,20 +25,33 @@ class CsvData extends Model
     {
         try {
             $cd = array();
+            $cd['manufacturer'] = $request->manufacturer;
             $cd['com_brand_name'] = $request->com_brand_name;
             $cd['colour'] = $request->colour;
+            $cd['type'] = $request->type;
+            $cd['battery_cap'] = $request->battery_cap;
             $cd['power_supply'] = $request->power_supply;
+            $cd['power_supply_details'] = $request->power_supply_details;
             $cd['os'] = $request->os;
             $cd['cpu_brand_name'] = $request->cpu_brand_name;
             $cd['cpu_power_limit'] = $request->cpu_power_limit;
+            $cd['cpu_power_limit_2'] = $request->cpu_power_limit_2;
             $cd['total_mem_size'] = $request->total_mem_size;
+            $cd['mem_type'] = $request->mem_type;
+            $cd['mem_speed'] = $request->mem_speed;
+            $cd['mem_channels'] = $request->mem_channels;
+            $cd['screen_size'] = $request->screen_size;
+            $cd['screen_rez'] = $request->screen_rez;
+            $cd['screen_tech'] = $request->screen_tech;
             $cd['drive_capacity'] = $request->drive_capacity;
             $cd['com_serial_number'] = $request->com_serial_number;
             $cd['videocard'] = $request->videocard;
             $cd['network'] = $request->network;
+            $cd['thunderbolt_ports'] = $request->thunderbolt_ports;
+            $cd['accessories'] = $request->accessories;
             $cd['owner'] = $request->owner;
-            $cd['comments'] = $request->comments;
             $cd['location'] = $request->location;
+            $cd['comments'] = $request->comments;
             CsvData::where('id',$id)->update($cd);
         } catch (\Exception $e) {
             logger($e->getMessage());
@@ -51,20 +64,33 @@ class CsvData extends Model
         $cd = new CsvData();
         try {
 
+            $cd['manufacturer'] = $request->manufacturer;
             $cd['com_brand_name'] = $request->com_brand_name;
             $cd['colour'] = $request->colour;
+            $cd['type'] = $request->type;
+            $cd['battery_cap'] = $request->battery_cap;
             $cd['power_supply'] = $request->power_supply;
+            $cd['power_supply_details'] = $request->power_supply_details;
             $cd['os'] = $request->os;
             $cd['cpu_brand_name'] = $request->cpu_brand_name;
             $cd['cpu_power_limit'] = $request->cpu_power_limit;
+            $cd['cpu_power_limit_2'] = $request->cpu_power_limit_2;
             $cd['total_mem_size'] = $request->total_mem_size;
+            $cd['mem_type'] = $request->mem_type;
+            $cd['mem_speed'] = $request->mem_speed;
+            $cd['mem_channels'] = $request->mem_channels;
+            $cd['screen_size'] = $request->screen_size;
+            $cd['screen_rez'] = $request->screen_rez;
+            $cd['screen_tech'] = $request->screen_tech;
             $cd['drive_capacity'] = $request->drive_capacity;
             $cd['com_serial_number'] = $request->com_serial_number;
             $cd['videocard'] = $request->videocard;
             $cd['network'] = $request->network;
+            $cd['thunderbolt_ports'] = $request->thunderbolt_ports;
+            $cd['accessories'] = $request->accessories;
             $cd['owner'] = $request->owner;
-            $cd['comments'] = $request->comments;
             $cd['location'] = $request->location;
+            $cd['comments'] = $request->comments;
             $cd->save();
         } catch (\Exception $e) {
             logger($e->getMessage());
