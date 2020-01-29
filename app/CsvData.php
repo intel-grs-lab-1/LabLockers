@@ -8,7 +8,11 @@ use Response;
 
 class CsvData extends Model
 {
+<<<<<<< HEAD
     protected $fillable = ['manufacturer','com_brand_name' , 'colour','type','battery_cap', 'power_supply','power_supply_details', 'os', 'cpu_brand_name',  'cpu_power_limit','cpu_power_limit_2', 'total_mem_size','mem_type','mem_speed','mem_channels','touchscreen_type', 'drive_capacity', 'com_serial_number','videocard','network','', 'comments', 'location'];
+=======
+    protected $fillable = ['com_brand_name' , 'colour', 'power_supply', 'os', 'cpu_brand_name',  'cpu_power_limit', 'total_mem_size', 'drive_capacity', 'com_serial_number','videocard','network','owner', 'comments', 'location'];
+>>>>>>> filtering
 
     public static function getByid($id)
     {
@@ -23,7 +27,7 @@ class CsvData extends Model
     public static function updateCsvdata($request,$id)
     {
         try {
-            $data = array();
+            $cd = array();
             $cd['com_brand_name'] = $request->com_brand_name;
             $cd['colour'] = $request->colour;
             $cd['power_supply'] = $request->power_supply;
@@ -35,10 +39,10 @@ class CsvData extends Model
             $cd['com_serial_number'] = $request->com_serial_number;
             $cd['videocard'] = $request->videocard;
             $cd['network'] = $request->network;
+            $cd['owner'] = $request->owner;
             $cd['comments'] = $request->comments;
             $cd['location'] = $request->location;
-
-            CsvData::where('id', $id)->update($data);
+            CsvData::where('id',$id)->update($cd);
         } catch (\Exception $e) {
             logger($e->getMessage());
         }
@@ -61,6 +65,7 @@ class CsvData extends Model
             $cd['com_serial_number'] = $request->com_serial_number;
             $cd['videocard'] = $request->videocard;
             $cd['network'] = $request->network;
+            $cd['owner'] = $request->owner;
             $cd['comments'] = $request->comments;
             $cd['location'] = $request->location;
             $cd->save();

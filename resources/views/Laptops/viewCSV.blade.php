@@ -4,7 +4,7 @@
     @if (Session::has('message'))
         <div class="alert alert-info">{{ Session::get('message') }}</div>
     @endif
-    <table class="table table-bordered">
+    <table class="table table-striped table-bordered" id="kaptop_table" width="100%">
         <thead class="thead-dark">
         <tr>
             <th scope="col">ID #</th>
@@ -19,6 +19,7 @@
             <th scope="col">Serial Number</th>
             <th scope="col">Video Card</th>
             <th scope="col">Network</th>
+            <th scope="col">owner</th>
             <th scope="col">comments</th>
             <th scope="col">location</th>
             <th scope="col">Edit</th>
@@ -41,6 +42,7 @@
                 <td>{{$product->com_serial_number}}</td>
                 <td>{{$product->videocard}}</td>
                 <td>{{$product->network}}</td>
+                <td>{{$product->owner}}</td>
                 <td>{{$product->comments}}</td>
                 <td>{{$product->location}}</td>
                 <td><a href="{{ url('import/edit',$product->id)}}" class="btn btn-primary">Edit</a></td>
@@ -56,4 +58,9 @@
             @endif
         </tbody>
     </table>
+    <script type="text/javascript">
+        $(document).ready( function () {
+    $('#kaptop_table').DataTable();
+} );
+    </script>
 @endsection

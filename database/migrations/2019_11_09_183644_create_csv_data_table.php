@@ -43,9 +43,14 @@ class CreateCsvDataTable extends Migration
             $table->string('com_serial_number')->nullable();
             $table->text('videocard')->nullable();
             $table->text('network')->nullable();
+<<<<<<< HEAD
             $table->text('thunderbolt_ports')->nullable();
             $table->text('accessories')->nullable();
             $table->text('owner')->nullable();
+=======
+            $table->text('owner')->nullable();
+            $table->text('comments')->nullable();
+>>>>>>> filtering
             $table->string('location')->nullable();
             $table->text('comments')->nullable();
             $table->timestamps(); 

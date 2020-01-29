@@ -196,12 +196,13 @@ class importController extends Controller
             'com_serial_number' => 'required',
             'videocard' => 'required',
             'network' => 'required',
+            'owner' => 'required',
             'comments' => 'required',
             'location' => 'required',
 
         ]);
         CsvData::updateCsvdata($request, $id);
-        return redirect()->route('import')->with('success', 'Laptop updated successfully');
+        return redirect()->route('viewall')->with('success', 'Laptop updated successfully');
     }
 
     public function insertImportData(Request $request)
