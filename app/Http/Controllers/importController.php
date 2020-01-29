@@ -242,6 +242,6 @@ class importController extends Controller
     {
         logger("update call");
         CsvData::insertCsvdata($request);
-        return redirect()->route('viewall')->with('success', 'Laptop updated successfully');
+        return redirect()->route('viewall')->with('success', 'Laptop imported successfully');
     }
 }

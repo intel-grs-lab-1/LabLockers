@@ -16,6 +16,7 @@
       </div><br />
     @endif
         <form method="POST" name="updateCsvData" action="{{ route('insertdata') }}">
+          <form method="POST" name="updateCsvData" action="{{ url('import/insertdata') }}">
         @csrf
         <div class="form-group">
           <label for="name">Manufacture</label>
@@ -54,7 +55,6 @@
           <label for="name">CPU Brand Name</label>
           <textarea type="text" class="form-control" name="cpu_brand_name">{{@$laptop['cpu_brand_name'] }}</textarea>
         </div>
-
         <div class="form-group">
           <label for="name">CPU Power Limit 1</label>
           <input type="text" class="form-control" name="cpu_power_limit" value="{{@$laptop['cpu_power_limit'] }}"/>
