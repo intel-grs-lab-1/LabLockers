@@ -8,6 +8,7 @@
         <thead class="thead-dark">
         <tr>
             <th scope="col">ID #</th>
+            <th scope="col"></th>
             <th scope="col">Computer Brand Name</th>
             <th scope="col">Colour</th>
             <th scope="col">Power supply</th>
