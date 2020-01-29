@@ -227,7 +227,7 @@ class importController extends Controller
             'com_serial_number' => 'required',
             'videocard' => 'required',
             'network' => 'required',
-            'thunderbolt_pots' => 'required',
+            'thunderbolt_ports' => 'required',
             'accessories' => 'required',
             'owner' => 'required',
             'comments' => 'required',

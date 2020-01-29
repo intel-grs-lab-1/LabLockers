@@ -13,9 +13,10 @@
               <li>{{ $error }}</li>
             @endforeach
         </ul>
+        @include('layouts.message')
       </div><br />
     @endif
-        <form method="POST" name="updateCsvData" action="{{ route('insertdata') }}">
+        <!-- <form method="POST" name="updateCsvData" action="{{ route('insertdata') }}"> -->
           <form method="POST" name="updateCsvData" action="{{ url('import/insertdata') }}">
         @csrf
         <div class="form-group">
@@ -40,11 +41,11 @@
         </div>
         <div class="form-group">
           <label for="name">Power supply</label>
-          <textarea type="text" class="form-control" name="power_supply_details">{{@$laptop['power_supply_details'] }}</textarea>
+          <textarea type="text" class="form-control" name="power_supply">{{@$laptop['power_supply_details'] }}</textarea>
         </div>
         <div class="form-group">
           <label for="name">power supply details</label>
-          <textarea type="text" class="form-control" name="colour">{{@$laptop['colour'] }}</textarea>
+          <textarea type="text" class="form-control" name="power_supply_details">{{@$laptop['colour'] }}</textarea>
         </div>
         <div class="form-group">
           <label for="name">Operating System</label>
