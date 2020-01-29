@@ -8,7 +8,7 @@ use Response;
 
 class CsvData extends Model
 {
-    protected $fillable = ['com_brand_name' , 'colour', 'power_supply', 'os', 'cpu_brand_name',  'cpu_power_limit', 'total_mem_size', 'drive_capacity', 'com_serial_number','videocard','network', 'comments', 'location'];
+    protected $fillable = ['manufacturer','com_brand_name' , 'colour','type','battery_cap', 'power_supply','power_supply_details', 'os', 'cpu_brand_name',  'cpu_power_limit','cpu_power_limit_2', 'total_mem_size','mem_type','mem_speed','mem_channels','touchscreen_type', 'drive_capacity', 'com_serial_number','videocard','network','', 'comments', 'location'];
 
     public static function getByid($id)
     {
