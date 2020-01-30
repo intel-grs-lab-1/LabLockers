@@ -72,7 +72,7 @@ class importController extends Controller
             //$key = substr($fileData[0], 0, -1);
             $key = $fileData[0];
             if ($key == "System Manufacturer:") {
-                $data['manufacturer'] = $fileData[1];
+                $data['manufacture'] = $fileData[1];
             }
             if ($key == "Computer Brand Name:") {
                 $data['com_brand_name'] = $fileData[1];
@@ -204,7 +204,7 @@ class importController extends Controller
     {
         logger("update call");
         $request->validate([
-            'manufacturer' => 'required',
+            'manufacture' => 'required',
             'com_brand_name' => 'required',
             'colour' => 'required',
             'type' => 'required',

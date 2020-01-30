@@ -21,7 +21,7 @@
         @csrf
         <div class="form-group">
           <label for="name">Manufacture</label>
-          <input type="text" class="form-control" name="manufacturer" value= "{{@$laptop['manufacturer'] }}"/>
+          <input type="text" class="form-control" name="manufacture" value= "{{@$laptop['manufacture'] }}"/>
         </div>
         <div class="form-group">
           <label for="name">Model</label>
@@ -41,11 +41,11 @@
         </div>
         <div class="form-group">
           <label for="name">Power supply</label>
-          <textarea type="text" class="form-control" name="power_supply">{{@$laptop['power_supply_details'] }}</textarea>
+          <textarea type="text" class="form-control" name="power_supply">{{@$laptop['power_supply'] }}</textarea>
         </div>
         <div class="form-group">
           <label for="name">power supply details</label>
-          <textarea type="text" class="form-control" name="power_supply_details">{{@$laptop['colour'] }}</textarea>
+          <textarea type="text" class="form-control" name="power_supply_details">{{@$laptop['power_supply_details'] }}</textarea>
         </div>
         <div class="form-group">
           <label for="name">Operating System</label>

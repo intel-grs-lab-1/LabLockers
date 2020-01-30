@@ -25,7 +25,7 @@ class CsvData extends Model
     {
         try {
             $cd = array();
-            $cd['manufacturer'] = $request->manufacturer;
+            $cd['manufacture'] = $request->manufacture;
             $cd['com_brand_name'] = $request->com_brand_name;
             $cd['colour'] = $request->colour;
             $cd['type'] = $request->type;
@@ -47,6 +47,7 @@ class CsvData extends Model
             $cd['com_serial_number'] = $request->com_serial_number;
             $cd['videocard'] = $request->videocard;
             $cd['network'] = $request->network;
+            $cd['touchscreen_type'] = $request->touchscreen_type;
             $cd['thunderbolt_ports'] = $request->thunderbolt_ports;
             $cd['accessories'] = $request->accessories;
             $cd['owner'] = $request->owner;
@@ -64,7 +65,7 @@ class CsvData extends Model
         $cd = new CsvData();
         try {
 
-            $cd['manufacturer'] = $request->manufacturer;
+            $cd['manufacture'] = $request->manufacture;
             $cd['com_brand_name'] = $request->com_brand_name;
             $cd['colour'] = $request->colour;
             $cd['type'] = $request->type;
@@ -86,6 +87,7 @@ class CsvData extends Model
             $cd['com_serial_number'] = $request->com_serial_number;
             $cd['videocard'] = $request->videocard;
             $cd['network'] = $request->network;
+            $cd['touchscreen_type'] = $request->touchscreen_type;
             $cd['thunderbolt_ports'] = $request->thunderbolt_ports;
             $cd['accessories'] = $request->accessories;
             $cd['owner'] = $request->owner;

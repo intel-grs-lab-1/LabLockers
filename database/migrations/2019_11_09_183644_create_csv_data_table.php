@@ -12,7 +12,7 @@ class CreateCsvDataTable extends Migration
         Schema::create('csv_data', function (Blueprint $table) {
             $table->bigIncrements('id');
             //device
-            $table->text('manufacturer')->nullable(); //from csv
+            $table->text('manufacture')->nullable(); //from csv
             $table->string('com_brand_name')->nullable(); // from csv
             $table->text('colour')->nullable(); // from drop down
             //covertaible / 2 in 1 / clam ...
