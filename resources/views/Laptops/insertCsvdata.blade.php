@@ -28,7 +28,17 @@
         </div>
         <div class="form-group">
           <label for="name">Colour</label>
-          <textarea type="text" class="form-control" name="colour">{{@$laptop['colour'] }}</textarea>
+          <select name="colour_id" id="" class="form-control">
+            @foreach ($colours as $colour)
+              <option 
+                value="{{ $colour->id }}"
+                @if ($colour->id === $csv_data->colour)
+                    selected
+                @endif
+                  > {{  $colour->name  }} 
+              </option>
+            @endforeach  
+          </select>
         </div>
         <div class="form-group">
           <label for="name">Type</label>

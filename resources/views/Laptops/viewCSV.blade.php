@@ -88,6 +88,9 @@
         @endif
     </tbody>
 </table>
+<br>
+<a class="btn btn-warning" href="{{ route('export') }}">Export User Data</a>
+<br>
 <script type="text/javascript">
     $(document).ready( function () {
         $('#laptop_table').DataTable();
