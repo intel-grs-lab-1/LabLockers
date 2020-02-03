@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use App\csv;
 use App\CsvData;
-use App\laptop;
+use App\Accs;
+use App\Color;
 use Complex\Exception;
 use Illuminate\Http\Request;
 
@@ -18,7 +19,8 @@ class importController extends Controller
 
     public function importExportView()
     {
-        return view('Laptops.importLaptop');
+         $accs = Accs::all();
+        return view('Laptops.importLaptop', compact('accs'));
     }
 
     public function allView()
@@ -26,6 +28,9 @@ class importController extends Controller
         $csvData = CsvData::all();
         return view('Laptops.viewCSV', compact('csvData'));
     }
+
+
+
 
     public function handleImportLaptop(Request $request)
     {
@@ -43,8 +48,12 @@ class importController extends Controller
         //    return redirect('/viewall');
         $laptop = $this->importCsv($csvFullPath);
 
+
+     $laptops = Accs::all();
+     $colors = Color::all();
+        
  
-        return view('Laptops.insertCsvdata', compact('laptop'));
+        return view('Laptops.insertCsvdata', compact('laptop','laptops','colors'));
     }
 
     public function exportCsvData($id)
@@ -182,14 +191,16 @@ class importController extends Controller
 
     public function editCsv($id)
     {
+        $laptops = Accs::all();
         $laptop = CsvData::getByid($id);
+        $colors = Color::all();
 
-        return view('Laptops.editCsvdata', compact('laptop'));
+        return view('Laptops.editCsvdata', compact('laptop','laptops','colors'));
     }
 
     public function destroy($id)
     {
-        $laptop = laptop::find($id);
+        $laptop = CsvData::find($id);
         $laptop->delete();
     }
 
@@ -244,4 +255,10 @@ class importController extends Controller
         CsvData::insertCsvdata($request);
         return redirect()->route('viewall')->with('success', 'Laptop imported successfully');
     }
+
+
+
+
+
+
 }

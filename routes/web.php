@@ -29,3 +29,12 @@ Route::post('/import/updatedata/{id}', 'importController@updateImportData');
 Route::post('/import/insertdata', 'importController@insertImportData')->name('insertdata');
 
 Route::get('viewall/export', 'CsvFileExport@csv_export')->name('export');
+
+
+
+Route::get('add-accessories', 'HomeController@addAccessories')->name('add-accessories');
+Route::post('post-accessories', 'HomeController@postAccessories')->name('post-accessories');
+
+
+Route::get('add-color', 'HomeController@addColor')->name('add-color');
+Route::post('post-color', 'HomeController@postColor')->name('post-color');

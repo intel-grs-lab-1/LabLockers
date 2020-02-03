@@ -1,6 +1,10 @@
 @extends('layouts/app')
 
 @section('content')
+
+{{-- @section('styls')
+   <script src="{{ asset('assets/admin/libs/select2/js/select2.min.js')}}"></script>
+@endsection --}}
 <div class="card uper">
   <div class="card-header">
     Edit CsvData
@@ -29,7 +33,14 @@
         </div>
         <div class="form-group">
           <label for="name">Colour</label>
-          <textarea type="text" class="form-control" name="colour">{{@$laptop['colour'] }}</textarea>
+         {{--  <textarea type="text" class="form-control" name="colour">{{@$laptop['colour'] }}</textarea> --}}
+
+              <select class="js-example-basic-multiple col-md-12" name="colour" multiple="multiple">
+              <option class="disabled">Choose Workfile</option>
+               @foreach($colors as $color)
+               <option value="{{$color->name}}">{{$color->name}}</option>
+               @endforeach
+            </select>
         </div>
         <div class="form-group">
           <label for="name">Type</label>
@@ -117,9 +128,19 @@
           <label for="name">No. thunderbolt ports</label>
           <textarea rows="4" type="text" class="form-control" name="thunderbolt_ports">{{@$laptop['thunderbolt_ports'] }}</textarea>
         </div>
-        <div class="form-group">
+         <div class="form-group">
           <label for="name">accessories</label>
-          <textarea rows="4" type="text" class="form-control" name="accessories">{{@$laptop['accessories'] }}</textarea>
+                 <div class="row">
+         <div class="col-md-12">
+           <select class="js-example-basic-multiple col-md-12" name="accessories" multiple="multiple">
+              <option class="disabled">Choose Workfile</option>
+               @foreach($laptops as $acc)
+               <option value="{{$acc->name}} ">{{$acc->name}}</option>
+               @endforeach
+            </select>
+         </div>
+       </div>   
+
         </div>
         <div class="form-group">
           <label for="name">owner</label>
@@ -138,4 +159,11 @@
       </form>
   </div>
 </div>
+@endsection
+@section('scripts')
+   <script>
+$(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+   </script>
 @endsection

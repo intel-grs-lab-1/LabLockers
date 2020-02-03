@@ -4,6 +4,8 @@
 <div class="card uper">
   <div class="card-header">
     Edit CsvData
+
+
   </div>
   <div class="card-body">
     @if ($errors->any())
@@ -28,18 +30,13 @@
         </div>
         <div class="form-group">
           <label for="name">Colour</label>
-          <select name="colour_id" id="" class="form-control">
-            @foreach ($colours as $colour)
-              <option 
-                value="{{ $colour->id }}"
-                @if ($colour->id === $csv_data->colour)
-                    selected
-                @endif
-                  > {{  $colour->name  }} 
-              </option>
-            @endforeach  
-          </select>
-        </div>
+         <select class="js-example-basic-multiple col-md-12" name="colour" multiple="multiple">
+              <option class="disabled">Choose Workfile</option>
+               @foreach($colors as $color)
+               <option value="{{$color->name}}">{{$color->name}}</option>
+               @endforeach
+            </select>
+          </div>
         <div class="form-group">
           <label for="name">Type</label>
           <textarea type="text" class="form-control" name="type">{{@$laptop['type'] }}</textarea>
@@ -126,7 +123,17 @@
         </div>
         <div class="form-group">
           <label for="name">accessories</label>
-          <textarea rows="4" type="text" class="form-control" name="accessories">{{@$laptop['accessories'] }}</textarea>
+                 <div class="row">
+         <div class="col-md-12">
+           <select class="js-example-basic-multiple col-md-12" name="accessories" multiple="multiple">
+              <option class="disabled">Choose Workfile</option>
+               @foreach($laptops as $acc)
+               <option value="{{$acc->name}}">{{$acc->name}}</option>
+               @endforeach
+            </select>
+         </div>
+       </div>   
+
         </div>
         <div class="form-group">
           <label for="name">owner</label>
@@ -145,4 +152,12 @@
       </form>
   </div>
 </div>
+@endsection
+
+@section('scripts')
+   <script>
+$(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+   </script>
 @endsection

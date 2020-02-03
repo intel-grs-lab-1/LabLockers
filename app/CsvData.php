@@ -125,4 +125,10 @@ class CsvData extends Model
         $columnNames = ['blah', 'yada', 'hmm'];//replace this with your own array of string column headers
         return self::getCsv($columnNames, $rows);
     }
+
+
+
+        public function acc() {
+        return $this->belongsTo(Accs::class, 'id');
+    }
 }
