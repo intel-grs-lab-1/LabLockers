@@ -31,17 +31,14 @@ class HomeController extends Controller
     }
 
 
-     public function addColor()
-    {
+     public function addColor(){
         $data['title'] = "Add Admin user";
         $data['route'] = "post-color";
 
-         // $data['accs'] = Accs::orderBy('id', 'desc');
         return view('Laptops.insertCsvdata', $data);
     }
 
-    public function postColor(Request $request)
-    {
+    public function postColor(Request $request){
          $this->validate($request,[
             'name' => 'required|string',
      
@@ -55,23 +52,14 @@ class HomeController extends Controller
         return redirect()->back();
     }
 
-
-
-
-
-
-
-    public function addAccessories()
-    {
+    public function addAccessories(){
         $data['title'] = "Add Admin user";
         $data['route'] = "post-accessories";
 
-         // $data['accs'] = Accs::orderBy('id', 'desc');
         return view('Laptops.insertCsvdata', $data);
     }
 
-    public function postAccessories(Request $request)
-    {
+    public function postAccessories(Request $request){
          $this->validate($request,[
             'name' => 'required|string',
      
@@ -85,4 +73,24 @@ class HomeController extends Controller
         return redirect()->back();
     }
 
+    public function addType(){
+        $data['title'] = "Add Admin User";
+        $data['route'] = "post-type";
+
+        return view('Laptops.insertCsvdata', $data);
+    }
+
+    public function postType(Request $request){
+         $this->validate($request,[
+            'name' => 'required|string',
+     
+        ]);
+
+        $acc['name'] = $request->name;
+
+        Type::create($acc);
+        session()->flash('message', 'Type Successfully added!');
+        Session::flash('type', 'success');
+        return redirect()->back();
+    }
 }

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCsvTable extends Migration
+class CreateTypesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,9 @@ class CreateCsvTable extends Migration
      */
     public function up()
     {
-        Schema::create('csv', function (Blueprint $table) {
+        Schema::create('types', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->text('name');
             $table->timestamps();
         });
     }
@@ -26,6 +27,6 @@ class CreateCsvTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('csv');
+        Schema::dropIfExists('types');
     }
 }

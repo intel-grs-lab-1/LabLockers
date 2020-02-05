@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCsvDataTable extends Migration
+class CreateTouchscreenTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateCsvDataTable extends Migration
      */
     public function up()
     {
-        Schema::create('csv_data', function (Blueprint $table) {
+        Schema::create('touchscreen', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
         });
@@ -26,6 +26,6 @@ class CreateCsvDataTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('csv_data');
+        Schema::dropIfExists('touchscreen');
     }
 }

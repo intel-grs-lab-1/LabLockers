@@ -6,6 +6,7 @@ use App\csv;
 use App\CsvData;
 use App\Accs;
 use App\Color;
+use App\Type;
 use Complex\Exception;
 use Illuminate\Http\Request;
 
@@ -51,9 +52,10 @@ class importController extends Controller
 
      $laptops = Accs::all();
      $colors = Color::all();
+     $type = Type::all();
         
  
-        return view('Laptops.insertCsvdata', compact('laptop','laptops','colors'));
+        return view('Laptops.insertCsvdata', compact('laptop','laptops','colors', 'type'));
     }
 
     public function exportCsvData($id)
@@ -194,8 +196,9 @@ class importController extends Controller
         $laptops = Accs::all();
         $laptop = CsvData::getByid($id);
         $colors = Color::all();
+        $type - Type::all();
 
-        return view('Laptops.editCsvdata', compact('laptop','laptops','colors'));
+        return view('Laptops.editCsvdata', compact('laptop','laptops','colors', 'type'));
     }
 
     public function destroy($id)
@@ -255,10 +258,5 @@ class importController extends Controller
         CsvData::insertCsvdata($request);
         return redirect()->route('viewall')->with('success', 'Laptop imported successfully');
     }
-
-
-
-
-
 
 }
