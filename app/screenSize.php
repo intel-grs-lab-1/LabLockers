@@ -4,7 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class screenSize extends Model
+class ScreenSize extends Model
 {
-    //
+    protected $fillable = [
+        'name', 
+    ];
 }

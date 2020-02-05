@@ -93,4 +93,25 @@ class HomeController extends Controller
         Session::flash('type', 'success');
         return redirect()->back();
     }
+
+    public function addPowerSupply(){
+        $data['title'] = "Add Admin user";
+        $data['route'] = "post-powerSupply";
+
+        return view('Laptops.insertCsvdata', $data);
+    }
+
+    public function postColor(Request $request){
+         $this->validate($request,[
+            'name' => 'required|string',
+     
+        ]);
+
+        $acc['name'] = $request->name;
+
+        Color::create($acc);
+        session()->flash('message', 'Color Successfully added!');
+        Session::flash('type', 'success');
+        return redirect()->back();
+    }
 }

@@ -39,7 +39,12 @@
           </div>
         <div class="form-group">
           <label for="name">Type</label>
-          <textarea type="text" class="form-control" name="type">{{@$laptop['type'] }}</textarea>
+            <select class="js-example-basic-multiple col-md-12" name="type" multiple="multiple">
+              <option class="disabled">Choose Workfile</option>
+               @foreach($types as $color)
+               <option value="{{$color->name}}">{{$color->name}}</option>
+               @endforeach
+            </select>
         </div>
         <div class="form-group">
           <label for="name">Battery capacity</label>
