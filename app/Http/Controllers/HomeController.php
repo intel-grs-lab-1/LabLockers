@@ -5,6 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Accs;
 use App\Color;
+use App\Type;
+use App\PowerSupply;
+use App\ScreenSize;
+use App\ThunderboltPorts;
+use App\Touchscreen;
 
 use Illuminate\Support\Facades\Session;
 
@@ -101,7 +106,7 @@ class HomeController extends Controller
         return view('Laptops.insertCsvdata', $data);
     }
 
-    public function postColor(Request $request){
+    public function postPowerSupply(Request $request){
          $this->validate($request,[
             'name' => 'required|string',
      
@@ -109,8 +114,71 @@ class HomeController extends Controller
 
         $acc['name'] = $request->name;
 
-        Color::create($acc);
-        session()->flash('message', 'Color Successfully added!');
+        PowerSupply::create($acc);
+        session()->flash('message', 'Power Supply spec Successfully added!');
+        Session::flash('type', 'success');
+        return redirect()->back();
+    }
+
+    public function addScreenSize(){
+        $data['title'] = "Add Admin user";
+        $data['route'] = "post-screenSize";
+
+        return view('Laptops.insertCsvdata', $data);
+    }
+
+    public function postScreenSize(Request $request){
+         $this->validate($request,[
+            'name' => 'required|string',
+     
+        ]);
+
+        $acc['name'] = $request->name;
+
+        ScreenSize::create($acc);
+        session()->flash('message', 'Screen Size spec Successfully added!');
+        Session::flash('type', 'success');
+        return redirect()->back();
+    }
+
+    public function addThunderboltPorts(){
+        $data['title'] = "Add Admin user";
+        $data['route'] = "post-ThunderboltPorts";
+
+        return view('Laptops.insertCsvdata', $data);
+    }
+
+    public function postThunderboltPorts(Request $request){
+         $this->validate($request,[
+            'name' => 'required|string',
+     
+        ]);
+
+        $acc['name'] = $request->name;
+
+        ThunderboltPorts::create($acc);
+        session()->flash('message', 'Quantity of Thunderbolt Ports Successfully added!');
+        Session::flash('type', 'success');
+        return redirect()->back();
+    }
+
+    public function addTouchscreen(){
+        $data['title'] = "Add Admin user";
+        $data['route'] = "post-Touchscreen";
+
+        return view('Laptops.insertCsvdata', $data);
+    }
+
+    public function postTouchscreen(Request $request){
+         $this->validate($request,[
+            'name' => 'required|string',
+     
+        ]);
+
+        $acc['name'] = $request->name;
+
+        Touchscreen::create($acc);
+        session()->flash('message', 'Touchscreen types Successfully added!');
         Session::flash('type', 'success');
         return redirect()->back();
     }
