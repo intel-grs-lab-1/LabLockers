@@ -7,6 +7,10 @@ use App\CsvData;
 use App\Accs;
 use App\Color;
 use App\Type;
+use App\PowerSupply;
+use App\ScreenSize;
+use App\ThunderboltPorts;
+use App\Touchscreen;
 use Complex\Exception;
 use Illuminate\Http\Request;
 
@@ -30,9 +34,6 @@ class importController extends Controller
         return view('Laptops.viewCSV', compact('csvData'));
     }
 
-
-
-
     public function handleImportLaptop(Request $request)
     {
 
@@ -53,9 +54,13 @@ class importController extends Controller
      $laptops = Accs::all();
      $colors = Color::all();
      $type = Type::all();
+     $powerSupply = PowerSupply::all();
+     $screenSize = screenSize::all();
+     $thunderboltPorts = ThunderboltPorts::all();
+     $touchscreen = Touchscreen::all();
         
  
-        return view('Laptops.insertCsvdata', compact('laptop','laptops','colors', 'type'));
+        return view('Laptops.insertCsvdata', compact('laptop','laptops','colors', 'type', 'powerSupply', 'screenSize', 'thunderboltPorts', 'touchscreen'));
     }
 
     public function exportCsvData($id)
@@ -196,9 +201,13 @@ class importController extends Controller
         $laptops = Accs::all();
         $laptop = CsvData::getByid($id);
         $colors = Color::all();
-        $type - Type::all();
+        $type = Type::all();
+        $powerSupply = PowerSupply::all();
+        $screenSize = screenSize::all();
+        $thunderboltPorts = ThunderboltPorts::all();
+        $touchscreen = Touchscreen::all();
 
-        return view('Laptops.editCsvdata', compact('laptop','laptops','colors', 'type'));
+        return view('Laptops.editCsvdata', compact('laptop','laptops','colors', 'type', 'powerSupply', 'screenSize', 'thunderboltPorts', 'touchscreen'));
     }
 
     public function destroy($id)
