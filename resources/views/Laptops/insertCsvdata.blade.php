@@ -41,8 +41,8 @@
           <label for="name">Type</label>
             <select class="js-example-basic-multiple col-md-12" name="type" multiple="multiple">
               <option class="disabled">Choose Workfile</option>
-               @foreach($types as $color)
-               <option value="{{$color->name}}">{{$color->name}}</option>
+               @foreach($types as $type)
+               <option value="{{$type->name}}">{{$type->name}}</option>
                @endforeach
             </select>
         </div>
@@ -52,7 +52,13 @@
         </div>
         <div class="form-group">
           <label for="name">Power supply</label>
-          <textarea type="text" class="form-control" name="power_supply">{{@$laptop['power_supply'] }}</textarea>
+            <select class="js-example-basic-multiple col-md-12" name="colour" multiple="multiple">
+              <option class="disabled">Choose Workfile</option>
+               @foreach($PowerSupplys as $PowerSupply)
+               <option value="{{$PowerSupply->name}}">{{$PowerSupply->name}}</option>
+               @endforeach
+            </select>
+          </div>
         </div>
         <div class="form-group">
           <label for="name">power supply details</label>
@@ -92,7 +98,13 @@
         </div>
         <div class="form-group">
           <label for="name">screen size</label>
-          <textarea rows="4" type="text" class="form-control" name="screen_size">{{@$laptop['screen_size'] }}</textarea>
+         <select class="js-example-basic-multiple col-md-12" name="colour" multiple="multiple">
+              <option class="disabled">Choose Workfile</option>
+               @foreach($screenSizes as $screenSize)
+               <option value="{{$screenSize->name}}">{{$screenSize->name}}</option>
+               @endforeach
+            </select>
+          </div>
         </div>
         <div class="form-group">
           <label for="name">resolution</label>
@@ -104,7 +116,13 @@
         </div>
         <div class="form-group">
           <label for="name">Touchscreen type</label>
-          <textarea rows="4" type="text" class="form-control" name="touchscreen_type">{{@$laptop['touchscreen_type'] }}</textarea>
+         <select class="js-example-basic-multiple col-md-12" name="colour" multiple="multiple">
+              <option class="disabled">Choose Workfile</option>
+               @foreach($touchscreens as $touchscreen)
+               <option value="{{$touchscreen->name}}">{{$touchscreen->name}}</option>
+               @endforeach
+            </select>
+          </div>
         </div>
         <div class="form-group">
           <label for="name">Dive Capacity</label>
@@ -124,7 +142,13 @@
         </div>
         <div class="form-group">
           <label for="name">No. thunderbolt ports</label>
-          <textarea rows="4" type="text" class="form-control" name="thunderbolt_ports">{{@$laptop['thunderbolt_ports'] }}</textarea>
+         <select class="js-example-basic-multiple col-md-12" name="colour" multiple="multiple">
+              <option class="disabled">Choose Workfile</option>
+               @foreach($thunderboltPorts as $thunderboltPort)
+               <option value="{{$thunderboltPort->name}}">{{$thunderboltPort->name}}</option>
+               @endforeach
+            </select>
+          </div>
         </div>
         <div class="form-group">
           <label for="name">accessories</label>
