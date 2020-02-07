@@ -45,8 +45,8 @@ Route::post('post-type', 'HomeController@postType')->name('post-type');
 Route::get('add-powerSupply', 'HomeController@addPowerSupply')->name('add-powerSupply');
 Route::post('post-powerSupply', 'HomeController@postPowerSupply')->name('post-powerSupply');
 // Screen size
-Route::get('add-ScreenSize', 'HomeController@addScreenSize')->name('add-tyScreenSizepe');
-Route::post('post-ScreenSize', 'HomeController@postScreenSize')->name('post-ScreenSize');
+Route::get('add-screenSize', 'HomeController@addScreenSize')->name('add-screenSizepe');
+Route::post('post-screenSize', 'HomeController@postScreenSize')->name('post-screenSize');
 // thunderbolt
 Route::get('add-ThunderboltPorts', 'HomeController@addThunderboltPorts')->name('add-ThunderboltPorts');
 Route::post('post-ThunderboltPorts', 'HomeController@postThunderboltPorts')->name('post-ThunderboltPorts');

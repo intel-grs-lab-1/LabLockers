@@ -86,7 +86,11 @@
          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal1">Add colors</a>
           <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal">Add accessories</a>
-          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal2">Add type</a>
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal2">Add type of device</a>
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal3">Add Power supply</a>
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal4">Add screen size</a>
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal5">Add No. thunderbolt ports</a>
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal6">Add Touchscreen types</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -192,6 +196,115 @@
   </div>
 </div>
 </div>
+<!-- Modal type -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"> Add accessories</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form method="POST" action="{{ route('post-powerSupply') }}" >
+         @csrf
+         <div class="form-group">
+          <label for="exampleInputEmail1">Type Name</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Accessories Name" name="name">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </form>
+    </div>
+    <div class="modal-footer">
+      {{-- <button type="button" class="btn btn-primary">Save changes</button> --}}
+    </div>
+  </div>
+</div>
+</div>
+<!-- Modal type -->
+<div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"> Add screen size</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form method="POST" action="{{ route('post-screenSize') }}" >
+         @csrf
+         <div class="form-group">
+          <label for="exampleInputEmail1">Type Name</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Accessories Name" name="name">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </form>
+    </div>
+    <div class="modal-footer">
+      {{-- <button type="button" class="btn btn-primary">Save changes</button> --}}
+    </div>
+  </div>
+</div>
+</div>
+<!-- Modal type -->
+<div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"> Add thunderbolt port #No.</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form method="POST" action="{{ route('post-ThunderboltPorts') }}" >
+         @csrf
+         <div class="form-group">
+          <label for="exampleInputEmail1">Type Name</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Accessories Name" name="name">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </form>
+    </div>
+    <div class="modal-footer">
+      {{-- <button type="button" class="btn btn-primary">Save changes</button> --}}
+    </div>
+  </div>
+</div>
+</div>
+<!-- Modal type -->
+<div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"> Add touchscreen type</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form method="POST" action="{{ route('post-Touchscreen') }}" >
+         @csrf
+         <div class="form-group">
+          <label for="exampleInputEmail1">Type Name</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Accessories Name" name="name">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </form>
+    </div>
+    <div class="modal-footer">
+      {{-- <button type="button" class="btn btn-primary">Save changes</button> --}}
+    </div>
+  </div>
+</div>
+</div>
+
 
 <main class="py-4">
   @yield('content')
