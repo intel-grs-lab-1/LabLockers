@@ -13,8 +13,9 @@ class CreatePowerSuppplyTable extends Migration
      */
     public function up()
     {
-        Schema::create('power_suppply', function (Blueprint $table) {
+        Schema::create('power_supplies', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->text('name');
             $table->timestamps();
         });
     }

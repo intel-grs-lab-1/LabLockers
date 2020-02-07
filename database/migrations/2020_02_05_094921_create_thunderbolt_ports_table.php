@@ -15,6 +15,7 @@ class CreateThunderboltPortsTable extends Migration
     {
         Schema::create('thunderbolt_ports', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->text('name');
             $table->timestamps();
         });
     }

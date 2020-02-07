@@ -54,7 +54,7 @@
           <label for="name">Power supply</label>
             <select class="js-example-basic-multiple col-md-12" name="colour" multiple="multiple">
               <option class="disabled">Choose Workfile</option>
-               @foreach($PowerSupplys as $PowerSupply)
+               @foreach($powerSupplys as $PowerSupply)
                <option value="{{$PowerSupply->name}}">{{$PowerSupply->name}}</option>
                @endforeach
             </select>

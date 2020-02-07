@@ -13,8 +13,9 @@ class CreateScreenSizeTable extends Migration
      */
     public function up()
     {
-        Schema::create('screen_size', function (Blueprint $table) {
+        Schema::create('screen_sizes', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->text('name');
             $table->timestamps();
         });
     }

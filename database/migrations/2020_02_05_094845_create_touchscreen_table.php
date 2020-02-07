@@ -13,8 +13,9 @@ class CreateTouchscreenTable extends Migration
      */
     public function up()
     {
-        Schema::create('touchscreen', function (Blueprint $table) {
+        Schema::create('touchscreens', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->text('name');
             $table->timestamps();
         });
     }
