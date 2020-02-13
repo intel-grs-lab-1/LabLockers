@@ -11,9 +11,6 @@
 |
 */
 
-
-
-
 Route::get('/', 'HomeController@index')->name('home');
 
 Auth::routes();
@@ -29,7 +26,6 @@ Route::post('/import/updatedata/{id}', 'importController@updateImportData');
 Route::post('/import/insertdata', 'importController@insertImportData')->name('insertdata');
 
 Route::get('viewall/export', 'CsvFileExport@csv_export')->name('export');
-
 
 // dynamic drop-down
 // Accs
