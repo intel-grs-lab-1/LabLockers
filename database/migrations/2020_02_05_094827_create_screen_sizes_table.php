@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePowerSuppplyTable extends Migration
+class CreateScreenSizesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreatePowerSuppplyTable extends Migration
      */
     public function up()
     {
-        Schema::create('power_supplies', function (Blueprint $table) {
+        Schema::create('screen_sizes', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->text('name');
             $table->timestamps();
@@ -27,6 +27,6 @@ class CreatePowerSuppplyTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('power_suppply');
+        Schema::dropIfExists('screen_sizes');
     }
 }

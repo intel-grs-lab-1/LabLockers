@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTouchscreenTable extends Migration
+class CreatePowerSupppliesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateTouchscreenTable extends Migration
      */
     public function up()
     {
-        Schema::create('touchscreens', function (Blueprint $table) {
+        Schema::create('power_supplies', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->text('name');
             $table->timestamps();
@@ -27,6 +27,6 @@ class CreateTouchscreenTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('touchscreen');
+        Schema::dropIfExists('power_suppplies');
     }
 }

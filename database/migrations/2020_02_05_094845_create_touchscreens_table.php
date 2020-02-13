@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateScreenSizeTable extends Migration
+class CreateTouchscreensTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateScreenSizeTable extends Migration
      */
     public function up()
     {
-        Schema::create('screen_sizes', function (Blueprint $table) {
+        Schema::create('touchscreens', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->text('name');
             $table->timestamps();
@@ -27,6 +27,6 @@ class CreateScreenSizeTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('screen_size');
+        Schema::dropIfExists('touchscreens');
     }
 }
