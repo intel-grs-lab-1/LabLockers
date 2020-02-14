@@ -90,8 +90,12 @@ class importController extends Controller
             if ($key == "System Manufacturer:") {
                 $data['manufacture'] = $fileData[1];
             }
-            if ($key == "Computer Brand Name:") {
-                $data['com_brand_name'] = $fileData[1];
+            if($key == "Computer Brand Name:"){
+                if(strpos($fileData[1],"HP HP") === 0){
+                    $data['com_brand_name'] = substr($fileData[1], 6);  
+                }else{
+                    $data['com_brand_name'] = strstr($fileData[1], " ");
+                }
             }
             if ($key == "Operating System:") {
                 $data['os'] = $fileData[1];
