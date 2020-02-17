@@ -27,6 +27,6 @@ class CreatePowerSupppliesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('power_suppplies');
+        Schema::dropIfExists('power_supplies');
     }
 }
