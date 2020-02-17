@@ -201,13 +201,13 @@ class importController extends Controller
         $laptops = Accs::all();
         $laptop = CsvData::getByid($id);
         $colors = Color::all();
-        $type = Type::all();
-        $powerSupply = PowerSupply::all();
-        $screenSize = screenSize::all();
+        $types = Type::all();
+        $powerSupplys = PowerSupply::all();
+        $screenSizes = screenSize::all();
         $thunderboltPorts = ThunderboltPorts::all();
-        $touchscreen = Touchscreen::all();
+        $touchscreens = Touchscreen::all();
 
-        return view('Laptops.editCsvdata', compact('laptop','laptops','colors', 'type', 'powerSupply', 'screenSize', 'thunderboltPorts', 'touchscreen'));
+        return view('Laptops.editCsvdata', compact('laptop','laptops','colors', 'types', 'powerSupplys', 'screenSizes', 'thunderboltPorts', 'touchscreens'));
     }
 
     public function destroy($id)
