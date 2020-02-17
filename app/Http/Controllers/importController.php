@@ -159,10 +159,8 @@ class importController extends Controller
 
             if($videoFlag)
             {
-                if(sizeof($fileData) > 1)
-                    $videoDesc .=$key. " : ".$fileData[1]."\n";
-                else
-                    $videoDesc .=$key."\n";
+                if(sizeof($fileData) > 1 && $key === "Driver Description:")
+                    $videoDesc .= $fileData[1]."\n";
             }
 
             if($key == "Network") {
@@ -174,10 +172,8 @@ class importController extends Controller
 
             if($netFlag)
             {
-                if(sizeof($fileData) > 1)
-                    $netDesc .=$key. " : ".$fileData[1]."\n";
-                else
-                    $netDesc .=$key."\n";
+                if(sizeof($fileData) > 1 && $key === "Driver Description:")
+                    $netDesc .= $fileData[1]."\n";
             }
 
         }
