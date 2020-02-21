@@ -58,5 +58,5 @@ Route::post('post-Touchscreen', 'HomeController@postTouchscreen')->name('post-To
 Route::get('add-Brand', 'HomeController@addBrand')->name('add-Brand');
 Route::post('post-Brand', 'HomeController@postBrand')->name('post-Brand');
 // cpu OEM
-Route::get('add-CPUMan', 'HomeController@addCPUMan')->name('add-CPUMan');
-Route::post('post-CPUMan', 'HomeController@postCPUMan')->name('post-CPUMan');
+Route::get('add-cpuMan', 'HomeController@addcpuMan')->name('add-cpuMan');
+Route::post('post-cpuMan', 'HomeController@postcpuMan')->name('post-cpuMan');

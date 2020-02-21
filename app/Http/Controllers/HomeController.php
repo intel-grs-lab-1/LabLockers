@@ -208,14 +208,14 @@ class HomeController extends Controller
     }
 
     // CPU OEM
-    public function addCPUMan(){
+    public function addcpuMan(){
         $data['title'] = "Add Admin user";
-        $data['route'] = "post-CPUMan";
+        $data['route'] = "post-cpuMan";
 
         return view('Laptops.insertCsvdata', $data);
     }
 
-    public function postCPUMan(Request $request){
+    public function postcpuMan(Request $request){
          $this->validate($request,[
             'name' => 'required|string',
      
