@@ -7,7 +7,7 @@
 
 
 	</div>
-	<div class="card-body">
+	<div class="card-body" style="text-transform: capitalize;">
 		@if ($errors->any())
 		<div class="alert alert-danger">
 			<ul>
@@ -139,12 +139,7 @@
 			</div>
 			<div class="form-group">
 				<label for="name">No. thunderbolt ports</label>
-				<select class="js-example-basic-multiple col-md-12" name="thunderbolt_ports" multiple="multiple">
-					<option class="disabled">Choose Workfile</option>
-					@foreach($thunderboltPorts as $thunderboltPort)
-					<option value="{{$thunderboltPort->name}}">{{$thunderboltPort->name}}</option>
-					@endforeach
-				</select>
+  					<input type="number" id="thunderbolt_ports" name="thunderbolt_ports" min="0" max="10">
 			</div>
 			<div class="form-group">
 				<label for="name">accessories</label>

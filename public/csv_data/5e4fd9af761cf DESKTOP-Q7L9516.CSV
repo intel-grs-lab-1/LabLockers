@@ -1,0 +1,2098 @@
+
+DESKTOP-Q7L9516
+
+"Computer Name:","DESKTOP-Q7L9516"
+"Computer Brand Name:","LENOVO Lenovo Yoga S940-14IIL"
+"Operating System:","Microsoft Windows 10 Professional (x64) Build 18362.418 (1903/May 2019 Update)"
+"UEFI Boot:","Present"
+"Secure Boot:","Present"
+
+Central Processor(s)
+
+"Number Of Processor Packages (Physical):","1"
+"Number Of Processor Cores:","4"
+"Number Of Logical Processors:","8"
+
+Intel Core i7-1065G7
+
+"Processor Name:","Intel Core i7-1065G7"
+"Original Processor Frequency:","1500.0 MHz"
+"Original Processor Frequency [MHz]:","1500"
+"CPU ID:","000706E5"
+"CPU Brand Name:","Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz"
+"CPU Vendor:","GenuineIntel"
+"CPU Stepping:","D1"
+"CPU Code Name:","Ice Lake-U"
+"CPU Technology:","10 nm"
+"CPU QDF:","QSD2, QSQS (QS)"
+"CPU Thermal Design Power (TDP):","15.0 W"
+"CPU Power Limit 4 (PL4):","129.0 W"
+"CPU Power Limits (Max):","Power = Unlimited, Time = Unlimited"
+"CPU Power Limit 1 - Long Duration:"," (18.00 W) (28.00 sec) [Unlocked]"
+"CPU Power Limit 2 - Short Duration:"," (25.00 W) (2.44 ms) [Unlocked]"
+"Configurable TDP Level 1 (Down):","12.00 W (Unlimited range), 1000 MHz"
+"Configurable TDP Level 2 (Up):","25.00 W (Unlimited range), 1500 MHz"
+"Current Configurable TDP Level:","Nominal [Unlocked]"
+"CPU Max. Junction Temperature (Tj,max):","100 °C"
+"CPU Type:","Engineering Sample"
+"CPU Platform:","BGA1526"
+"Microcode Update Revision:","1A"
+"Favored Cores List:","0"
+"Number of CPU Cores:","4"
+"Number of Logical CPUs:","8"
+"CPU LFM (Minimum):","400.0 MHz = 4 x 100.0 MHz"
+"CPU HFM (Base):","1500.0 MHz = 15 x 100.0 MHz"
+"CPU Turbo Max:","3900.0 MHz = 39 x 100.0 MHz [Unlocked]"
+"Turbo Ratio Limits - IA/SSE:","39x (1c), 38x (2c), 35x (3-4c)"
+"Turbo Ratio Limits - AVX2, Resolved:","39x (1c), 38x (2c), 35x (3-4c)"
+"CPU Current:","3891.4 MHz = 39 x 99.8 MHz @ 1.1899 V"
+"LLC/Ring Maximum:","3600.0 MHz = 36.00 x 100.0 MHz"
+"LLC/Ring Current:","3592.1 MHz = 36.00 x 99.8 MHz @ 1.0911 V"
+"CPU Bus Type:","OPI"
+"PCI-Express Current Clock:","99.8 MHz = 1.00 x 99.8 MHz"
+"Voltage Offset:","Supported"
+"Voltage Override:","Supported"
+"Ratio Overclocking:","Not Supported"
+"Fused Ratio Limit:","39x"
+"OC Ratio Limit:","N/A"
+"Voltage Mode:","Interpolative"
+"Voltage Offset:","0 mV"
+"IccMax:","70.00 A"
+"Voltage Offset:","Supported"
+"Voltage Override:","Supported"
+"Ratio Overclocking:","Not Supported"
+"Fused Ratio Limit:","22x"
+"OC Ratio Limit:","N/A"
+"Voltage Mode:","Interpolative"
+"Voltage Offset:","0 mV"
+"IccMax:","70.00 A"
+"Voltage Offset:","Supported"
+"Voltage Override:","Supported"
+"Ratio Overclocking:","Not Supported"
+"Fused Ratio Limit:","36x"
+"OC Ratio Limit:","N/A"
+"Voltage Mode:","Interpolative"
+"Voltage Offset:","0 mV"
+"IccMax:","70.00 A"
+"Voltage Offset:","Supported"
+"Voltage Override:","Supported"
+"Ratio Overclocking:","Not Supported"
+"Fused Ratio Limit:","N/A"
+"OC Ratio Limit:","N/A"
+"Voltage Mode:","Interpolative"
+"Voltage Offset:","0 mV"
+"L1 Cache:","Instruction: 4 x 32 KBytes, Data: 4 x 48 KBytes"
+"L2 Cache:","Integrated: 4 x 512 KBytes"
+"L3 Cache:","8 MBytes"
+"Instruction TLB:","Unknown"
+"Data TLB:","Unknown"
+"FPU on Chip","Present"
+"Enhanced Virtual-86 Mode","Present"
+"I/O Breakpoints","Present"
+"Page Size Extensions","Present"
+"Time Stamp Counter","Present"
+"Pentium-style Model Specific Registers","Present"
+"Physical Address Extension","Present"
+"Machine Check Exception","Present"
+"CMPXCHG8B Instruction","Present"
+"APIC On Chip / PGE (AMD)","Present"
+"Fast System Call","Present"
+"Memory Type Range Registers","Present"
+"Page Global Feature","Present"
+"Machine Check Architecture","Present"
+"CMOV Instruction","Present"
+"Page Attribute Table","Present"
+"36-bit Page Size Extensions","Present"
+"Processor Number","Not Present"
+"CLFLUSH Instruction","Present"
+"Debug Trace and EMON Store","Present"
+"Internal ACPI Support","Present"
+"MMX Technology","Present"
+"Fast FP Save/Restore (IA MMX-2)","Present"
+"Streaming SIMD Extensions","Present"
+"Streaming SIMD Extensions 2","Present"
+"Self-Snoop","Present"
+"Multi-Threading Capable","Present"
+"Automatic Clock Control","Present"
+"IA-64 Processor","Not Present"
+"Signal Break on FERR","Present"
+"Virtual Machine Extensions (VMX)","Present"
+"Safer Mode Extensions (Intel TXT)","Not Present"
+"Streaming SIMD Extensions 3","Present"
+"Supplemental Streaming SIMD Extensions 3","Present"
+"Streaming SIMD Extensions 4.1","Present"
+"Streaming SIMD Extensions 4.2","Present"
+"AVX Support","Present"
+"Fused Multiply Add (FMA)","Present"
+"Carryless Multiplication (PCLMULQDQ)/GFMUL","Present"
+"CMPXCHG16B Support","Present"
+"MOVBE Instruction","Present"
+"POPCNT Instruction","Present"
+"XSAVE/XRSTOR/XSETBV/XGETBV Instructions","Present"
+"XGETBV/XSETBV OS Enabled","Present"
+"Float16 Instructions","Present"
+"AES Cryptography Support","Present"
+"Random Number Read Instruction (RDRAND)","Present"
+"Extended xAPIC","Present"
+"MONITOR/MWAIT Support","Present"
+"Thermal Monitor 2","Present"
+"Enhanced SpeedStep Technology","Present"
+"L1 Context ID","Not Present"
+"Send Task Priority Messages Disabling","Present"
+"Processor Context ID","Present"
+"Direct Cache Access","Not Present"
+"TSC-deadline Timer","Present"
+"Performance/Debug Capability MSR","Present"
+"IA32 Debug Interface Support","Present"
+"64-Bit Debug Store","Present"
+"CPL Qualified Debug Store","Present"
+"64-bit Extensions","Present"
+"RDTSCP and TSC_AUX Support","Present"
+"1 GB large page support","Present"
+"No Execute","Present"
+"SYSCALL/SYSRET Support","Present"
+"Bit Manipulation Instructions Set 1","Present"
+"Bit Manipulation Instructions Set 2","Present"
+"Advanced Vector Extensions 2 (AVX2)","Present"
+"Advanced Vector Extensions 512 (AVX-512)","Present"
+"AVX-512 Prefetch Instructions","Not Present"
+"AVX-512 Exponential and Reciprocal Instructions","Not Present"
+"AVX-512 Conflict Detection Instructions","Present"
+"AVX-512 Doubleword and Quadword Instructions","Present"
+"AVX-512 Byte and Word Instructions","Present"
+"AVX-512 Vector Length Extensions","Present"
+"AVX-512 52-bit Integer FMA Instructions","Present"
+"Secure Hash Algorithm (SHA) Extensions","Present"
+"Software Guard Extensions (SGX) Support","Present"
+"Supervisor Mode Execution Protection (SMEP)","Present"
+"Supervisor Mode Access Prevention (SMAP)","Present"
+"Hardware Lock Elision (HLE)","Not Present"
+"Restricted Transactional Memory (RTM)","Not Present"
+"Memory Protection Extensions (MPX)","Not Present"
+"Read/Write FS/GS Base Instructions","Present"
+"Enhanced Performance String Instruction","Present"
+"INVPCID Instruction","Present"
+"RDSEED Instruction","Present"
+"Multi-precision Add Carry Instructions (ADX)","Present"
+"PCOMMIT Instructions","Not Present"
+"CLFLUSHOPT Instructions","Present"
+"CLWB Instructions","Not Present"
+"TSC_THREAD_OFFSET","Present"
+"Platform Quality of Service Monitoring (PQM)","Not Present"
+"Platform Quality of Service Enforcement (PQE)","Not Present"
+"FPU Data Pointer updated only on x87 Exceptions","Present"
+"Deprecated FPU CS and FPU DS","Present"
+"Intel Processor Trace","Present"
+"PREFETCHWT1 Instruction","Not Present"
+"AVX-512 Vector Bit Manipulation Instructions","Present"
+"AVX-512 Vector Bit Manipulation Instructions 2","Present"
+"AVX-512 Galois Fields New Instructions","Present"
+"AVX-512 Vector AES","Present"
+"AVX-512 Vector Neural Network Instructions","Present"
+"AVX-512 Bit Algorithms","Present"
+"AVX-512 Carry-Less Multiplication Quadword (VPCLMULQDQ)","Present"
+"AVX-512 Vector POPCNT (VPOPCNTD/VPOPCNTQ)","Present"
+"User-Mode Instruction Prevention","Present"
+"Protection Keys for User-mode Pages","Present"
+"OS Enabled Protection Keys","Not Present"
+"Wait and Pause Enhancements (WAITPKG)","Not Present"
+"Total Memory Encryption","Not Present"
+"Read Processor ID","Present"
+"Cache Line Demote","Not Present"
+"MOVDIRI: Direct Stores","Not Present"
+"MOVDIR64B: Direct Stores","Not Present"
+"ENQCMD: Enqueue Stores","Not Present"
+"SGX Launch Configuration","Present"
+"AVX-512 BFLOAT16 Instructions","Not Present"
+"Thermal Monitor 1:","Supported, Enabled"
+"Thermal Monitor 2:","Supported, Enabled"
+"Enhanced Intel SpeedStep (GV3):","Supported, Enabled"
+"Bi-directional PROCHOT#:","Enabled"
+"Extended Auto-HALT State C1E:","Enabled"
+"MLC Streamer Prefetcher","Supported, Enabled"
+"MLC Spatial Prefetcher","Supported, Enabled"
+"DCU Streamer Prefetcher","Supported, Enabled"
+"DCU IP Prefetcher","Supported, Enabled"
+"Intel Dynamic Acceleration (IDA) Technology:","Not Supported"
+"Intel Dynamic FSB Switching:","Not Supported"
+"Intel Turbo Boost Technology:","Supported, Enabled"
+"Programmable Ratio Limits:","Supported, Disabled"
+"Programmable TDC/TDP Limits:","Supported, Disabled"
+"Hardware Duty Cycling:","Supported, Enabled"
+"NVME:","Not Supported"
+"DMI x4:","Supported"
+"DRAM ECC:","Not Supported"
+"VT-d:","Supported"
+"DMI in Gen2 Mode:","Supported"
+"PEG in Gen2 Mode:","Supported"
+"1N Mode DDR Timings:","Supported"
+"Camarillo Device:","Supported"
+"2 DIMMs per Channel:","Not Supported"
+"X2APIC:","Supported"
+"Dual Memory Channel:","Supported"
+"Integrated GPU:","Enabled"
+"DDR Overclocking:","Disabled"
+"Maximum Memory Size per Channel:","64 GB (unlimited)"
+"IMGU Device:","Supported"
+"Northpeak Device:","Supported"
+"Overclocking:","Disabled"
+"SMT:","Supported"
+"Additive Graphics:","Supported"
+"Additive Graphics:","Enabled"
+"PCIe Gen 3:","Supported"
+"DMI Gen 3:","Supported"
+"HDCP:","Supported"
+"L Technology:","1LM"
+"VMD:","Not Supported"
+"PCIe Gen 4:","Supported"
+"BCLK OC Limit:","100 MHz"
+"DDR4:","Supported"
+"LPDDR4:","Supported"
+"Maximum Supported DDR4 Frequency:","1600 MHz"
+"Maximum Supported LPDDR4 Frequency:","1867 MHz"
+"Secure Enclave (SGX):","Supported"
+"SVID Status:","Enabled"
+"VCC VR:","Monolithic Pwr Sys (0x40), IMVP9"
+"VR Thermal Sensor:","Not Supported"
+"Maximum Physical Address Size:","39-bit (512 GBytes)"
+"Maximum Virtual Address Size:","48-bit (256 TBytes)"
+"Range 80000000-100000000 (2048MB-4096MB) Type:","Uncacheable (UC)"
+"Range 40000000-80000000 (1024MB-2048MB) Type:","Uncacheable (UC)"
+"Range 38000000-40000000 (896MB-1024MB) Type:","Uncacheable (UC)"
+"Range 2000000000-4000000000 (131072MB-262144MB) Type:","Uncacheable (UC)"
+"Range 1000000000-2000000000 (65536MB-131072MB) Type:","Uncacheable (UC)"
+"Range 800000000-1000000000 (32768MB-65536MB) Type:","Uncacheable (UC)"
+"Range 4000000000-8000000000 (262144MB-524288MB) Type:","Uncacheable (UC)"
+
+Motherboard
+
+"Computer Brand Name:","LENOVO Lenovo Yoga S940-14IIL"
+"Motherboard Model:","LENOVO LNVNB161216"
+"Motherboard Chipset:","Intel 495 (Ice Lake-U PCH-LP Premium)"
+"Motherboard Slots:","4xPCI Express x1, 3xPCI Express x4, 1xPCI Express x16"
+"PCI Express Version Supported:","v3.0"
+"USB Version Supported:","v3.1"
+"BIOS Manufacturer:","LENOVO"
+"BIOS Date:","05/16/2019"
+"BIOS Version:","AKCN99WW"
+"UEFI BIOS:","Capable"
+"Super-IO/LPC Chip:","Unknown"
+
+ACPI Devices
+
+
+Standard PS/2 Keyboard
+
+"Device Name:","Standard PS/2 Keyboard"
+"I/O Port:","0060"
+"I/O Port:","0000"
+"I/O Port:","0060"
+"I/O Port:","0064"
+"IRQ:","1"
+
+Intel(R) Software Guard Extensions Device
+
+"Device Name:","Intel(R) Software Guard Extensions Device"
+"Memory Location:","300C0000 - 35D7FFFF"
+"Memory Location:","300C0000 - 35D7FFFF"
+
+Intel(R) Serial IO GPIO Host Controller - INT3455
+
+"Device Name:","Intel(R) Serial IO GPIO Host Controller - INT3455"
+"Memory Location:","FD6E0000 - FD6EFFFF"
+"Memory Location:","FD6E0000 - FD6EFFFF"
+"Memory Location:","FD6D0000 - FD6DFFFF"
+"Memory Location:","FD6A0000 - FD6AFFFF"
+"Memory Location:","FD690000 - FD69FFFF"
+"IRQ:","14"
+
+Motherboard resources
+
+"Device Name:","Motherboard resources"
+"I/O Port:","1854 - 1857"
+"I/O Port:","1854 - 1857"
+
+Trusted Platform Module 2.0
+
+"Device Name:","Trusted Platform Module 2.0"
+"Memory Location:","FED40000 - FED44FFF"
+"Memory Location:","FED40000 - FED44FFF"
+
+I2C HID Device
+
+"Device Name:","I2C HID Device"
+"IRQ:","117"
+
+Programmable interrupt controller
+
+"Device Name:","Programmable interrupt controller"
+"I/O Port:","0020 - 0021"
+"I/O Port:","0030 - 0031"
+"I/O Port:","00A0 - 00A1"
+"I/O Port:","00B0 - 00B1"
+"IRQ:","1114369"
+"IRQ:","1114369"
+"IRQ:","1114369"
+"IRQ:","1114369"
+"I/O Port:","0020 - 0021"
+"I/O Port:","0024 - 0025"
+"I/O Port:","0028 - 0029"
+"I/O Port:","002C - 002D"
+"I/O Port:","0030 - 0031"
+"I/O Port:","0034 - 0035"
+"I/O Port:","0038 - 0039"
+"I/O Port:","003C - 003D"
+"I/O Port:","00A0 - 00A1"
+"I/O Port:","00A4 - 00A5"
+"I/O Port:","00A8 - 00A9"
+"I/O Port:","00AC - 00AD"
+"I/O Port:","00B0 - 00B1"
+"I/O Port:","00B4 - 00B5"
+"I/O Port:","00B8 - 00B9"
+"I/O Port:","00BC - 00BD"
+"I/O Port:","04D0 - 04D1"
+
+System timer
+
+"Device Name:","System timer"
+"I/O Port:","0040 - 0043"
+"DMA:","0"
+"I/O Port:","0040 - 0043"
+"I/O Port:","0050 - 0053"
+"IRQ:","0"
+
+High precision event timer
+
+"Device Name:","High precision event timer"
+"Memory Location:","FED00000 - FED003FF"
+"Memory Location:","FED00000 - FED003FF"
+
+PCI Express Root Complex
+
+"Device Name:","PCI Express Root Complex"
+"I/O Port:","0000 - FFFFFFFF"
+"Memory Location:","000A0000 - 000BFFFF"
+"I/O Port:","0000 - 0CF7"
+"I/O Port:","0D00 - FFFF"
+"Memory Location:","000A0000 - 000BFFFF"
+"Memory Location:","3D400000 - BFFFFFFF"
+
+Motherboard resources
+
+"Device Name:","Motherboard resources"
+"Memory Location:","FED10000 - FED17FFF"
+"Memory Location:","FED20000 - FED7FFFF"
+"Memory Location:","FED10000 - FED17FFF"
+"Memory Location:","FEDA0000 - FEDA0FFF"
+"Memory Location:","FEDA1000 - FEDA1FFF"
+"Memory Location:","C0000000 - CFFFFFFF"
+"Memory Location:","FED20000 - FED7FFFF"
+"Memory Location:","FED90000 - FED93FFF"
+"Memory Location:","FEE00000 - FEEFFFFF"
+
+Motherboard resources
+
+"Device Name:","Motherboard resources"
+"I/O Port:","002E - 002F"
+"I/O Port:","0065"
+"I/O Port:","0000 - 006F"
+"I/O Port:","0092"
+"IRQ:","1114369"
+"IRQ:","1114369"
+"I/O Port:","002E - 002F"
+"I/O Port:","004E - 004F"
+"I/O Port:","0061"
+"I/O Port:","0063"
+"I/O Port:","0065"
+"I/O Port:","0067"
+"I/O Port:","0070"
+"I/O Port:","0080"
+"I/O Port:","0092"
+"I/O Port:","00B2 - 00B3"
+"I/O Port:","0680 - 069F"
+"I/O Port:","164E - 164F"
+"I/O Port:","0068 - 006F"
+"Memory Location:","FE800000 - FE80FFFF"
+
+Motherboard resources
+
+"Device Name:","Motherboard resources"
+"Memory Location:","FE038000 - FE038FFF"
+"Memory Location:","FE038000 - FE038FFF"
+
+Motherboard resources
+
+"Device Name:","Motherboard resources"
+"I/O Port:","FF00 - FFFE"
+"I/O Port:","FF00 - FFFE"
+
+Motherboard resources
+
+"Device Name:","Motherboard resources"
+"Memory Location:","FD000000 - FD68FFFF"
+"Memory Location:","FE200000 - FE7FFFFF"
+"I/O Port:","1800 - 18FE"
+"Memory Location:","FD000000 - FD68FFFF"
+"Memory Location:","FD6B0000 - FD6CFFFF"
+"Memory Location:","FD6F0000 - FDFFFFFF"
+"Memory Location:","FE000000 - FE01FFFF"
+"Memory Location:","FE200000 - FE7FFFFF"
+"Memory Location:","FF000000 - FFFFFFFF"
+
+Microsoft ACPI-Compliant Embedded Controller
+
+"Device Name:","Microsoft ACPI-Compliant Embedded Controller"
+"I/O Port:","0062"
+"I/O Port:","0062"
+"I/O Port:","0066"
+
+UCM-UCSI ACPI Device
+
+"Device Name:","UCM-UCSI ACPI Device"
+"Memory Location:","2BA20000 - 2BA20FFF"
+"Memory Location:","2BA20000 - 2BA20FFF"
+
+SMBIOS DMI
+
+
+Group Associations
+
+
+TPM
+
+"TPM Specification Version:","2.0"
+"TPM Vendor:","Intel"
+"TPM Description:","TPM 2.0, ManufacturerID: INTC, Firmware Version: 0x01F40005.0x0"
+
+BIOS
+
+"BIOS Vendor:","LENOVO"
+"BIOS Version:","AKCN99WW"
+"BIOS Release Date:","05/16/2019"
+"BIOS Start Segment:","E000"
+"BIOS Size:","12288 KBytes"
+"System BIOS Version:","0.11"
+"Embedded Controller Firmware Version:","0.7"
+"ISA Support:","Not Present"
+"MCA Support:","Not Present"
+"EISA Support:","Not Present"
+"PCI Support:","Present"
+"PC Card (PCMCIA) Support:","Not Present"
+"Plug-and-Play Support:","Not Present"
+"APM Support:","Not Present"
+"Flash BIOS:","Present"
+"BIOS Shadow:","Present"
+"VL-VESA Support:","Not Present"
+"ESCD Support:","Not Present"
+"Boot from CD:","Present"
+"Selectable Boot:","Present"
+"BIOS ROM Socketed:","Not Present"
+"Boot from PC Card:","Not Present"
+"EDD Support:","Present"
+"NEC PC-98 Support:","Present"
+"ACPI Support:","Present"
+"USB Legacy Support:","Present"
+"AGP Support:","Not Present"
+"I2O Boot Support:","Not Present"
+"LS-120 Boot Support:","Present"
+"ATAPI ZIP Drive Boot Support:","Present"
+"IEE1394 Boot Support:","Not Present"
+"Smart Battery Support:","Not Present"
+"BIOS Boot Specification Support:","Present"
+"Function key-initiated Network Service Boot Support:","Present"
+"Targeted Content Distribution Support:","Present"
+"UEFI Specification Support:","Not Present"
+"Virtual Machine:","Not Present"
+
+On Board Device
+
+"Device Description:","Intel(R) Extreme Graphics 3 Controller"
+"Device Type:","Video Adapter"
+"Device Status:","Enabled"
+
+On Board Device
+
+"Device Description:","Intel(R) Azalia Audio Device"
+"Device Type:","Audio Device"
+"Device Status:","Enabled"
+
+OEM Strings
+
+
+
+System Configuration Options
+
+
+BIOS Language
+
+
+
+
+
+
+
+
+Portable Battery
+
+"Battery Location:","Rear"
+"Battery Manufacturer:","Intel Corp."
+"Manufacture Date:","2008"
+"Serial Number:","1.0"
+"Device Name:","Smart Battery"
+"Device Chemistry:","Unknown"
+"Design Capacity:","Unknown"
+"Design Voltage:","Unknown"
+"SBDS Verison Number:","V1.0"
+"Max. Error in Battery Data:","Unknown"
+"SBDS Serial Number:","Unknown"
+"SBDS Manufacture Date:","Unknown"
+"SBDS Device Chemistry:","Lithium-Ion"
+
+System Boot Information
+
+"Boot Status:","No error occured"
+
+L1 Cache
+
+"Socket Designation:","L1 Cache"
+"Cache State:","Enabled"
+"Cache Location:","Internal"
+"Cache Type:","L1 Data"
+"Cache Scheme:","Write-Back"
+"Supported SRAM Type:","Synchronous"
+"Current SRAM Type:","Synchronous"
+"Cache Speed:","Unknown"
+"Error Correction Type:","Parity"
+"Maximum Cache Size:","192 KBytes"
+"Installed Cache Size:","192 KBytes"
+"Cache Associativity:","12-way Set-Associative"
+
+L1 Cache
+
+"Socket Designation:","L1 Cache"
+"Cache State:","Enabled"
+"Cache Location:","Internal"
+"Cache Type:","L1 Instruction"
+"Cache Scheme:","Write-Back"
+"Supported SRAM Type:","Synchronous"
+"Current SRAM Type:","Synchronous"
+"Cache Speed:","Unknown"
+"Error Correction Type:","Parity"
+"Maximum Cache Size:","128 KBytes"
+"Installed Cache Size:","128 KBytes"
+"Cache Associativity:","8-way Set-Associative"
+
+L2 Cache
+
+"Socket Designation:","L2 Cache"
+"Cache State:","Enabled"
+"Cache Location:","Internal"
+"Cache Type:","L2 Unified"
+"Cache Scheme:","Write-Back"
+"Supported SRAM Type:","Synchronous"
+"Current SRAM Type:","Synchronous"
+"Cache Speed:","Unknown"
+"Error Correction Type:","Single-bit ECC"
+"Maximum Cache Size:","2048 KBytes"
+"Installed Cache Size:","2048 KBytes"
+"Cache Associativity:","8-way Set-Associative"
+
+L3 Cache
+
+"Socket Designation:","L3 Cache"
+"Cache State:","Enabled"
+"Cache Location:","Internal"
+"Cache Type:","L3 Unified"
+"Cache Scheme:","Write-Back"
+"Supported SRAM Type:","Synchronous"
+"Current SRAM Type:","Synchronous"
+"Cache Speed:","Unknown"
+"Error Correction Type:","Multi-bit ECC"
+"Maximum Cache Size:","8192 KBytes"
+"Installed Cache Size:","8192 KBytes"
+"Cache Associativity:","16-way Set-Associative"
+
+Processor
+
+"Processor Manufacturer:","Intel(R) Corporation"
+"Processor Version:","Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz"
+"External Clock:","100 MHz"
+"Maximum Clock Supported:","1500 MHz"
+"Current Clock:","1300 MHz"
+"CPU Socket:","Populated"
+"CPU Status:","Enabled"
+"Processor Type:","Central Processor"
+"Processor Voltage:","0.7 V"
+"Processor Upgrade:","Unknown (1)"
+"Socket Designation:","U3E1"
+
+Intel AMT
+
+"Intel AMT Support:","Not Supported"
+
+Intel vPro
+
+"CPU VT-x Support:","Supported"
+"CPU VT-x Status:","Enabled"
+"CPU VT-x2 Support:","Not Supported"
+"CPU VT-x2 Status:","Disabled"
+"CPU TXT Support:","Not Supported"
+"CPU TXT Status:","Disabled"
+"CPU VMX Status:","Enabled"
+"CPU SMX Status:","Disabled"
+"Intel ME Status:","Enabled"
+"Intel OST Firmware Support:","Not Supported"
+"Intel ASF Firmware Support:","Not Supported"
+"Intel AMT Pro Firmware Support:","Not Supported"
+"Intel AMT Basic Firmware Support:","Not Supported"
+"Intel TPM Firmware Support:","Not Supported"
+"Intel Castle Peak Support:","Not Supported"
+"Intel WoX Support:","Not Supported"
+"Intel Virtualization Engine Support:","Not Supported"
+"Intel Anti-Theft Technology Support:","Not Supported"
+"TPM On-board:","Not Supported"
+"Intel Anti-Theft Technology Enrolled:","Not Supported"
+"Intel ME Version:","v13.0, Build 1061, Hotfix 0"
+"BIOS VT-x Support:","Not Supported"
+"BIOS VT-d Support:","Supported"
+"BIOS TXT Support:","Not Supported"
+"BIOS TPM Support:","Not Supported"
+"BIOS ME Support:","Not Supported"
+"BIOS VA Extensions Support:","Supported"
+"Intel AT PBA For Recovery Support:","Not Supported"
+"Intel AT WWAN Support:","Not Supported"
+
+System
+
+"System Manufacturer:","LENOVO"
+"Product Name:","INVALID"
+"Product Version:","Lenovo Yoga S940-14IIL"
+"Product Serial Number:","4810HB01"
+"UUID:","{8292C2AE-76DC-11E9-978D-3413E8D6F942}"
+"SKU Number:","LENOVO_BI_IDEAPADAK"
+"Family:","Yoga S940-14IIL"
+
+Mainboard
+
+"Mainboard Manufacturer:","LENOVO"
+"Mainboard Name:","LNVNB161216"
+"Mainboard Version:","NO DPK"
+"Mainboard Serial Number:","4810HB01"
+"Asset Tag:","0000000000000"
+"Location in chassis:","Part Component"
+
+System Enclosure
+
+"Manufacturer:","LENOVO"
+"Case Type:","Notebook"
+"Version:","Lenovo Yoga S940-14IIL"
+"Serial Number:","4810HB01"
+"Asset Tag Number:","0000000000000"
+
+System Event Log
+
+
+Group Associations
+
+
+Hardware Security
+
+"Power-on Password:","Disabled"
+"Keyboard Password:","Disabled"
+"Administrator Password:","Disabled"
+"Front Panel Reset:","Disabled"
+
+Memory Devices
+
+
+Physical Memory Array
+
+"Array Location:","System board"
+"Array Use:","System memory"
+"Error Detecting Method:","None"
+"Memory Capacity:","16 GBytes"
+"Memory Devices:","2"
+
+Memory Device
+
+"Total Width:","32 bits"
+"Data Width:","32 bits"
+"Device Size:","8192 MBytes"
+"Device Form Factor:","Row of chips"
+"Device Locator:","ChannelA-DIMM0"
+"Bank Locator:","BANK 0"
+"Device Type:","LPDDR4"
+"Device Type Detail:","Synchronous"
+"Memory Speed:","4267 MHz"
+"Manufacturer:","Samsung"
+"Serial Number:","00000000"
+"Part Number:","K4UBE3D4AA-MGCL     "
+"Asset Tag:","9876543210"
+
+Memory Device
+
+"Total Width:","32 bits"
+"Data Width:","32 bits"
+"Device Size:","8192 MBytes"
+"Device Form Factor:","Row of chips"
+"Device Locator:","ChannelB-DIMM0"
+"Bank Locator:","BANK 2"
+"Device Type:","LPDDR4"
+"Device Type Detail:","Synchronous"
+"Memory Speed:","4267 MHz"
+"Manufacturer:","Samsung"
+"Serial Number:","00000000"
+"Part Number:","K4UBE3D4AA-MGCL     "
+"Asset Tag:","9876543210"
+
+Memory Array Mapped Address
+
+"Starting Address:","00000000"
+"Ending Address:","00FFFFFF"
+"Partition Width:","2"
+
+Port Connectors
+
+
+Keyboard Port
+
+"Port Type:","Keyboard Port"
+"Internal Reference:","None"
+"Internal Connector Type:","None"
+"External Reference:","Keyboard"
+"External Connector Type:","PS/2"
+
+Mouse Port
+
+"Port Type:","Mouse Port"
+"Internal Reference:","None"
+"Internal Connector Type:","None"
+"External Reference:","Mouse"
+"External Connector Type:","PS/2"
+
+Serial Port 16550A Compatible
+
+"Port Type:","Serial Port 16550A Compatible"
+"Internal Reference:","None"
+"Internal Connector Type:","Unknown"
+"External Reference:","COM 1"
+"External Connector Type:","DB-9 pin male"
+
+USB
+
+"Port Type:","USB"
+"Internal Reference:","None"
+"Internal Connector Type:","None"
+"External Reference:","USB3.0 - 1#/USB2.0 - 1#"
+"External Connector Type:","Access Bus (USB)"
+
+USB
+
+"Port Type:","USB"
+"Internal Reference:","None"
+"Internal Connector Type:","None"
+"External Reference:","USB3.0 - 2#/USB2.0 - 2#"
+"External Connector Type:","Access Bus (USB)"
+
+USB
+
+"Port Type:","USB"
+"Internal Reference:","None"
+"Internal Connector Type:","None"
+"External Reference:","USB3.0 - 3#/USB2.0 - 3#"
+"External Connector Type:","Access Bus (USB)"
+
+USB
+
+"Port Type:","USB"
+"Internal Reference:","None"
+"Internal Connector Type:","None"
+"External Reference:","USB3.0 - 4#/USB2.0 - 4#"
+"External Connector Type:","Access Bus (USB)"
+
+USB
+
+"Port Type:","USB"
+"Internal Reference:","None"
+"Internal Connector Type:","None"
+"External Reference:","USB2.0 - 5#"
+"External Connector Type:","Access Bus (USB)"
+
+USB
+
+"Port Type:","USB"
+"Internal Reference:","None"
+"Internal Connector Type:","None"
+"External Reference:","USB2.0 - 6#"
+"External Connector Type:","Access Bus (USB)"
+
+USB
+
+"Port Type:","USB"
+"Internal Reference:","None"
+"Internal Connector Type:","None"
+"External Reference:","USB2.0 - 7#"
+"External Connector Type:","Access Bus (USB)"
+
+USB
+
+"Port Type:","USB"
+"Internal Reference:","None"
+"Internal Connector Type:","None"
+"External Reference:","USB2.0 - 8#"
+"External Connector Type:","Access Bus (USB)"
+
+Network Port
+
+"Port Type:","Network Port"
+"Internal Reference:","None"
+"Internal Connector Type:","None"
+"External Reference:","Ethernet"
+"External Connector Type:","RJ-45"
+
+SATA
+
+"Port Type:","SATA"
+"Internal Reference:","SATA Port 1 J6J1"
+"Internal Connector Type:","SAS/SATA Plug Receptacle"
+"External Reference:","None"
+"External Connector Type:","None"
+
+SATA
+
+"Port Type:","SATA"
+"Internal Reference:","SATA Port 2 J5C4"
+"Internal Connector Type:","SAS/SATA Plug Receptacle"
+"External Reference:","None"
+"External Connector Type:","None"
+
+SATA
+
+"Port Type:","SATA"
+"Internal Reference:","SATA Port 3(ODD) J5J4"
+"Internal Connector Type:","SAS/SATA Plug Receptacle"
+"External Reference:","None"
+"External Connector Type:","None"
+
+SATA
+
+"Port Type:","SATA"
+"Internal Reference:","None"
+"Internal Connector Type:","None"
+"External Reference:","None"
+"External Connector Type:","SAS/SATA Plug Receptacle"
+
+System Slots
+
+
+PEG Gen1/Gen2/Gen3 X16
+
+"Slot Designation:","PEG Gen1/Gen2/Gen3 X16"
+"Slot Type:","PCI Express"
+"Slot Usage:","Empty"
+"Slot Data Bus Width:","16x / x16"
+"Slot Length:","Long"
+
+PCI-Express 1 X1
+
+"Slot Designation:","PCI-Express 1 X1"
+"Slot Type:","PCI Express"
+"Slot Usage:","Empty"
+"Slot Data Bus Width:","1x / x1"
+"Slot Length:","Short"
+
+PCI-Express 2 X1
+
+"Slot Designation:","PCI-Express 2 X1"
+"Slot Type:","PCI Express"
+"Slot Usage:","Empty"
+"Slot Data Bus Width:","1x / x1"
+"Slot Length:","Short"
+
+PCI-Express 3 X1
+
+"Slot Designation:","PCI-Express 3 X1"
+"Slot Type:","PCI Express"
+"Slot Usage:","Empty"
+"Slot Data Bus Width:","1x / x1"
+"Slot Length:","Short"
+
+PCI-Express 4 X1
+
+"Slot Designation:","PCI-Express 4 X1"
+"Slot Type:","PCI Express"
+"Slot Usage:","Empty"
+"Slot Data Bus Width:","1x / x1"
+"Slot Length:","Short"
+
+PCI-Express 5 X4
+
+"Slot Designation:","PCI-Express 5 X4"
+"Slot Type:","PCI Express"
+"Slot Usage:","Empty"
+"Slot Data Bus Width:","4x / x4"
+"Slot Length:","Short"
+
+Intel ME
+
+"ME Current Working State:","Normal"
+"Manufacturing Mode:","Active"
+"ME Current Operation Mode:","Normal"
+"Boot Guard Status:","Enabled"
+"Boot Guard Verified Boot Policy:","Disabled"
+"Boot Guard Measured Boot Policy:","Disabled"
+"Intel ME Version:","13.0, Build 1061"
+"Intel ME Recovery Image Version:","13.0, Build 1061"
+"Intel ME FITC Version:","13.0, Build 1061"
+"Full Network Manageability:","Not Capable"
+"Standard Network Manageability:","Not Capable"
+"Manageability (AMT):","Not Capable"
+"Small Business Advantage:","Not Capable"
+"Intel Integrated Touch:","Not Capable"
+"Intel Anti-Theft:","Not Capable"
+"Capability Licensing Service:","Capable"
+"Virtualization Engine:","Not Capable"
+"Intel Sensor Hub (ISH):","Capable"
+"ICC Over Clocking:","Not Capable"
+"Protected Audio Video Path (PAVP):","Not Capable"
+"Network Frame Forwarder (NFF):","Not Capable"
+"Remote PC Assist (RPAT):","Not Capable"
+"IPV6:","Not Capable"
+"KVM Remote Control:","Not Capable"
+"Outbreak Containment Heuristic (OCH):","Not Capable"
+"Dynamic Application Loader (DAL):","Capable"
+"Cipher Transport Layer (TLS):","Not Capable"
+"Wireless LAN (WLAN):","Not Capable"
+"Platform Trust Technology (PTT):","Capable"
+"Near Field Communication (NFC):","Not Capable"
+"Full Network Manageability:","Disabled"
+"Standard Network Manageability:","Disabled"
+"Manageability (AMT):","Disabled"
+"Small Business Advantage:","Not Capable"
+"MEI3:","Not Capable"
+"Intel Anti-Theft:","Disabled"
+"Capability Licensing Service:","Enabled"
+"Virtualization Engine:","Disabled"
+"Intel Sensor Hub (ISH):","Enabled"
+"ICC Over Clocking:","Disabled"
+"Protected Audio Video Path (PAVP):","Disabled"
+"Network Frame Forwarder (NFF):","Not Capable"
+"Remote PC Assist (RPAT):","Disabled"
+"IPV6:","Disabled"
+"KVM Remote Control:","Disabled"
+"Outbreak Containment Heuristic (OCH):","Disabled"
+"Dynamic Application Loader (DAL):","Capable"
+"Cipher Transport Layer (TLS):","Disabled"
+"Wireless LAN (WLAN):","Disabled"
+"Platform Trust Technology (PTT):","Enabled"
+"Near Field Communication (NFC):","Disabled"
+"Platform Target Usage Type:","Mobile"
+"SKU:","Regular SKU"
+"ME Firmware Image Type:","Consumer SKU Firmware"
+"Platform Brand:","None"
+"Host ME Region Flash Protection Override (HMRFPO) Status:","Disabled"
+
+Memory
+
+"Total Memory Size:","16 GBytes"
+"Total Memory Size [MB]:","16384"
+"Maximum Supported Memory Clock:","1866.7 MHz"
+"Current Memory Clock:","532.2 MHz"
+"Current Timing (tCAS-tRCD-tRP-tRAS):","20-20-20-45"
+"Memory Channels Supported:","2"
+"Memory Channels Active:","2"
+"Command Rate:","1T"
+"Read to Read Delay (tRD_RD) Same Rank:","8T"
+"Read to Read Delay (tRD_RD) Different Rank:","8T"
+"Read to Read Delay (tRD_RD) Different DIMM:","18T"
+"Write to Write Delay (tWR_WR) Same Rank:","8T"
+"Write to Write Delay (tWR_WR) Different Rank:","8T"
+"Write to Write Delay (tWR_WR) Different DIMM:","20T"
+"Read to Write Delay (tRD_WR) Same Rank:","22T"
+"Read to Write Delay (tRD_WR) Different Rank:","22T"
+"Read to Write Delay (tRD_WR) Different DIMM:","22T"
+"Write to Read Delay (tWR_RD) Same Rank (tWTR):","40T"
+"Write to Read Delay (tWR_RD) Different Rank:","40T"
+"Write to Read Delay (tWR_RD) Different DIMM:","12T"
+"RAS# to RAS# Delay (tRRD):","11T"
+"Refresh Cycle Time (tRFC):","299T"
+"Four Activate Window (tFAW):","43T"
+
+Bus
+
+
+PCI Bus #0
+
+
+Intel Ice Lake-U - Host Bridge/DRAM Controller [D0]
+
+"Device Name:","Intel Ice Lake-U - Host Bridge/DRAM Controller [D0]"
+"Original Device Name:","Intel Ice Lake-U - Host Bridge/DRAM Controller [D0]"
+"Device Class:","Host-to-PCI Bridge"
+"Revision ID:","3 [D0]"
+"PCI Address (Bus:Device:Function) Number:","0:0:0"
+"PCI Latency Timer:","0"
+"Hardware ID:","PCI\VEN_8086&DEV_8A12&SUBSYS_380117AA&REV_03"
+"Interrupt Line:","N/A"
+"Interrupt Pin:","N/A"
+"Bus Mastering:","Enabled"
+"Running At 66 MHz:","Not Capable"
+"Fast Back-to-Back Transactions:","Capable"
+"Driver Manufacturer:","(Standard system devices)"
+"Driver Description:","PCI standard host CPU bridge"
+"Driver Provider:","Microsoft"
+"Driver Version:","10.0.18362.267"
+"Driver Date:","20-Jun-2006"
+"DeviceInstanceId","PCI\VEN_8086&DEV_8A12&SUBSYS_380117AA&REV_03\3&11583659&0&00"
+"Location Paths","PCIROOT(0)#PCI(0000)"
+
+Intel Ice Lake-U GT2 64EU - Integrated Graphics Controller
+
+"Device Name:","Intel Ice Lake-U GT2 64EU - Integrated Graphics Controller"
+"Original Device Name:","Intel Ice Lake-U GT2 64EU - Integrated Graphics Controller"
+"Device Class:","VGA Compatible Adapter"
+"Revision ID:","7"
+"PCI Address (Bus:Device:Function) Number:","0:2:0"
+"PCI Latency Timer:","0"
+"Hardware ID:","PCI\VEN_8086&DEV_8A52&SUBSYS_381017AA&REV_07"
+"Version:","1.1"
+"Current Link Width:","Not negotiated"
+"Device/Port Type:","Root Complex Integrated Endpoint"
+"Slot Implemented:","No"
+"Emergency Power Reduction:","Not Supported"
+"Active State Power Management (ASPM) Support:","None"
+"Active State Power Management (ASPM) Status:","Disabled"
+"L0s Exit Latency:","< 64 ns"
+"L1 Exit Latency:","< 1 us"
+"Maximum Payload Size Supported:","128 bytes"
+"Maximum Payload Size:","128 bytes"
+"Interrupt Line:","N/A"
+"Interrupt Pin:","INTA#"
+"Memory Base Address 0","603C000000"
+"Memory Base Address 2","4000000000"
+"I/O Base Address 4","2000"
+"Bus Mastering:","Enabled"
+"Running At 66 MHz:","Not Capable"
+"Fast Back-to-Back Transactions:","Not Capable"
+"Driver Manufacturer:","Intel Corporation"
+"Driver Description:","Intel(R) Iris(R) Plus Graphics"
+"Driver Provider:","Intel Corporation"
+"Driver Version:","26.20.100.7212"
+"Driver Date:","11-Sep-2019"
+"DCH/UWD Driver:","Capable"
+"DeviceInstanceId","PCI\VEN_8086&DEV_8A52&SUBSYS_381017AA&REV_07\3&11583659&0&10"
+"Location Paths","PCIROOT(0)#PCI(0200)"
+
+Intel Ice Lake - Dynamic Platform & Thermal Framework Processor Participant
+
+"Device Name:","Intel Ice Lake - Dynamic Platform & Thermal Framework Processor Participant"
+"Original Device Name:","Intel Ice Lake - Dynamic Platform & Thermal Framework Processor Participant"
+"Device Class:","Other Data Acquisition/Signal Processing Controller"
+"Revision ID:","3"
+"PCI Address (Bus:Device:Function) Number:","0:4:0"
+"PCI Latency Timer:","0"
+"Hardware ID:","PCI\VEN_8086&DEV_8A03&SUBSYS_380517AA&REV_03"
+"Interrupt Line:","IRQ16"
+"Interrupt Pin:","INTA#"
+"Memory Base Address 0","7FFFED0000"
+"Bus Mastering:","Enabled"
+"Running At 66 MHz:","Not Capable"
+"Fast Back-to-Back Transactions:","Capable"
+"Driver Manufacturer:","Intel"
+"Driver Description:","Intel(R) Dynamic Tuning Processor Participant"
+"Driver Provider:","Intel"
+"Driver Version:","8.6.10401.9906"
+"Driver Date:","13-Jun-2019"
+"DeviceInstanceId","PCI\VEN_8086&DEV_8A03&SUBSYS_380517AA&REV_03\3&11583659&0&20"
+"Location Paths","PCIROOT(0)#PCI(0400)"
+
+Intel Ice Lake - Integrated Thunderbolt PCI Express 0
+
+"Device Name:","Intel Ice Lake - Integrated Thunderbolt PCI Express 0"
+"Original Device Name:","Intel Ice Lake - Integrated Thunderbolt PCI Express 0"
+"Device Class:","PCI-to-PCI Bridge"
+"Revision ID:","3"
+"PCI Address (Bus:Device:Function) Number:","0:7:0"
+"PCI Latency Timer:","0"
+"Hardware ID:","PCI\VEN_8086&DEV_8A1D&SUBSYS_00000060&REV_03"
+"Version:","1.1"
+"Maximum Link Width:","4x"
+"Current Link Width:","Not negotiated"
+"Maximum Link Speed:","2.5 GT/s"
+"Current Link Speed:","2.5 GT/s"
+"Device/Port Type:","Root Port of PCI Express Root Complex"
+"Slot Implemented:","Yes"
+"Hot-Plug:","Capable"
+"Hot-Plug Surprise:","Capable"
+"Emergency Power Reduction:","Not Supported"
+"Active State Power Management (ASPM) Support:","L1"
+"Active State Power Management (ASPM) Status:","L1 Entry"
+"L0s Exit Latency:","512 ns - 1 us"
+"L1 Exit Latency:","8 - 16 us"
+"Maximum Payload Size Supported:","128 bytes"
+"Maximum Payload Size:","128 bytes"
+"Interrupt Line:","N/A"
+"Interrupt Pin:","INTA#"
+"Bus Mastering:","Disabled"
+"Running At 66 MHz:","Not Capable"
+"Fast Back-to-Back Transactions:","Not Capable"
+"Driver Manufacturer:","(Standard system devices)"
+"Driver Description:","PCI Express Root Port"
+"Driver Provider:","Microsoft"
+"Driver Version:","10.0.18362.418"
+"Driver Date:","20-Jun-2006"
+"DeviceInstanceId","PCI\VEN_8086&DEV_8A1D&SUBSYS_00000000&REV_03\3&11583659&0&38"
+"Location Paths","PCIROOT(0)#PCI(0700)"
+
+PCI Express x4 Bus #1
+
+
+Intel Ice Lake - Integrated Thunderbolt PCI Express 1
+
+"Device Name:","Intel Ice Lake - Integrated Thunderbolt PCI Express 1"
+"Original Device Name:","Intel Ice Lake - Integrated Thunderbolt PCI Express 1"
+"Device Class:","PCI-to-PCI Bridge"
+"Revision ID:","3"
+"PCI Address (Bus:Device:Function) Number:","0:7:1"
+"PCI Latency Timer:","0"
+"Hardware ID:","PCI\VEN_8086&DEV_8A1F&SUBSYS_00000060&REV_03"
+"Version:","1.1"
+"Maximum Link Width:","4x"
+"Current Link Width:","Not negotiated"
+"Maximum Link Speed:","2.5 GT/s"
+"Current Link Speed:","2.5 GT/s"
+"Device/Port Type:","Root Port of PCI Express Root Complex"
+"Slot Implemented:","Yes"
+"Hot-Plug:","Capable"
+"Hot-Plug Surprise:","Capable"
+"Emergency Power Reduction:","Not Supported"
+"Active State Power Management (ASPM) Support:","L1"
+"Active State Power Management (ASPM) Status:","L1 Entry"
+"L0s Exit Latency:","512 ns - 1 us"
+"L1 Exit Latency:","8 - 16 us"
+"Maximum Payload Size Supported:","128 bytes"
+"Maximum Payload Size:","128 bytes"
+"Interrupt Line:","N/A"
+"Interrupt Pin:","INTB#"
+"Bus Mastering:","Disabled"
+"Running At 66 MHz:","Not Capable"
+"Fast Back-to-Back Transactions:","Not Capable"
+"Driver Manufacturer:","(Standard system devices)"
+"Driver Description:","PCI Express Root Port"
+"Driver Provider:","Microsoft"
+"Driver Version:","10.0.18362.418"
+"Driver Date:","20-Jun-2006"
+"DeviceInstanceId","PCI\VEN_8086&DEV_8A1F&SUBSYS_00000000&REV_03\3&11583659&0&39"
+"Location Paths","PCIROOT(0)#PCI(0701)"
+
+PCI Express x4 Bus #43
+
+
+Intel Ice Lake - USB 3.0 xHCI Host Controller
+
+"Device Name:","Intel Ice Lake - USB 3.0 xHCI Host Controller"
+"Original Device Name:","Intel Ice Lake - USB 3.0 xHCI Host Controller"
+"Device Class:","USB xHCI Controller"
+"Revision ID:","3"
+"PCI Address (Bus:Device:Function) Number:","0:13:0"
+"PCI Latency Timer:","0"
+"Hardware ID:","PCI\VEN_8086&DEV_8A13&SUBSYS_00000000&REV_03"
+"Interrupt Line:","N/A"
+"Interrupt Pin:","N/A"
+"Memory Base Address 0","7FFFEF0000"
+"Bus Mastering:","Enabled"
+"Running At 66 MHz:","Not Capable"
+"Fast Back-to-Back Transactions:","Capable"
+"USB Version Supported:","3.1"
+"Driver Manufacturer:","Generic USB xHCI Host Controller"
+"Driver Description:","USB xHCI Compliant Host Controller"
+"Driver Provider:","Microsoft"
+"Driver Version:","10.0.18362.207"
+"Driver Date:","18-Jun-2019"
+"DeviceInstanceId","PCI\VEN_8086&DEV_8A13&SUBSYS_00000000&REV_03\3&11583659&0&68"
+"Location Paths","PCIROOT(0)#PCI(0D00)"
+
+USB Root Hub
+
+
+[Port1] : No Device Connected
+
+
+[Port2] : No Device Connected
+
+
+[Port3] : USB Attached SCSI (UAS) Mass Storage Device
+
+"Device Manufacturer:","SanDisk"
+"Product Name:","Extreme SSD"
+"Serial Number:","313932383756343032333038"
+"USB Version Supported:","3.10"
+"USB Device Speed:","USB 3.1 SuperSpeedPlus"
+"Driver Description:","USB Attached SCSI (UAS) Mass Storage Device"
+"Hardware ID:","USB\VID_0781&PID_558C"
+"Driver Manufacturer:","USB Attached SCSI (UAS) Compatible Device"
+"Driver Description:","USB Attached SCSI (UAS) Mass Storage Device"
+"Driver Provider:","Microsoft"
+"Driver Version:","10.0.18362.387"
+"Driver Date:","20-Jun-2006"
+"DeviceInstanceId","USB\VID_0781&PID_558C\MSFT30313932383756343032333038"
+"Location Paths","PCIROOT(0)#PCI(0D00)#USBROOT(0)#USB(3)"
+
+[Port4] : No Device Connected
+
+
+[Port5] : No Device Connected
+
+
+Intel Ice Lake - Integrated Thunderbolt DMA 1
+
+"Device Name:","Intel Ice Lake - Integrated Thunderbolt DMA 1"
+"Original Device Name:","Intel Ice Lake - Integrated Thunderbolt DMA 1"
+"Device Class:","Unknown Peripheral Device"
+"Revision ID:","3"
+"PCI Address (Bus:Device:Function) Number:","0:13:2"
+"PCI Latency Timer:","0"
+"Hardware ID:","PCI\VEN_8086&DEV_8A17&SUBSYS_00000000&REV_03"
+"Interrupt Line:","N/A"
+"Interrupt Pin:","INTA#"
+"Memory Base Address 0","603D100000"
+"Memory Base Address 2","603D180000"
+"Bus Mastering:","Disabled"
+"Running At 66 MHz:","Not Capable"
+"Fast Back-to-Back Transactions:","Not Capable"
+"Driver Manufacturer:","Intel(R) Corporation"
+"Driver Description:","Thunderbolt(TM) Controller - 8A17"
+"Driver Provider:","Intel(R) Corporation"
+"Driver Version:","1.41.648.5"
+"Driver Date:","11-Jun-2019"
+"DeviceInstanceId","PCI\VEN_8086&DEV_8A17&SUBSYS_00000000&REV_03\3&11583659&0&6A"
+"Location Paths","PCIROOT(0)#PCI(0D02)"
+
+Intel Ice Lake-U/Y PCH-LP - Integrated Sensor Hub [D0]
+
+"Device Name:","Intel Ice Lake-U/Y PCH-LP - Integrated Sensor Hub [D0]"
+"Original Device Name:","Intel Ice Lake-U/Y PCH-LP - Integrated Sensor Hub [D0]"
+"Device Class:","RS-232 Serial Port"
+"Revision ID:","30 [D0]"
+"PCI Address (Bus:Device:Function) Number:","0:18:0"
+"PCI Latency Timer:","0"
+"Hardware ID:","PCI\VEN_8086&DEV_34FC&SUBSYS_381117AA&REV_30"
+"Interrupt Line:","IRQ16"
+"Interrupt Pin:","INTA#"
+"Memory Base Address 0","7FFFEE6000"
+"Bus Mastering:","Enabled"
+"Running At 66 MHz:","Not Capable"
+"Fast Back-to-Back Transactions:","Not Capable"
+"Driver Manufacturer:","Intel"
+"Driver Description:","Intel(R) Integrated Sensor Solution"
+"Driver Provider:","Intel"
+"Driver Version:","3.1.0.4027"
+"Driver Date:","29-Jul-2019"
+"DeviceInstanceId","PCI\VEN_8086&DEV_34FC&SUBSYS_381117AA&REV_30\3&11583659&0&90"
+"Location Paths","PCIROOT(0)#PCI(1200)"
+
+Intel Ice Lake-U/Y PCH-LP - USB 3.2 Gen 2x1 (10 Gb/s) xHCI Host Controller [D0]
+
+"Device Name:","Intel Ice Lake-U/Y PCH-LP - USB 3.2 Gen 2x1 (10 Gb/s) xHCI Host Controller [D0]"
+"Original Device Name:","Intel Ice Lake-U/Y PCH-LP - USB 3.2 Gen 2x1 (10 Gb/s) xHCI Host Controller [D0]"
+"Device Class:","USB xHCI Controller"
+"Revision ID:","30 [D0]"
+"PCI Address (Bus:Device:Function) Number:","0:20:0"
+"PCI Latency Timer:","0"
+"Hardware ID:","PCI\VEN_8086&DEV_34ED&SUBSYS_380617AA&REV_30"
+"Interrupt Line:","N/A"
+"Interrupt Pin:","INTA#"
+"Memory Base Address 0","603D140000"
+"Bus Mastering:","Disabled"
+"Running At 66 MHz:","Not Capable"
+"Fast Back-to-Back Transactions:","Capable"
+"USB Version Supported:","3.1"
+"Driver Manufacturer:","Generic USB xHCI Host Controller"
+"Driver Description:","USB xHCI Compliant Host Controller"
+"Driver Provider:","Microsoft"
+"Driver Version:","10.0.18362.207"
+"Driver Date:","18-Jun-2019"
+"DeviceInstanceId","PCI\VEN_8086&DEV_34ED&SUBSYS_380617AA&REV_30\3&11583659&0&A0"
+"Location Paths","PCIROOT(0)#PCI(1400)"
+
+USB Root Hub
+
+
+[Port1] : No Device Connected
+
+
+[Port2] : No Device Connected
+
+
+[Port3] : No Device Connected
+
+
+[Port4] : No Device Connected
+
+
+[Port5] : No Device Connected
+
+
+[Port6] : No Device Connected
+
+
+[Port7] : No Device Connected
+
+
+[Port8] : USB Composite Device
+
+"Device Manufacturer:","Chicony"
+"Product Name:","-"
+"Serial Number:","-"
+"USB Version Supported:","2.01"
+"USB Device Speed:","USB 2.0 High-speed"
+"Driver Description:","USB Composite Device"
+"Hardware ID:","USB\VID_04F2&PID_B67C"
+"Driver Manufacturer:","(Standard USB Host Controller)"
+"Driver Description:","USB Composite Device"
+"Driver Provider:","Microsoft"
+"Driver Version:","10.0.18362.1"
+"Driver Date:","20-Jun-2006"
+"DeviceInstanceId","USB\VID_04F2&PID_B67C\0001"
+"Location Paths","PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(8)"
+
+[Port9] : No Device Connected
+
+
+[Port10] : Intel(R) Wireless Bluetooth(R)
+
+"Device Manufacturer:","Intel"
+"Product Name:","-"
+"Serial Number:","-"
+"USB Version Supported:","2.01"
+"USB Device Speed:","USB 1.1 Full-speed"
+"Driver Description:","Intel(R) Wireless Bluetooth(R)"
+"Hardware ID:","USB\VID_8087&PID_0026"
+"Driver Manufacturer:","Intel Corporation"
+"Driver Description:","Intel(R) Wireless Bluetooth(R)"
+"Driver Provider:","Intel Corporation"
+"Driver Version:","21.40.0.1"
+"Driver Date:","31-Jul-2019"
+"DeviceInstanceId","USB\VID_8087&PID_0026\5&5F0AA9B&0&10"
+"Location Paths","PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(10)"
+
+[Port11] : No Device Connected
+
+
+[Port12] : No Device Connected
+
+
+[Port13] : No Device Connected
+
+
+[Port14] : No Device Connected
+
+
+[Port15] : No Device Connected
+
+
+[Port16] : No Device Connected
+
+
+[Port17] : No Device Connected
+
+
+[Port18] : No Device Connected
+
+
+Intel Ice Lake-U/Y PCH-LP - Shared SRAM [D0]
+
+"Device Name:","Intel Ice Lake-U/Y PCH-LP - Shared SRAM [D0]"
+"Original Device Name:","Intel Ice Lake-U/Y PCH-LP - Shared SRAM [D0]"
+"Device Class:","RAM/Memory Controller"
+"Revision ID:","30 [D0]"
+"PCI Address (Bus:Device:Function) Number:","0:20:2"
+"PCI Latency Timer:","0"
+"Hardware ID:","PCI\VEN_8086&DEV_34EF&SUBSYS_00000000&REV_30"
+"Interrupt Line:","N/A"
+"Interrupt Pin:","N/A"
+"Memory Base Address 0","603D178000"
+"Memory Base Address 2","603D17F000"
+"Bus Mastering:","Disabled"
+"Running At 66 MHz:","Not Capable"
+"Fast Back-to-Back Transactions:","Not Capable"
+"Driver Manufacturer:","(Standard system devices)"
+"Driver Description:","PCI standard RAM Controller"
+"Driver Provider:","Microsoft"
+"Driver Version:","10.0.18362.267"
+"Driver Date:","20-Jun-2006"
+"DeviceInstanceId","PCI\VEN_8086&DEV_34EF&SUBSYS_00000000&REV_30\3&11583659&0&A2"
+"Location Paths","PCIROOT(0)#PCI(1402)"
+
+Intel Ice Lake-U/Y PCH-LP - Wi-Fi [D0]
+
+"Device Name:","Intel Ice Lake-U/Y PCH-LP - Wi-Fi [D0]"
+"Original Device Name:","Intel Ice Lake-U/Y PCH-LP - Wi-Fi [D0]"
+"Device Class:","Other Network Adapter"
+"Revision ID:","30 [D0]"
+"PCI Address (Bus:Device:Function) Number:","0:20:3"
+"PCI Latency Timer:","0"
+"Hardware ID:","PCI\VEN_8086&DEV_34F0&SUBSYS_00748086&REV_30"
+"Version:","1.1"
+"Current Link Width:","Not negotiated"
+"Device/Port Type:","Root Complex Integrated Endpoint"
+"Slot Implemented:","No"
+"Emergency Power Reduction:","Not Supported"
+"Active State Power Management (ASPM) Support:","None"
+"Active State Power Management (ASPM) Status:","Disabled"
+"L0s Exit Latency:","< 64 ns"
+"L1 Exit Latency:","< 1 us"
+"Maximum Payload Size Supported:","128 bytes"
+"Maximum Payload Size:","128 bytes"
+"Interrupt Line:","N/A"
+"Interrupt Pin:","INTA#"
+"Memory Base Address 0","7FFFEE8000"
+"Bus Mastering:","Enabled"
+"Running At 66 MHz:","Not Capable"
+"Fast Back-to-Back Transactions:","Not Capable"
+"Driver Manufacturer:","Intel Corporation"
+"Driver Description:","Intel(R) Wi-Fi 6 AX201 160MHz"
+"Driver Provider:","Intel"
+"Driver Version:","21.30.3.2"
+"Driver Date:","06-Jul-2019"
+"DeviceInstanceId","PCI\VEN_8086&DEV_34F0&SUBSYS_00748086&REV_30\3&11583659&0&A3"
+"Location Paths","PCIROOT(0)#PCI(1403)"
+
+Intel Ice Lake-U/Y PCH-LP - I2C Controller #0 [D0]
+
+"Device Name:","Intel Ice Lake-U/Y PCH-LP - I2C Controller #0 [D0]"
+"Original Device Name:","Intel Ice Lake-U/Y PCH-LP - I2C Controller #0 [D0]"
+"Device Class:","Other Serial Bus Controller"
+"Revision ID:","30 [D0]"
+"PCI Address (Bus:Device:Function) Number:","0:21:0"
+"PCI Latency Timer:","0"
+"Hardware ID:","PCI\VEN_8086&DEV_34E8&SUBSYS_380817AA&REV_30"
+"Interrupt Line:","IRQ16"
+"Interrupt Pin:","INTA#"
+"Memory Base Address 0","7FFFEE4000"
+"Bus Mastering:","Enabled"
+"Running At 66 MHz:","Not Capable"
+"Fast Back-to-Back Transactions:","Not Capable"
+"Driver Manufacturer:","Intel Corporation"
+"Driver Description:","Intel(R) Serial IO I2C Host Controller - 34E8"
+"Driver Provider:","Intel Corporation"
+"Driver Version:","30.100.1916.1"
+"Driver Date:","14-Apr-2019"
+"DeviceInstanceId","PCI\VEN_8086&DEV_34E8&SUBSYS_380817AA&REV_30\3&11583659&0&A8"
+"Location Paths","PCIROOT(0)#PCI(1500)"
+
+Intel Ice Lake-U/Y PCH-LP - Intel ME: HECI #1 [D0]
+
+"Device Name:","Intel Ice Lake-U/Y PCH-LP - Intel ME: HECI #1 [D0]"
+"Original Device Name:","Intel Ice Lake-U/Y PCH-LP - Intel ME: HECI #1 [D0]"
+"Device Class:","Other Communication Device"
+"Revision ID:","30 [D0]"
+"PCI Address (Bus:Device:Function) Number:","0:22:0"
+"PCI Latency Timer:","0"
+"Hardware ID:","PCI\VEN_8086&DEV_34E0&SUBSYS_380917AA&REV_30"
+"Interrupt Line:","N/A"
+"Interrupt Pin:","INTA#"
+"Memory Base Address 0","7FFFEE5000"
+"Bus Mastering:","Enabled"
+"Running At 66 MHz:","Not Capable"
+"Fast Back-to-Back Transactions:","Not Capable"
+"Driver Manufacturer:","Intel"
+"Driver Description:","Intel(R) Management Engine Interface "
+"Driver Provider:","Intel"
+"Driver Version:","1910.13.0.1060"
+"Driver Date:","03-Mar-2019"
+"DeviceInstanceId","PCI\VEN_8086&DEV_34E0&SUBSYS_380917AA&REV_30\3&11583659&0&B0"
+"Location Paths","PCIROOT(0)#PCI(1600)"
+
+Intel Ice Lake-U/Y PCH-LP - PCI Express Root Port #9
+
+"Device Name:","Intel Ice Lake-U/Y PCH-LP - PCI Express Root Port #9"
+"Original Device Name:","Intel Ice Lake-U/Y PCH-LP - PCI Express Root Port #9"
+"Device Class:","PCI-to-PCI Bridge"
+"Revision ID:","30"
+"PCI Address (Bus:Device:Function) Number:","0:29:0"
+"PCI Latency Timer:","0"
+"Hardware ID:","PCI\VEN_8086&DEV_34B0&SUBSYS_00000000&REV_30"
+"Version:","3.0"
+"Maximum Link Width:","4x"
+"Current Link Width:","4x"
+"Maximum Link Speed:","8.0 GT/s"
+"Current Link Speed:","8.0 GT/s"
+"Device/Port Type:","Root Port of PCI Express Root Complex"
+"Slot Implemented:","Yes"
+"Hot-Plug:","Not Capable"
+"Hot-Plug Surprise:","Not Capable"
+"Slot Power Limit:","25.000 W"
+"Emergency Power Reduction:","Not Supported"
+"Active State Power Management (ASPM) Support:","L0s and L1"
+"Active State Power Management (ASPM) Status:","L1 Entry"
+"L0s Exit Latency:","512 ns - 1 us"
+"L1 Exit Latency:","8 - 16 us"
+"Maximum Payload Size Supported:","256 bytes"
+"Maximum Payload Size:","256 bytes"
+"Interrupt Line:","N/A"
+"Interrupt Pin:","INTA#"
+"Bus Mastering:","Enabled"
+"Running At 66 MHz:","Not Capable"
+"Fast Back-to-Back Transactions:","Not Capable"
+"Driver Manufacturer:","INTEL"
+"Driver Description:","Intel(R) PCI Express Root Port #9 - 34B0"
+"Driver Provider:","INTEL"
+"Driver Version:","10.1.12.2"
+"DeviceInstanceId","PCI\VEN_8086&DEV_34B0&SUBSYS_380C17AA&REV_30\3&11583659&0&E8"
+"Location Paths","PCIROOT(0)#PCI(1D00)"
+
+PCI Express x4 Bus #44
+
+
+Samsung NVMe PCIe SSD Controller
+
+"Device Name:","Samsung NVMe PCIe SSD Controller"
+"Original Device Name:","Samsung Electronics NVMe PCIe SSD Controller"
+"Device Class:","NVMe Controller"
+"Revision ID:","0"
+"PCI Address (Bus:Device:Function) Number:","44:0:0"
+"PCI Latency Timer:","0"
+"Hardware ID:","PCI\VEN_144D&DEV_A808&SUBSYS_A801144D&REV_00"
+"Version:","3.0"
+"Maximum Link Width:","4x"
+"Current Link Width:","4x"
+"Maximum Link Speed:","8.0 GT/s"
+"Current Link Speed:","8.0 GT/s"
+"Device/Port Type:","PCI Express Endpoint"
+"Slot Implemented:","No"
+"Emergency Power Reduction:","Not Supported"
+"Active State Power Management (ASPM) Support:","L1"
+"Active State Power Management (ASPM) Status:","L1 Entry"
+"L0s Exit Latency:",">4 us"
+"L1 Exit Latency:","32 - 64 us"
+"Maximum Payload Size Supported:","256 bytes"
+"Maximum Payload Size:","256 bytes"
+"Interrupt Line:","N/A"
+"Interrupt Pin:","INTA#"
+"Memory Base Address 0","58200000"
+"Bus Mastering:","Enabled"
+"Running At 66 MHz:","Not Capable"
+"Fast Back-to-Back Transactions:","Not Capable"
+"Driver Manufacturer:","Standard NVM Express Controller"
+"Driver Description:","Standard NVM Express Controller"
+"Driver Provider:","Microsoft"
+"Driver Version:","10.0.18362.1"
+"Driver Date:","20-Jun-2006"
+"DeviceInstanceId","PCI\VEN_144D&DEV_A808&SUBSYS_A801144D&REV_00\4&1B04C67F&0&00E8"
+"Location Paths","PCIROOT(0)#PCI(1D00)#PCI(0000)"
+
+Intel Ice Lake-U PCH-LP Premium - eSPI Controller [D0]
+
+"Device Name:","Intel Ice Lake-U PCH-LP Premium - eSPI Controller [D0]"
+"Original Device Name:","Intel Ice Lake-U PCH-LP Premium - eSPI Controller [D0]"
+"Device Class:","PCI-to-ISA Bridge"
+"Revision ID:","30 [D0]"
+"PCI Address (Bus:Device:Function) Number:","0:31:0"
+"PCI Latency Timer:","0"
+"Hardware ID:","PCI\VEN_8086&DEV_3482&SUBSYS_381417AA&REV_30"
+"Interrupt Line:","N/A"
+"Interrupt Pin:","N/A"
+"Bus Mastering:","Enabled"
+"Running At 66 MHz:","Not Capable"
+"Fast Back-to-Back Transactions:","Not Capable"
+"Driver Manufacturer:","INTEL"
+"Driver Description:","I/O LPC Controller (U Premium) - 3482 for Intel(R) 495 Series Chipset Family On-Package Platform Controller Hub"
+"Driver Provider:","INTEL"
+"Driver Version:","10.1.12.2"
+"DeviceInstanceId","PCI\VEN_8086&DEV_3482&SUBSYS_381417AA&REV_30\3&11583659&0&F8"
+"Location Paths","PCIROOT(0)#PCI(1F00)"
+
+Intel Ice Lake-U/Y PCH-LP - cAVS (Audio, Voice, Speech) [D0]
+
+"Device Name:","Intel Ice Lake-U/Y PCH-LP - cAVS (Audio, Voice, Speech) [D0]"
+"Original Device Name:","Intel Ice Lake-U/Y PCH-LP - cAVS (Audio, Voice, Speech) [D0]"
+"Device Class:","Multimedia Audio Adapter"
+"Revision ID:","30 [D0]"
+"PCI Address (Bus:Device:Function) Number:","0:31:3"
+"PCI Latency Timer:","0"
+"Hardware ID:","PCI\VEN_8086&DEV_34C8&SUBSYS_380E17AA&REV_30"
+"Interrupt Line:","IRQ16"
+"Interrupt Pin:","INTA#"
+"Memory Base Address 0","7FFFEEC000"
+"Memory Base Address 4","7FFFF00000"
+"Bus Mastering:","Enabled"
+"Running At 66 MHz:","Not Capable"
+"Fast Back-to-Back Transactions:","Not Capable"
+"DeviceInstanceId","PCI\VEN_8086&DEV_34C8&SUBSYS_380E17AA&REV_30\3&11583659&0&FB"
+"Location Paths","PCIROOT(0)#PCI(1F03)"
+
+Intel Ice Lake-U/Y PCH-LP - SMBus Host Controller [D0]
+
+"Device Name:","Intel Ice Lake-U/Y PCH-LP - SMBus Host Controller [D0]"
+"Original Device Name:","Intel Ice Lake-U/Y PCH-LP - SMBus Host Controller [D0]"
+"Device Class:","SMBus (System Management Bus)"
+"Revision ID:","30 [D0]"
+"PCI Address (Bus:Device:Function) Number:","0:31:4"
+"PCI Latency Timer:","0"
+"Hardware ID:","PCI\VEN_8086&DEV_34A3&SUBSYS_380F17AA&REV_30"
+"Interrupt Line:","N/A"
+"Interrupt Pin:","INTA#"
+"Memory Base Address 0","603D17C000"
+"I/O Base Address 4","EFA0"
+"Bus Mastering:","Disabled"
+"Running At 66 MHz:","Not Capable"
+"Fast Back-to-Back Transactions:","Capable"
+"Driver Manufacturer:","INTEL"
+"Driver Description:","Intel(R) SMBus - 34A3"
+"Driver Provider:","INTEL"
+"Driver Version:","10.1.12.2"
+"DeviceInstanceId","PCI\VEN_8086&DEV_34A3&SUBSYS_380F17AA&REV_30\3&11583659&0&FC"
+"Location Paths","PCIROOT(0)#PCI(1F04)"
+
+Intel Ice Lake-U/Y PCH-LP - SPI (flash) Controller [D0]
+
+"Device Name:","Intel Ice Lake-U/Y PCH-LP - SPI (flash) Controller [D0]"
+"Original Device Name:","Intel Ice Lake-U/Y PCH-LP - SPI (flash) Controller [D0]"
+"Device Class:","Other Serial Bus Controller"
+"Revision ID:","30 [D0]"
+"PCI Address (Bus:Device:Function) Number:","0:31:5"
+"PCI Latency Timer:","0"
+"Hardware ID:","PCI\VEN_8086&DEV_34A4&SUBSYS_380317AA&REV_30"
+"Interrupt Line:","N/A"
+"Interrupt Pin:","N/A"
+"Memory Base Address 0","FE010000"
+"Bus Mastering:","Disabled"
+"Running At 66 MHz:","Not Capable"
+"Fast Back-to-Back Transactions:","Not Capable"
+"Driver Manufacturer:","INTEL"
+"Driver Description:","Intel(R) SPI (flash) Controller - 34A4"
+"Driver Provider:","INTEL"
+"Driver Version:","10.1.12.2"
+"DeviceInstanceId","PCI\VEN_8086&DEV_34A4&SUBSYS_380317AA&REV_30\3&11583659&0&FD"
+"Location Paths","PCIROOT(0)#PCI(1F05)"
+
+Video Adapter
+
+
+Intel Iris Plus Graphics 940
+
+"Video Chipset:","Intel Iris Plus Graphics 940"
+"Video Chipset Codename:","Ice Lake-U GT2 64EU"
+"Video Memory:","1024 MBytes"
+"Video Card:","Intel Ice Lake-U GT2 64EU - Integrated Graphics Controller [Lenovo]"
+"Video Bus:","Integrated"
+"Video RAMDAC:","Internal"
+"Video BIOS Version:","Unknown"
+"Memory Clock:","532.0 MHz"
+"Hardware ID:","PCI\VEN_8086&DEV_8A52&SUBSYS_381017AA&REV_07"
+"PCI Location (Bus:Dev:Fnc):","0:02:0"
+"Driver Manufacturer:","Intel Corporation"
+"Driver Description:","Intel(R) Iris(R) Plus Graphics"
+"Driver Provider:","Intel Corporation"
+"Driver Version:","26.20.100.7212"
+"Driver Date:","11-Sep-2019"
+"DCH/UWD Driver:","Capable"
+"DeviceInstanceId","PCI\VEN_8086&DEV_8A52&SUBSYS_381017AA&REV_07\3&11583659&0&10"
+"Location Paths","PCIROOT(0)#PCI(0200)"
+
+Monitor
+
+
+Lenovo [Unknown Model: LEN8B91]
+
+"Monitor Name:","Lenovo [Unknown Model: LEN8B91]"
+"Monitor Name (Manuf):","AUO          B140ZAN01.3  "
+"Serial Number:","Unknown"
+"Date Of Manufacture:","Week: 37, Year: 2018"
+"Monitor Hardware ID:","Monitor\LEN8B91"
+"Max. Vertical Size:","17 cm"
+"Max. Horizontal Size:","31 cm"
+"Input Signal:","Digital"
+"Color Bit Depth:","10 Bits per Primary Color"
+"Digital Video Interface Standard Supported:","DisplayPort"
+"Gamma Factor:","2.20"
+"Standby:","Not Supported"
+"Suspend:","Not Supported"
+"Active Off:","Not Supported"
+"Standard Colour Space (sRGB) Default:","Not Supported"
+"Preferred Timing Mode:","Supported"
+"Default GTF (Continuous Frequency):","Not Supported"
+"DFP 1.x Compatible:","Yes"
+"3840 x 2160","309 x 173 mm, Pixel Clock 533.50 MHz"
+"3840 x 2160","309 x 173 mm, Pixel Clock 426.80 MHz"
+
+Drives
+
+
+(S)ATA/ATAPI Drives
+
+
+SAMSUNG MZVLB1T0HBLR-000L2
+
+"Host Controller:","Samsung NVMe PCIe SSD Controller"
+"Drive Model:","SAMSUNG MZVLB1T0HBLR-000L2"
+"Drive Serial Number:","S4DZNE0M300075"
+"Drive Firmware Revision:","3L1QEXF7"
+"NVMe Version Supported:","v1.3"
+"Drive Capacity:","976,762 MBytes (1024 GB)"
+"Drive Capacity [MB]:","976762"
+"Volatile Write Cache:","Present"
+"Compare Command:","Supported"
+"Write Uncorrectable Command:","Supported"
+"Dataset Management:","Supported"
+"Write Zeroes:","Supported"
+"Save field set to a non-zero value:","Supported"
+"Reservations:","Not Supported"
+"Timestamp:","Supported"
+"Autonomous Power State Transitions:","Supported"
+"Available Space Below Threshold:","OK"
+"Temperature Exceeded Critical Threshold:","OK"
+"Device Reliablity Degraded:","OK"
+"Media In Read Only Mode:","OK"
+"Volatile Memory Backup Device Failed:","OK"
+"Drive Temperature:","28 °C"
+"Warning Temperature Threshold:","84 °C"
+"Critical Temperature Threshold:","85 °C"
+"Time Above Warning Temperature Threshold:","0 minutes"
+"Time Above Critical Temperature Threshold:","0 minutes"
+"Spare Capacity Available:","100%"
+"Device Health:","100%"
+"Power Cycles:","179"
+"Power On Hours:","48 hours"
+"Unsafe Shutdowns:","63"
+"Media Errors:","0"
+"Total Host Reads:","907 GBytes"
+"Total Host Writes:","910 GBytes"
+
+SanDisk SD9SN8W2T00
+
+"Drive Controller:","Serial ATA 6Gb/s @ 6Gb/s <-> USB"
+"Host Controller:","USB Attached SCSI (UAS) Mass Storage Device"
+"Drive Model:","SanDisk SD9SN8W2T00"
+"Drive Firmware Revision:","X61110RL"
+"Drive Serial Number:","19271C455611"
+"World Wide Name:","5001B444A8E2ED3C"
+"Drive Capacity:","1,907,729 MBytes (2000 GB)"
+"Drive Capacity [MB]:","1907729"
+"Media Rotation Rate:","SSD Drive (Non-rotating)"
+"Nominal Form Factor:","M.2"
+"ATA Major Version Supported:","ATA/ATAPI-5, ATA/ATAPI-6, ATA/ATAPI-7, ATA8-ACS, ACS-2, ACS-3, ACS-4"
+"ATA Minor Version Supported:","ACS-4 Revision 5"
+"ATA Transport Version Supported:","SATA 3.3"
+"Number of Cylinders:","16383"
+"Number of Heads:","16"
+"Sectors Per Track:","63"
+"Number of Sectors:","16514064"
+"Total 32-bit LBA Sectors:","268435455"
+"Total 48-bit LBA Sectors:","3907029168"
+"Logical Sector Size:","512 Bytes"
+"Cache Buffer Size:","N/A"
+"Sectors Per Interrupt:","Total: 1, Active: 1"
+"Max. PIO Transfer Mode:","4"
+"Multiword DMA Mode:","Total: 2, Active: -"
+"Singleword DMA Mode:","Total: -, Active: -"
+"Ultra-DMA Mode:","Total: 6 (ATA-133), Active: 5 (ATA-100)"
+"Max. Multiword DMA Transfer Rate:","16.7 MBytes/s"
+"Max. PIO with IORDY Transfer Rate:","16.7 MBytes/s"
+"Max. PIO w/o IORDY Transfer Rate:","16.7 MBytes/s"
+"Native Command Queuing:","Supported, Max. Depth: 32"
+"TRIM Command:","Supported (Deterministic Read After TRIM, Words = 0)"
+"Fixed Drive:","Present"
+"Removable Drive:","Not Present"
+"Magnetic Storage:","Present"
+"LBA Mode:","Supported"
+"DMA Mode:","Supported"
+"IORDY:","Supported"
+"IORDY Disableable:","Supported"
+"Write Cache:","Present, Active"
+"S.M.A.R.T. Feature:","Present, Active"
+"Security Feature:","Present, Inactive"
+"Removable Media Feature:","Not Present, Disabled"
+"Power Management:","Present, Active"
+"Advanced Power Management:","Present, Active"
+"Packet Interface:","Not Present, Disabled"
+"Look-Ahead Buffer:","Present, Active"
+"Host Protected Area:","Not Present, Disabled"
+"Power-Up In Standby:","Not Suppported, Inactive"
+"Automatic Acoustic Management:","Not Suppported, Inactive"
+"48-bit LBA:","Supported, Active"
+"Host-Initiated Link Power Management:","Not Supported"
+"Device-Initiated Link Power Management:","Supported, Disabled"
+"In-Order Data Delivery:","Not Supported"
+"Hardware Feature Control:","Supported, Disabled"
+"Software Settings Preservation:","Supported, Disabled"
+"NCQ Autosense:","Not Supported"
+"Link Power State Device Sleep:","Supported, Enabled"
+"Hybrid Information Feature:","Not Supported"
+"Rebuild Assist:","Not Supported"
+"Power Disable:","Not Supported"
+"All Write Cache Non-Volatile:","Not Supported"
+"Extended Number of User Addressable Sectors:","Not Supported"
+"CFast Specification:","Not Supported"
+"NCQ Priority Information:","Not Supported"
+"Host Automatic Partial to Slumber Transitions:","Not Supported"
+"Device Automatic Partial to Slumber Transitions:","Not Supported"
+"NCQ Streaming:","Not Supported"
+"NCQ Queue Management Command:","Not Supported"
+"DevSleep to Reduced Power State:","Not Supported"
+"Extended Power Conditions Feature:","Not Supported"
+"Sense Data Reporting Feature:","Not Supported"
+"Free-Fall Control Feature:","Not Supported"
+"Write-Read-Verify Feature:","Not Supported"
+"Security Feature:","Supported"
+"Security Status:","Disabled"
+"Security Locked:","Disabled"
+"Security Frozen:","Disabled"
+"Enhanced Security Erase:","Supported"
+"Sanitize Feature:","Supported"
+"Sanitize Device - Crypto Scramble:","Not Supported"
+"Sanitize Device - Overwrite:","Not Supported"
+"Sanitize Device - Block Erase:","Supported"
+"Sanitize Device - Antifreeze Lock:","Not Supported"
+"Device Encrypts All User Data:","Not Supported"
+"Trusted Computing:","Not Supported"
+"[05] Reallocated Sector Count:","100/Always OK, Worst: 100"
+"[09] Power-On Hours/Cycle Count:","100/Always OK, Worst: 100 (247 hours / 10.3 days)"
+"[0C] Power Cycle Count:","100/Always OK, Worst: 100 (Data = 486,0)"
+"[A5] Initial Bad Block Count:","100/Always OK, Worst: 100 (Data = 983048,0)"
+"[A6] Min W/E Cycle:","100/Always OK, Worst: 100"
+"[A7] Max Bad Block per Die:","100/Always OK, Worst: 100 (Data = 62,0)"
+"[A8] Max Erase Cycle:","100/Always OK, Worst: 100 (Data = 1,0)"
+"[A9] Total Bad Block Count:","100/Always OK, Worst: 100 (Data = 1446,0)"
+"[AA] Available Reserved Space/Block Count:","100/Always OK, Worst: 100"
+"[AB] Program Fail Count (Total):","100/Always OK, Worst: 100"
+"[AC] Erase Fail Count (Total):","100/Always OK, Worst: 100"
+"[AD] Average Erase Cycle:","100/Always OK, Worst: 100"
+"[AE] Unexpected Power Loss Count:","100/Always OK, Worst: 100 (Data = 299,0)"
+"[B8] End-to-End Data Errors Corrected","100/Always OK, Worst: 100"
+"[BB] Uncorrectable Error Count:","100/Always OK, Worst: 100"
+"[BC] Command Timeout Count:","100/Always OK, Worst: 100"
+"[C2] Temperature","68/Always OK, Worst: 54 (32.0 °C)"
+"[C7] SATA CRC Error Count:","100/Always OK, Worst: 100"
+"[E6] Percentage Total P/E Count:","100/Always OK, Worst: 100 (Data = 1,1)"
+"[E8] Spare Block Remaining:","100/4, Worst: 100 (Data = 100,0)"
+"[E9] Total GB Written To NAND:","100/Always OK, Worst: 100 (Data = 352,0)"
+"[EA] Unknown","100/Always OK, Worst: 100 (Data = 414,0)"
+"[F1] Total Host Writes:","253/Always OK, Worst: 253 (Data = 396,0)"
+"[F2] Total Host Reads:","253/Always OK, Worst: 253 (Data = 565,0)"
+"[F4] ECC Cumulative Threshold Events:","0/Always OK, Worst: 100"
+"Drive Remaining Life","100%"
+"Lifetime Power-On Resets:","486"
+"Power-on Hours:","0"
+"Logical Sectors Written:","832494858"
+"Logical Sectors Read:","1186308774"
+"Number of Write Commands:","12437564"
+"Number of Read Commands:","26751974"
+"Used Endurance Indicator:","0%"
+
+SanDisk SES Device
+
+"Drive Model:","SanDisk SES Device"
+"Drive Firmware Revision:","1012"
+"Device Type:","Enclosure"
+
+SCSI Devices
+
+
+SanDisk Extreme SSD
+
+"Host Controller:","USB Attached SCSI (UAS) Mass Storage Device"
+"Device Description:","SanDisk Extreme SSD"
+"Device Firmware Revision:","1012"
+"Device Type:","Disk drive"
+"Drive Capacity:","1,907,729 MBytes (2000 GB)"
+"Drive Capacity [MB]:","1907729"
+"SCSI Port Number:","1"
+"SCSI Path ID:","0"
+"SCSI Target ID:","0"
+"SCSI Logical Unit Number:","0"
+"SCSI Version:","SCSI-6"
+"Removable Device:","Not Capable"
+"Tagged Command Queuing:","Supported"
+"Linked Commands:","Not Supported"
+"Synchronous Data Transfer:","Not Supported"
+"Relative Addressing:","Not Supported"
+"Asynchronous Event Notification:","Not Supported"
+"Self-Test Result:","OK"
+
+Audio
+
+
+Intel Ice Lake-U/Y PCH-LP - cAVS (Audio, Voice, Speech) [D0]
+
+"Audio Adapter:","Intel Ice Lake-U/Y PCH-LP - cAVS (Audio, Voice, Speech) [D0]"
+"Audio Controller Hardware ID:","PCI\VEN_8086&DEV_34C8&SUBSYS_380E17AA&REV_30"
+"High Definition Audio Codec:","RealTek ALC298"
+"Audio Codec Hardware ID:","HDAUDIO\FUNC_01&VEN_10EC&DEV_0298&SUBSYS_00000000"
+"Driver Manufacturer:","Microsoft"
+"Driver Description:","High Definition Audio Device"
+"Driver Provider:","Microsoft"
+"Driver Version:","10.0.18362.356"
+"Driver Date:","03-Sep-2019"
+"DeviceInstanceId","HDAUDIO\FUNC_01&VEN_10EC&DEV_0298&SUBSYS_17AA3819&REV_1001\4&5AD8980&0&0001"
+
+Network
+
+
+Intel Ice Lake-U/Y PCH-LP - Wi-Fi [D0]
+
+"Network Card:","Intel Ice Lake-U/Y PCH-LP - Wi-Fi [D0]"
+"Vendor Description:","Microsoft"
+"MAC Address:","34-13-E8-D6-F9-3E"
+"Maximum Link Speed:","1 Mbps"
+"Transmit Buffer Size:","9 Bytes"
+"Receive Buffer Size:","9 Bytes"
+"Hardware ID:","PCI\VEN_8086&DEV_34F0&SUBSYS_00748086&REV_30"
+"Driver Manufacturer:","Intel Corporation"
+"Driver Description:","Intel(R) Wi-Fi 6 AX201 160MHz"
+"Driver Provider:","Intel"
+"Driver Version:","21.30.3.2"
+"Driver Date:","06-Jul-2019"
+"DeviceInstanceId","PCI\VEN_8086&DEV_34F0&SUBSYS_00748086&REV_30\3&11583659&0&A3"
+"Location Paths","PCIROOT(0)#PCI(1403)"
+
+Ports
+
+
+Serial Ports
+
+
+USB
+
+
+Intel(R) USB 3.10 eXtensible Host Controller - 1.10 (Microsoft)
+
+
+Root Hub
+
+
+[Port1] : No Device Connected
+
+
+[Port2] : No Device Connected
+
+
+[Port3] : USB Attached SCSI (UAS) Mass Storage Device
+
+"Device Manufacturer:","SanDisk"
+"Product Name:","Extreme SSD"
+"Serial Number:","313932383756343032333038"
+"USB Version Supported:","3.10"
+"USB Device Speed:","USB 3.1 SuperSpeedPlus"
+"Driver Description:","USB Attached SCSI (UAS) Mass Storage Device"
+"Hardware ID:","USB\VID_0781&PID_558C"
+"Driver Manufacturer:","USB Attached SCSI (UAS) Compatible Device"
+"Driver Description:","USB Attached SCSI (UAS) Mass Storage Device"
+"Driver Provider:","Microsoft"
+"Driver Version:","10.0.18362.387"
+"Driver Date:","20-Jun-2006"
+"DeviceInstanceId","USB\VID_0781&PID_558C\MSFT30313932383756343032333038"
+"Location Paths","PCIROOT(0)#PCI(0D00)#USBROOT(0)#USB(3)"
+
+[Port4] : No Device Connected
+
+
+[Port5] : No Device Connected
+
+
+Intel(R) USB 3.10 eXtensible Host Controller - 1.10 (Microsoft)
+
+
+Root Hub
+
+
+[Port1] : No Device Connected
+
+
+[Port2] : No Device Connected
+
+
+[Port3] : No Device Connected
+
+
+[Port4] : No Device Connected
+
+
+[Port5] : No Device Connected
+
+
+[Port6] : No Device Connected
+
+
+[Port7] : No Device Connected
+
+
+[Port8] : USB Composite Device
+
+"Device Manufacturer:","Chicony"
+"Product Name:","-"
+"Serial Number:","-"
+"USB Version Supported:","2.01"
+"USB Device Speed:","USB 2.0 High-speed"
+"Driver Description:","USB Composite Device"
+"Hardware ID:","USB\VID_04F2&PID_B67C"
+"Driver Manufacturer:","(Standard USB Host Controller)"
+"Driver Description:","USB Composite Device"
+"Driver Provider:","Microsoft"
+"Driver Version:","10.0.18362.1"
+"Driver Date:","20-Jun-2006"
+"DeviceInstanceId","USB\VID_04F2&PID_B67C\0001"
+"Location Paths","PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(8)"
+
+[Port9] : No Device Connected
+
+
+[Port10] : Intel(R) Wireless Bluetooth(R)
+
+"Device Manufacturer:","Intel"
+"Product Name:","-"
+"Serial Number:","-"
+"USB Version Supported:","2.01"
+"USB Device Speed:","USB 1.1 Full-speed"
+"Driver Description:","Intel(R) Wireless Bluetooth(R)"
+"Hardware ID:","USB\VID_8087&PID_0026"
+"Driver Manufacturer:","Intel Corporation"
+"Driver Description:","Intel(R) Wireless Bluetooth(R)"
+"Driver Provider:","Intel Corporation"
+"Driver Version:","21.40.0.1"
+"Driver Date:","31-Jul-2019"
+"DeviceInstanceId","USB\VID_8087&PID_0026\5&5F0AA9B&0&10"
+"Location Paths","PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(10)"
+
+[Port11] : No Device Connected
+
+
+[Port12] : No Device Connected
+
+
+[Port13] : No Device Connected
+
+
+[Port14] : No Device Connected
+
+
+[Port15] : No Device Connected
+
+
+[Port16] : No Device Connected
+
+
+[Port17] : No Device Connected
+
+
+[Port18] : No Device Connected
+
+
+Smart Battery
+
+
+Battery #0
+
+"Device Name:","L18C4PC0"
+"Manufacturer Name:","Celxpert"
+"Serial Number:"," 4330"
+"Unique ID:"," 4330CelxpertL18C4PC0"
+"Chemistry:",""
+"Designed Capacity:","52000 mWh"
+"Full Charged Capacity:","52060 mWh"
+"Wear Level:","0.0 %"
+"Power Status:","Discharging "
+"Current Capacity:","26340 mWh (50.6 %)"
+"Current Voltage:","7.272 V"
+"Discharge Rate:","-21597 mW"

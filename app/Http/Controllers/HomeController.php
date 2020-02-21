@@ -10,6 +10,8 @@ use App\PowerSupply;
 use App\ScreenSize;
 use App\ThunderboltPorts;
 use App\Touchscreen;
+use App\Brand;
+use App\cpuMan;
 
 use Illuminate\Support\Facades\Session;
 
@@ -179,6 +181,50 @@ class HomeController extends Controller
 
         Touchscreen::create($acc);
         session()->flash('message', 'Touchscreen types Successfully added!');
+        Session::flash('type', 'success');
+        return redirect()->back();
+    }
+
+    // Brand
+    public function addBrand(){
+        $data['title'] = "Add Admin user";
+        $data['route'] = "post-Brand";
+
+        return view('Laptops.insertCsvdata', $data);
+    }
+
+    public function postBrand(Request $request){
+         $this->validate($request,[
+            'name' => 'required|string',
+     
+        ]);
+
+        $acc['name'] = $request->name;
+
+        Brand::create($acc);
+        session()->flash('message', 'Brand Successfully added!');
+        Session::flash('type', 'success');
+        return redirect()->back();
+    }
+
+    // CPU OEM
+    public function addCPUMan(){
+        $data['title'] = "Add Admin user";
+        $data['route'] = "post-CPUMan";
+
+        return view('Laptops.insertCsvdata', $data);
+    }
+
+    public function postCPUMan(Request $request){
+         $this->validate($request,[
+            'name' => 'required|string',
+     
+        ]);
+
+        $acc['name'] = $request->name;
+
+        cpuMan::create($acc);
+        session()->flash('message', 'CPU Successfully added!');
         Session::flash('type', 'success');
         return redirect()->back();
     }

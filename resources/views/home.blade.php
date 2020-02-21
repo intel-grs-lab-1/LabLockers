@@ -1,50 +1,98 @@
 @extends('layouts.app')
 
+@section('style')
+<style>
+	* {box-sizing: border-box}
+	body {font-family: "Lato", sans-serif;}
+
+	/* Style the tab */
+	.tab {
+		float: left;
+		border: 1px solid #ccc;
+		background-color: #f1f1f1;
+		width: 10%;
+	}
+
+	/* Style the buttons inside the tab */
+	.tab button {
+		display: block;
+		background-color: inherit;
+		color: black;
+		padding: 22px 16px;
+		width: 100%;
+		border: none;
+		outline: none;
+		text-align: left;
+		cursor: pointer;
+		transition: 0.3s;
+		font-size: 17px;
+	}
+
+	/* Change background color of buttons on hover */
+	.tab button:hover {
+		background-color: #ddd;
+	}
+
+	/* Create an active/current "tab button" class */
+	.tab button.active {
+		background-color: #ccc;
+	}
+
+	/* Style the tab content */
+	.tabcontent {
+		float: left;
+		padding: 0px 12px;
+		border: 1px solid #ccc;
+		width: 90%;
+		border-left: none;
+	}
+</style>
+@endsection
+
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">
-                  Dashboard
-                </div>
+<div class="card-body">
+<h2>Items</h2>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-   <div class="row">
-                        <div class="col-12">
-                        <!--  ==================================SESSION MESSAGES==================================  -->
-                            @if (session()->has('message'))
-                                <div class="alert alert-{!! session()->get('type')  !!} alert-dismissable">
-                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                    {!! session()->get('message')  !!}
-                                </div>
-                            @endif
-                        <!--  ==================================SESSION MESSAGES==================================  -->
-
-
-                        <!--  ==================================VALIDATION ERRORS==================================  -->
-                            @if($errors->any())
-                                @foreach ($errors->all() as $error)
-
-                                    <div class="alert alert-danger alert-dismissable">
-                                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                        {!!  $error !!}
-                                    </div>
-
-                            @endforeach
-                         @endif
-                        <!--  ==================================SESSION MESSAGES==================================  -->
-                        </div>
-                    </div>
-                    You are logged in!
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Colours')" id="defaultOpen">Colours</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
 </div>
+
+<div id="Colours" class="tabcontent">
+  <h3>Colours</h3>
+  <p>Table here</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+</div>
+@endsection
+
+@section('scripts')
+<script>
+	function openCity(evt, cityName) {
+		var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " active";
+	}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
 @endsection

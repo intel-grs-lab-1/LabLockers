@@ -11,6 +11,7 @@ use App\PowerSupply;
 use App\ScreenSize;
 use App\ThunderboltPorts;
 use App\Touchscreen;
+
 use Complex\Exception;
 use Illuminate\Http\Request;
 
@@ -24,8 +25,7 @@ class importController extends Controller
 
     public function importExportView()
     {
-         $accs = Accs::all();
-        return view('Laptops.importLaptop', compact('accs'));
+        return view('Laptops.importLaptop');
     }
 
     public function allView()
@@ -51,15 +51,15 @@ class importController extends Controller
         $laptop = $this->importCsv($csvFullPath);
 
 
-     $laptops = Accs::all();
-     $colors = Color::all();
-     $types = Type::all();
-     $powerSupplys = PowerSupply::all();
-     $screenSizes = screenSize::all();
-     $thunderboltPorts = ThunderboltPorts::all();
-     $touchscreens = Touchscreen::all();
+        $laptops = Accs::all();
+        $colors = Color::all();
+        $types = Type::all();
+        $powerSupplys = PowerSupply::all();
+        $screenSizes = screenSize::all();
+        $thunderboltPorts = ThunderboltPorts::all();
+        $touchscreens = Touchscreen::all();
         
- 
+        
         return view('Laptops.insertCsvdata', compact('laptop','laptops','colors', 'types', 'powerSupplys', 'screenSizes', 'thunderboltPorts', 'touchscreens'));
     }
 

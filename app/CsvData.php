@@ -126,9 +126,4 @@ class CsvData extends Model
         return self::getCsv($columnNames, $rows);
     }
 
-
-
-        public function acc() {
-        return $this->belongsTo(Accs::class, 'id');
-    }
 }
