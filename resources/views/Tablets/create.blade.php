@@ -98,7 +98,6 @@
             <input type="radio" id="{{$PowerSupply->name}}" name="power_supply" value="{{$PowerSupply->name}}">
             <label for="{{$PowerSupply->name}}">{{$PowerSupply->name}}</label><br>
             @endforeach
-        </select>
     </div>
 </div>
 <div class="col-xs-12 col-sm-12 col-md-12">
@@ -110,7 +109,11 @@
 <div class="col-xs-12 col-sm-12 col-md-12">
     <div class="form-group">
         <strong>Accessories:</strong>
-        <input type="text"  class="form-control" name="accessories" placeholder="accessories" autocomplete="off" style="text-transform: capitalize;">
+        <select class="js-example-basic-multiple col-md-12"  id="accessories" style="text-transform: capitalize;">
+        @foreach($accessories as $accs)
+        <option value="{{$accs->name}}">{{$accs->name}}"</option>
+        @endforeach
+        </select>
     </div>
 </div>
 <div class="col-xs-12 col-sm-12 col-md-12">

@@ -128,6 +128,7 @@
     <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal5">Add No. thunderbolt ports</a>
     <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal6">Add Touchscreen types</a>
     <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal7">Add Brand</a>
+    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal8">Add CPU manufacturer</a>
   </div>
 </li>
 <li class="nav-item dropdown">
@@ -355,6 +356,32 @@
          @csrf
          <div class="form-group">
           <label for="exampleInputEmail1">Brand Name</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Accessories Name" name="name" autocomplete="off" style="text-transform: capitalize;">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </form>
+    </div>
+    <div class="modal-footer">
+    </div>
+  </div>
+</div>
+</div>
+<!-- Modal CPU Man -->
+<div class="modal fade" id="exampleModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"> Add CPU Manufacture</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form method="POST" action="{{ route('post-cpuMan') }}" >
+         @csrf
+         <div class="form-group">
+          <label for="exampleInputEmail1">CPU Manufacture Name</label>
           <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Accessories Name" name="name" autocomplete="off" style="text-transform: capitalize;">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
