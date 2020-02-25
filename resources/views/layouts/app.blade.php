@@ -76,10 +76,10 @@
              </a>
 
              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="{{ route('tablets.index') }}">
+              <a class="dropdown-item" href="{{ url('/desktop/viewall') }}">
                 View All Desktops
               </a>
-              <a class="dropdown-item" href="{{ url('/view/import') }}">
+              <a class="dropdown-item" href="{{ url('/desktop/view/import') }}">
                Import(!)
              </a>
            </div>

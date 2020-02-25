@@ -26,6 +26,14 @@ Route::any('/import', 'importController@handleImportLaptop');
 Route::post('/import/updatedata/{id}', 'importController@updateImportData');
 Route::post('/import/insertdata', 'importController@insertImportData')->name('insertdata');
 
+// Desktops
+Route::get('/desktop/view/import', 'desktopController@importExportView')->name('importDesktop');
+Route::get('/desktop/viewall', 'desktopController@allView')->name('viewallDesktop');
+Route::get('/desktop/import/edit/{id}', 'desktopController@editCsv');
+Route::any('/desktop/import', 'desktopController@handleImportLaptop');
+Route::post('/desktop/import/updatedata/{id}', 'desktopController@updateImportData');
+Route::post('/desktop/import/insertdata', 'desktopController@insertImportData')->name('insertdataDesktop');
+
 //Export csv_data (Laptops)
 Route::get('viewall/export', 'CsvFileExport@csv_export')->name('export');
 
