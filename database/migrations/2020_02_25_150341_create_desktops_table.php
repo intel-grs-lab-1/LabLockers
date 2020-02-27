@@ -15,46 +15,70 @@ class CreateDesktopsTable extends Migration
     {
         Schema::create('desktops', function (Blueprint $table) {
             $table->bigIncrements('id');
-            //device
-            $table->text('manufacture')->nullable(); //from csv
-            $table->string('com_brand_name')->nullable(); // from csv
-            $table->text('colour')->nullable(); // from drop down - eg(red, blue green ....)
-            //covertaible / 2 in 1 / clam ...
-            $table->text('type')->nullable(); // from drop down - eg(2 in 1, convertible ...)
-            //Battery + Power Supply
-            $table->text('battery_cap')->nullable(); //from csv
-            $table->text('power_supply')->nullable(); // drop down- eg(yes or no)
-            $table->text('power_supply_details')->nullable(); // manual
-            //OS
-            $table->string('os')->nullable();// frrom csv
-            //CPU
-            $table->string('cpu_brand_name')->nullable(); // from csv
-            $table->string('cpu_power_limit')->nullable(); // from csv
-            $table->string('cpu_power_limit_2')->nullable(); // from csv
-            //RAM
-            $table->string('total_mem_size')->nullable(); //from csv
-            $table->text('mem_type')->nullable(); //from csv
-            $table->text('mem_speed')->nullable(); //from csv
-            $table->text('mem_channels')->nullable(); //from csv
-            //screen
-            $table->text('screen_size')->nullable(); //from dropdown - eg(13.3", 15" ..)
-            $table->text('screen_rez')->nullable(); // manual
-            $table->text('screen_tech')->nullable(); //from drop down - eg(ips Lcd, led...)
-            $table->text('touchscreen_type')->nullable(); // from drop down -eg(10 with pen, no, withour pen...)
-            //Storage
-            $table->string('drive_capacity')->nullable(); // from csv
             //system
-            $table->string('com_serial_number')->nullable(); //from csv
-            $table->text('videocard')->nullable(); //from csv
-            $table->text('network')->nullable(); //from csv
-            // others
-            $table->text('thunderbolt_ports')->nullable(); //from drop down -eg(0, 1,2, 3, 4 ...)
-            $table->text('accessories')->nullable();//from drop down - eg(pen, sleve ..) - for this one we need to select more then one
-            $table->text('owner')->nullable();// manual
+            $table->text('System_Manufacturer')->nullable();
+            $table->text('Product_Name')->nullable();
+            $table->text('Product_Version')->nullable();
+            $table->text('Product_Serial_Number')->nullable();
+            $table->text('UUID')->nullable();
+            $table->text('SKU_Number')->nullable();
+            $table->text('Family')->nullable();
+            //Mainboard
+            $table->text('Mainboard_Manufacturer')->nullable();
+            $table->text('Mainboard_Name')->nullable();
+            $table->text('Mainboard_Version')->nullable();
+            $table->text('Mainboard_Serial_Number')->nullable();
+            $table->text('Asset_Tag')->nullable();
+            $table->text('Location_in_chassis')->nullable();
+            //OS
+            $table->text('OS')->nullable();
+            //CPU
+            $table->text('CPU_Brand_Name')->nullable();
+            $table->text('CPU_QDF')->nullable();
+            $table->text('CPU_Thermal_Design_Power_TDP')->nullable();
+            $table->text('CPU_Power_Limit_4')->nullable();
+            //Motherboard
+            $table->text('Motherboard_Model')->nullable();
+            $table->text('Motherboard_Chipset')->nullable();
+            $table->text('Motherboard_Slots')->nullable();
+            $table->text('BIOS_Date')->nullable();
+            $table->text('BIOS_Version')->nullable();
+            $table->text('UEFI_BIOS')->nullable();
+            //Memory
+            $table->text('Total_Memory_Size')->nullable();
+            $table->text('Memory_Type')->nullable();
+            $table->text('Module_Type')->nullable();
+            $table->text('Memory_Speed')->nullable();
+            $table->text('Current_Timing')->nullable();
+            $table->text('Memory_Channels_Active')->nullable();
+            //Network
+            $table->text('Network_Card')->nullable();
+            //Video
+            $table->text('Video_Chipset')->nullable();
+            $table->text('Video_Chipset_Codename')->nullable();
+            $table->text('Video_Card')->nullable();
+            $table->text('Video_Memory')->nullable();
+            $table->text('Memory_Clock')->nullable();
+            $table->text('Memory_Bus_Width')->nullable();
+            $table->text('Processor_Clock')->nullable();
+            $table->text('Video_Unit_Clock')->nullable();
+            $table->text('Number_Of_ROPs')->nullable();
+            $table->text('Number_Of_Unified_Shaders')->nullable();
+            $table->text('Number_Of_TMUs')->nullable();
+            $table->text('ASIC_Serial_Number')->nullable();
+            //Drivers
+            $table->text('Host_Controller')->nullable();
+            $table->text('Drive_Model')->nullable();
+            $table->text('NVMe_Version_Supported')->nullable();
+            $table->text('Drive_Capacity')->nullable();
+            //others
+            $table->text('power_supply_details')->nullable(); 
+            $table->text('accessories')->nullable();
+            $table->text('owner')->nullable();
             //location
-            $table->string('location')->nullable(); // manual
-            $table->text('comments')->nullable(); // manual
-            $table->timestamps(); 
+            $table->string('location')->nullable();
+            $table->text('comments')->nullable();  
+            $table->timestamps();     
         });
     }
 

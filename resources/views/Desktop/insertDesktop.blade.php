@@ -21,125 +21,196 @@
 		<form method="POST" name="updateCsvData" action="{{ url('/desktop/import/insertdata') }}">
 			@csrf
 			<div class="form-group">
-				<label for="name">Manufacture</label>
-				<input type="text" class="form-control" name="manufacture" value= "{{@$laptop['manufacture'] }}"/>
+				<label for="name">System_Manufacturer</label>
+				<input type="text" class="form-control"  required="" name="System_Manufacturer" value= "{{@$laptop['System_Manufacturer'] }}"/>
 			</div>
 			<div class="form-group">
-				<label for="name">Model</label>
-				<input type="text" class="form-control" name="com_brand_name" value= "{{@$laptop['com_brand_name'] }}"/>
+				<label for="name">Product_Name</label>
+				<input type="text" class="form-control"  required="" name="Product_Name" value= "{{@$laptop['Product_Name'] }}"/>
 			</div>
 			<div class="form-group">
-				<label for="name">Colour</label>
-				<select class="js-example-basic-multiple col-md-12" name="colour" multiple="multiple">
-					<option class="disabled">Choose Workfile</option>
-					@foreach($colors as $color)
-					<option value="{{$color->name}}">{{$color->name}}</option>
-					@endforeach
-				</select>
+				<label for="name">Product_Version</label>
+				<input type="text" class="form-control"  required="" name="Product_Version" value= "{{@$laptop['Product_Version'] }}"/>
 			</div>
 			<div class="form-group">
-				<label for="name">Type</label>
-				<select class="js-example-basic-multiple col-md-12" name="type" multiple="multiple">
-					<option class="disabled">Choose Workfile</option>
-					@foreach($types as $type)
-					<option value="{{$type->name}}">{{$type->name}}</option>
-					@endforeach
-				</select>
+				<label for="name">Product_Serial_Number</label>
+				<input type="text" class="form-control"  required="" name="Product_Serial_Number" value= "{{@$laptop['Product_Serial_Number'] }}"/>
 			</div>
 			<div class="form-group">
-				<label for="name">Battery capacity</label>
-				<textarea type="text" class="form-control" name="battery_cap">{{@$laptop['battery_cap'] }}</textarea>
+				<label for="name">UUID</label>
+				<input type="text" class="form-control"  required="" name="UUID" value= "{{@$laptop['UUID'] }}"/>
 			</div>
 			<div class="form-group">
-				<label for="name">Power supply</label>
-				<select class="js-example-basic-multiple col-md-12" name="power_supply" multiple="multiple">
-					<option class="disabled">Choose Workfile</option>
-					@foreach($powerSupplys as $PowerSupply)
-					<option value="{{$PowerSupply->name}}">{{$PowerSupply->name}}</option>
-					@endforeach
-				</select>
+				<label for="name">SKU_Number</label>
+				<input type="text" class="form-control"  required="" name="SKU_Number" value= "{{@$laptop['SKU_Number'] }}"/>
 			</div>
 			<div class="form-group">
-				<label for="name">power supply details</label>
-				<textarea type="text" class="form-control" name="power_supply_details">{{@$laptop['power_supply_details'] }}</textarea>
+				<label for="name">Family</label>
+				<input type="text" class="form-control"  required="" name="Family" value= "{{@$laptop['Family'] }}"/>
 			</div>
 			<div class="form-group">
-				<label for="name">Operating System</label>
-				<textarea type="text" class="form-control" name="os">{{@$laptop['os'] }}</textarea>
+				<label for="name">Mainboard_Manufacturer</label>
+				<input type="text" class="form-control"  required="" name="Mainboard_Manufacturer" value= "{{@$laptop['Mainboard_Manufacturer'] }}"/>
 			</div>
 			<div class="form-group">
-				<label for="name">CPU Brand Name</label>
-				<textarea type="text" class="form-control" name="cpu_brand_name">{{@$laptop['cpu_brand_name'] }}</textarea>
+				<label for="name">Mainboard_Name</label>
+				<input type="text" class="form-control"  required="" name="Mainboard_Name" value= "{{@$laptop['Mainboard_Name'] }}"/>
 			</div>
 			<div class="form-group">
-				<label for="name">CPU Power Limit 1</label>
-				<input type="text" class="form-control" name="cpu_power_limit" value="{{@$laptop['cpu_power_limit'] }}"/>
+				<label for="name">Mainboard_Version</label>
+				<input type="text" class="form-control"  required="" name="Mainboard_Version" value= "{{@$laptop['Mainboard_Version'] }}"/>
 			</div>
 			<div class="form-group">
-				<label for="name">CPU Power Limit 2</label>
-				<input type="text" class="form-control" name="cpu_power_limit_2" value="{{@$laptop['cpu_power_limit_2'] }}"/>
+				<label for="name">Mainboard_Serial_Number</label>
+				<input type="text" class="form-control"  required="" name="Mainboard_Serial_Number" value= "{{@$laptop['Mainboard_Serial_Number'] }}"/>
 			</div>
 			<div class="form-group">
-				<label for="name">Total Memory Size</label>
-				<input type="text" class="form-control" name="total_mem_size" value="{{@$laptop['total_mem_size'] }}"/>
+				<label for="name">Asset_Tag</label>
+				<input type="text" class="form-control"  required="" name="Asset_Tag" value= "{{@$laptop['Asset_Tag'] }}"/>
 			</div>
 			<div class="form-group">
-				<label for="name">Memory type</label>
-				<textarea rows="4" type="text" class="form-control" name="mem_type">{{@$laptop['mem_type'] }}</textarea>
+				<label for="name">Location_in_chassis</label>
+				<input type="text" class="form-control"  required="" name="Location_in_chassis" value= "{{@$laptop['Location_in_chassis'] }}"/>
 			</div>
 			<div class="form-group">
-				<label for="name">memory speed</label>
-				<textarea rows="4" type="text" class="form-control" name="mem_speed">{{@$laptop['mem_speed'] }}</textarea>
+				<label for="name">OS</label>
+				<input type="text" class="form-control"  required="" name="OS" value= "{{@$laptop['OS'] }}"/>
 			</div>
 			<div class="form-group">
-				<label for="name">Memory channel</label>
-				<textarea rows="4" type="text" class="form-control" name="mem_channels">{{@$laptop['mem_channels'] }}</textarea>
+				<label for="name">CPU_Brand_Name</label>
+				<input type="text" class="form-control"  required="" name="CPU_Brand_Name" value= "{{@$laptop['CPU_Brand_Name'] }}"/>
 			</div>
 			<div class="form-group">
-				<label for="name">screen size</label>
-				<select class="js-example-basic-multiple col-md-12" name="screen_size" multiple="multiple">
-					<option class="disabled">Choose Workfile</option>
-					@foreach($screenSizes as $screenSize)
-					<option value="{{$screenSize->name}}">{{$screenSize->name}}</option>
-					@endforeach
-				</select>
+				<label for="name">CPU_QDF</label>
+				<input type="text" class="form-control"  required="" name="CPU_QDF" value= "{{@$laptop['CPU_QDF'] }}"/>
 			</div>
 			<div class="form-group">
-				<label for="name">resolution</label>
-				<textarea rows="4" type="text" class="form-control" name="screen_rez">{{@$laptop['screen_rez'] }}</textarea>
+				<label for="name">CPU_Thermal_Design_Power_TDP</label>
+				<input type="text" class="form-control"  required="" name="CPU_Thermal_Design_Power_TDP" value= "{{@$laptop['CPU_Thermal_Design_Power_TDP'] }}"/>
 			</div>
 			<div class="form-group">
-				<label for="name">Screen Technology</label>
-				<textarea rows="4" type="text" class="form-control" name="screen_tech">{{@$laptop['screen_tech'] }}</textarea>
+				<label for="name">CPU_Power_Limit_4</label>
+				<input type="text" class="form-control"  required="" name="CPU_Power_Limit_4" value= "{{@$laptop['CPU_Power_Limit_4'] }}"/>
 			</div>
 			<div class="form-group">
-				<label for="name">Touchscreen type</label>
-				<select class="js-example-basic-multiple col-md-12" name="touchscreen_type" multiple="multiple">
-					<option class="disabled">Choose Workfile</option>
-					@foreach($touchscreens as $touchscreen)
-					<option value="{{$touchscreen->name}}">{{$touchscreen->name}}</option>
-					@endforeach
-				</select>
+				<label for="name">Motherboard_Model</label>
+				<input type="text" class="form-control"  required="" name="Motherboard_Model" value= "{{@$laptop['Motherboard_Model'] }}"/>
 			</div>
 			<div class="form-group">
-				<label for="name">Dive Capacity</label>
-				<textarea type="text" class="form-control" name="drive_capacity">{{@$laptop['drive_capacity'] }}</textarea>
+				<label for="name">Motherboard_Chipset</label>
+				<input type="text" class="form-control"  required="" name="Motherboard_Chipset" value= "{{@$laptop['Motherboard_Chipset'] }}"/>
 			</div>
 			<div class="form-group">
-				<label for="name">Serial Number</label>
-				<input type="text" class="form-control" name="com_serial_number" value="{{@$laptop['com_serial_number'] }}"/>
+				<label for="name">Motherboard_Slots</label>
+				<input type="text" class="form-control"  required="" name="Motherboard_Slots" value= "{{@$laptop['Motherboard_Slots'] }}"/>
 			</div>
 			<div class="form-group">
-				<label for="name">Video Card</label>
-				<textarea rows="4" type="text" class="form-control" name="videocard">{{@$laptop['videocard'] }}</textarea>
+				<label for="name">BIOS_Date</label>
+				<input type="text" class="form-control"  required="" name="BIOS_Date" value= "{{@$laptop['BIOS_Date'] }}"/>
 			</div>
 			<div class="form-group">
-				<label for="name">Network</label>
-				<textarea rows="4" type="text" class="form-control" name="network">{{@$laptop['network'] }}</textarea>
+				<label for="name">BIOS_Version</label>
+				<input type="text" class="form-control"  required="" name="BIOS_Version" value= "{{@$laptop['BIOS_Version'] }}"/>
 			</div>
 			<div class="form-group">
-				<label for="name">No. thunderbolt ports</label>
-  					<input type="number" id="thunderbolt_ports" name="thunderbolt_ports" min="0" max="10">
+				<label for="name">UEFI_BIOS</label>
+				<input type="text" class="form-control"  required="" name="UEFI_BIOS" value= "{{@$laptop['UEFI_BIOS'] }}"/>
+			</div>
+			<div class="form-group">
+				<label for="name">Total_Memory_Size</label>
+				<input type="text" class="form-control"  required="" name="Total_Memory_Size" value= "{{@$laptop['Total_Memory_Size'] }}"/>
+			</div>
+			<div class="form-group">
+				<label for="name">Memory_Type</label>
+				<input type="text" class="form-control"  required="" name="Memory_Type" value= "{{@$laptop['Memory_Type'] }}"/>
+			</div>
+			<div class="form-group">
+				<label for="name">Module_Type</label>
+				<input type="text" class="form-control"  required="" name="Module_Type" value= "{{@$laptop['Module_Type'] }}"/>
+			</div>
+			<div class="form-group">
+				<label for="name">Memory_Speed</label>
+				<input type="text" class="form-control"  required="" name="Memory_Speed" value= "{{@$laptop['Memory_Speed'] }}"/>
+			</div>
+			<div class="form-group">
+				<label for="name">Current_Timing</label>
+				<input type="text" class="form-control"  required="" name="Current_Timing" value= "{{@$laptop['Current_Timing'] }}"/>
+			</div>
+			<div class="form-group">
+				<label for="name">Memory_Channels_Active</label>
+				<input type="text" class="form-control"  required="" name="Memory_Channels_Active" value= "{{@$laptop['Memory_Channels_Active'] }}"/>
+			</div>
+			<div class="form-group">
+				<label for="name">Network_Card</label>
+				<input type="text" class="form-control"  required="" name="Network_Card" value= "{{@$laptop['Network_Card'] }}"/>
+			</div>
+			<div class="form-group">
+				<label for="name">Video_Chipset</label>
+				<input type="text" class="form-control"  required="" name="Video_Chipset" value= "{{@$laptop['Video_Chipset'] }}"/>
+			</div>
+			<div class="form-group">
+				<label for="name">Video_Chipset_Codename</label>
+				<input type="text" class="form-control"  required="" name="Video_Chipset_Codename" value= "{{@$laptop['Video_Chipset_Codename'] }}"/>
+			</div>
+			<div class="form-group">
+				<label for="name">Video_Card</label>
+				<input type="text" class="form-control"  required="" name="Video_Card" value= "{{@$laptop['Video_Card'] }}"/>
+			</div>
+			<div class="form-group">
+				<label for="name">Video_Memory</label>
+				<input type="text" class="form-control"  required="" name="Video_Memory" value= "{{@$laptop['Video_Memory'] }}"/>
+			</div>
+			<div class="form-group">
+				<label for="name">Memory_Clock</label>
+				<input type="text" class="form-control"  required="" name="Memory_Clock" value= "{{@$laptop['Memory_Clock'] }}"/>
+			</div>
+			<div class="form-group">
+				<label for="name">Memory_Bus_Width</label>
+				<input type="text" class="form-control"  required="" name="Memory_Bus_Width" value= "{{@$laptop['Memory_Bus_Width'] }}"/>
+			</div>
+			<div class="form-group">
+				<label for="name">Processor_Clock</label>
+				<input type="text" class="form-control"  required="" name="Processor_Clock" value= "{{@$laptop['Processor_Clock'] }}"/>
+			</div>
+			<div class="form-group">
+				<label for="name">Video_Unit_Clock</label>
+				<input type="text" class="form-control"  required="" name="Video_Unit_Clock" value= "{{@$laptop['Video_Unit_Clock'] }}"/>
+			</div>
+			<div class="form-group">
+				<label for="name">Number_Of_ROPs</label>
+				<input type="text" class="form-control"  required="" name="Number_Of_ROPs" value= "{{@$laptop['Number_Of_ROPs'] }}"/>
+			</div>
+			<div class="form-group">
+				<label for="name">Number_Of_Unified_Shaders</label>
+				<input type="text" class="form-control"  required="" name="Number_Of_Unified_Shaders" value= "{{@$laptop['Number_Of_Unified_Shaders'] }}"/>
+			</div>
+			<div class="form-group">
+				<label for="name">Number_Of_TMUs</label>
+				<input type="text" class="form-control"  required="" name="Number_Of_TMUs" value= "{{@$laptop['Number_Of_TMUs'] }}"/>
+			</div>
+			<div class="form-group">
+				<label for="name">ASIC_Serial_Number</label>
+				<input type="text" class="form-control"  required="" name="ASIC_Serial_Number" value= "{{@$laptop['ASIC_Serial_Number'] }}"/>
+			</div>
+			<div class="form-group">
+				<label for="name">Host_Controller</label>
+				<input type="text" class="form-control"  required="" name="Host_Controller" value= "{{@$laptop['Host_Controller'] }}"/>
+			</div>
+			<div class="form-group">
+				<label for="name">Drive_Model</label>
+				<input type="text" class="form-control"  required="" name="Drive_Model" value= "{{@$laptop['Drive_Model'] }}"/>
+			</div>
+			<div class="form-group">
+				<label for="name">NVMe_Version_Supported</label>
+				<input type="text" class="form-control"  required="" name="NVMe_Version_Supported" value= "{{@$laptop['NVMe_Version_Supported'] }}"/>
+			</div>
+			<div class="form-group">
+				<label for="name">Drive_Capacity</label>
+				<input type="text" class="form-control"  required="" name="Drive_Capacity" value= "{{@$laptop['Drive_Capacity'] }}"/>
+			</div>
+			<div class="form-group">
+				<label for="name">power_supply_details</label>
+				<input type="text" class="form-control"  required="" name="power_supply_details" value= "{{@$laptop['power_supply_details'] }}"/>
 			</div>
 			<div class="form-group">
 				<label for="name">accessories</label>

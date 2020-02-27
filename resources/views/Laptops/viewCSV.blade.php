@@ -43,8 +43,8 @@
         </tr>
     </thead>
     <tbody>
-        @if(isset($csvData))
-        @foreach($csvData as $product)
+        @if(isset($deskyop))
+        @foreach($desktop as $product)
         <tr>
             <th scope="row">{{$product->id}}</th>
             <td>{{$product->manufacture}}</td>
