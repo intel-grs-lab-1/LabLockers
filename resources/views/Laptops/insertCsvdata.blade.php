@@ -97,12 +97,7 @@
 			</div>
 			<div class="form-group">
 				<label for="name">screen size</label>
-				<select class="js-example-basic-multiple col-md-12" name="screen_size" multiple="multiple">
-					<option class="disabled">Choose Workfile</option>
-					@foreach($screenSizes as $screenSize)
-					<option value="{{$screenSize->name}}">{{$screenSize->name}}</option>
-					@endforeach
-				</select>
+				<textarea rows="4" type="text" class="form-control" name="screen_size">{{@$laptop['screen_size'] }}</textarea>
 			</div>
 			<div class="form-group">
 				<label for="name">resolution</label>

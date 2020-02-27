@@ -17,6 +17,7 @@ Auth::routes();
 
 // Home route
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@Color');
 
 // Laptops
 Route::get('/view/import', 'importController@importExportView')->name('import');

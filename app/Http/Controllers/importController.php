@@ -82,6 +82,10 @@ class importController extends Controller
         $netFlag = false;
         $hddFlag = false;
 
+        $width = "";
+        $height = "";
+        $size = 0;
+
         while (!feof($file)) {
             $fileData = fgetcsv($file);
 
@@ -124,7 +128,12 @@ class importController extends Controller
             if ($key == "Designed Capacity:") {
                 $data['battery_cap'] = $fileData[1];
             }
-            
+            if($key == "Max. Vertical Size:"){
+                $height = $fileData[1];
+            }
+            if($key == "Max. Horizontal Size:"){
+                $width = $fileData[1];
+            }
             if($key == "Drives")
             {
                 $hddFlag = true;
@@ -178,6 +187,14 @@ class importController extends Controller
 
         }
         fclose($file);
+        $width = substr($width, 0, -3);
+        $width = (int)$width * 0.393701;
+        $height = substr($height, 0, -3);
+        $height = (int)$height * 0.393701;
+        $size = ((pow($height,2)) + (pow($width,2)));
+        $size = sqrt($size);
+        $size = round($size, 1);
+        $data['screen_size'] = $size;
         $data['videocard'] = $videoDesc;
         $data['network'] = $netDesc;
         $data['drive_capacity'] = $hddData;

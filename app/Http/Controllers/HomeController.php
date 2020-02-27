@@ -37,6 +37,21 @@ class HomeController extends Controller
         return view('home');
     }
 
+    public function color()
+    {
+        $tablets = Color::all();
+        $acces = Accs::all();
+        $types = Type::all();
+        $powersupply = PowerSupply::all();
+        $screensize = ScreenSize::all();
+        $thunderbolt = ThunderboltPorts::all();
+        $touchscreen = Touchscreen::all();
+        $brand = Brand::all();
+        $cpuman = cpuMan::all();
+  
+        return view('home',compact('tablets', 'acces', 'types', 'powersupply', 'screensize', 'thunderbolt', 'touchscreen', 'brand', 'cpuman'));
+    }
+
 
      public function addColor(){
         $data['title'] = "Add Admin user";
