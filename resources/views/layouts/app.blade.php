@@ -94,9 +94,6 @@
           <a class="dropdown-item" href="{{ route('tablets.index') }}">
             View All tablets
           </a>
-          <a class="dropdown-item" href="{{ url('/view/import') }}">
-           Import(!)
-         </a>
        </div>
 
      </li>
@@ -115,22 +112,6 @@
    </div>
 
  </li>
- <li class="nav-item dropdown">
-  <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-    Add Item <i class="fas fa-plus"></i> <span class="caret"></span>
-  </a>
-  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal1">Add colors</a>
-    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal">Add accessories</a>
-    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal2">Add type of device</a>
-    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal3">Add Power supply</a>
-    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal4">Add screen size</a>
-    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal5">Add No. thunderbolt ports</a>
-    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal6">Add Touchscreen types</a>
-    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal7">Add Brand</a>
-    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal8">Add CPU manufacturer</a>
-  </div>
-</li>
 <li class="nav-item dropdown">
   <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
     {{ Auth::user()->name }} <i class="far fa-user"></i><span class="caret"></span>

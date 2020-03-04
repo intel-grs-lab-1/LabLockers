@@ -63,7 +63,7 @@
 
 @section('content')
 <div class="card-body">
-<h2>Items</h2>
+<h2>Items <i class="fas fa-box-open"></i></h2>
 
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Colours')" id="defaultOpen">Colours</button>

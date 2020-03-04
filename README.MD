@@ -49,7 +49,7 @@ public function addmodelName(){
 
 Web:
 
-```
+```php
 Route::get('add-modelName', 'HomeController@addmodelName')->name('add-modelName');
 Route::post('post-modelName', 'HomeController@postmodelName')->name('post-modelName');
 ```
