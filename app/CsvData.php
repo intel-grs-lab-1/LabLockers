@@ -64,7 +64,6 @@ class CsvData extends Model
     {
         $cd = new CsvData();
         try {
-
             $cd['manufacture'] = $request->manufacture;
             $cd['com_brand_name'] = $request->com_brand_name;
             $cd['colour'] = $request->colour;

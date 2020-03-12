@@ -40,7 +40,7 @@ class CreateCsvDataTable extends Migration
             //Storage
             $table->string('drive_capacity')->nullable(); // from csv
             //system
-            $table->string('com_serial_number')->nullable(); //from csv
+            $table->string('com_serial_number')->nullable()->unique(); //from csv
             $table->text('videocard')->nullable(); //from csv
             $table->text('network')->nullable(); //from csv
             // others

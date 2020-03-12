@@ -38,13 +38,13 @@
             <th scope="col">Owner</th>
             <th scope="col">location</th>
             <th scope="col">Comments</th>
+            <th scope="col">Export</th>
             <th scope="col">Edit</th>
             <th scope="col">Delete</th>
         </tr>
     </thead>
     <tbody>
-        @if(isset($deskyop))
-        @foreach($desktop as $product)
+        @foreach($csvData as $product)
         <tr>
             <th scope="row">{{$product->id}}</th>
             <td>{{$product->manufacture}}</td>
@@ -75,6 +75,7 @@
             <td>{{$product->owner}}</td>
             <td>{{$product->location}}</td>
             <td>{{$product->comments}}</td>
+            <td><a href="{{ url('import/export',$product->id)}}" class="btn btn-warning">Export</a></td>
             <td><a href="{{ url('import/edit',$product->id)}}" class="btn btn-primary">Edit</a></td>
             <td>
                 <form action="{{ url('import/destroy', $product->id)}}" method="post">
@@ -85,7 +86,6 @@
             </td>
         </tr>
         @endforeach
-        @endif
     </tbody>
 </table>
 <br>

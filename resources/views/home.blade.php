@@ -85,14 +85,14 @@
         <th>ID</th>
         <th>Name</th>
     </tr>
-    @foreach ($tablets as $product)
+    @foreach ($colors as $product)
     <tr style="text-transform:capitalize;">
         <td>{{ $product->id }}</td>
         <td>{{ $product->name }}</td>
     </tr>
     @endforeach
 </table>
-</div>
+</div> 
 
 <div id="Accessories" class="tabcontent">
   <h3>Accessories</h3>

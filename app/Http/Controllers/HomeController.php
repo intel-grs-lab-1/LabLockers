@@ -39,7 +39,7 @@ class HomeController extends Controller
 
     public function color()
     {
-        $tablets = Color::all();
+        $colors = Color::all();
         $acces = Accs::all();
         $types = Type::all();
         $powersupply = PowerSupply::all();
@@ -49,7 +49,7 @@ class HomeController extends Controller
         $brand = Brand::all();
         $cpuman = cpuMan::all();
   
-        return view('home',compact('tablets', 'acces', 'types', 'powersupply', 'screensize', 'thunderbolt', 'touchscreen', 'brand', 'cpuman'));
+        return view('home',compact('colors', 'acces', 'types', 'powersupply', 'screensize', 'thunderbolt', 'touchscreen', 'brand', 'cpuman'));
     }
 
 

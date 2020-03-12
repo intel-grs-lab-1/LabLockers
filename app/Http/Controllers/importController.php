@@ -212,6 +212,65 @@ class importController extends Controller
             echo "</pre>";
         }
     }
+ 
+    public function exportCsv($id)
+    {
+        $delimiter = ",";
+        
+    
+        //create a file pointer
+        $f = fopen('php://memory', 'w');
+        $fields=[
+            'id',
+            'Manufacture',
+            'Model',
+            'Colour',
+            'Type',
+            'Battery capacity',
+            'Power supply',
+            'Power supply details',
+            'OS',
+            'CPU brand name',
+            'CPU power limit 1',
+            'CPU power limit 2',
+            'Memory size',
+            'Type',
+            'Speed',
+            'Channels',
+            'Screen size',
+            'Resolution',
+            'Panel tech',
+            'Touchscreen',
+            'Drive capacity',
+            'Serial number',
+            'Video card',
+            'Network',
+            'Thunderbolt ports',
+            'Accessories',
+            'Owner',
+            'Location',
+            'Comments',
+			'Created at',
+            'Updated at',
+        ];
+        //set column headers
+        fputcsv($f, $fields, $delimiter);
+        $laptop = CsvData::getByid($id);
+        //output each row of the data, format line as csv and write to file pointer
+        $filename = $laptop['manufacture'] . $laptop['com_brand_name'] . $laptop['com_serial_number']. ".csv";
+
+        $lineData = array($laptop['id'],$laptop['manufacture'],$laptop['com_brand_name'],$laptop['colour'],$laptop['type'],$laptop['battery_cap'],$laptop['power_supply'],$laptop['power_supply_details'],$laptop['os'],$laptop['cpu_brand_name'],$laptop['cpu_power_limit'],$laptop['cpu_power_limit_2'],$laptop['total_mem_size'],$laptop['mem_type'],$laptop['mem_speed'],$laptop['mem_channels'],$laptop['screen_size'],$laptop['touchscreen_type'],$laptop['drive_capacity'],$laptop['com_serial_number'],$laptop['videocard'],$laptop['network'],$laptop['thunderbolt_ports'],$laptop['accessories'],$laptop['owner'],$laptop['location'],$laptop['comments'],$laptop['created_at'],$laptop['updated_at']);
+        fputcsv($f, $lineData, $delimiter);
+        //move back to beginning of file
+        fseek($f, 0);
+        
+        //set headers to download file rather than displayed
+        header('Content-Type: text/csv');
+        header('Content-Disposition: attachment; filename="' . $filename . '";');
+        
+        //output all remaining data on a file pointer
+        fpassthru($f);
+}
 
     public function editCsv($id)
     {
@@ -264,7 +323,7 @@ class importController extends Controller
             'screen_tech' => 'required',
             'touchscreen_type' => 'required',
             'drive_capacity' => 'required',
-            'com_serial_number' => 'required',
+            'com_serial_number' => 'required | unique:csv_data',
             'videocard' => 'required',
             'network' => 'required',
             'thunderbolt_ports' => 'required',

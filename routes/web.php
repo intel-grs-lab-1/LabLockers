@@ -17,12 +17,13 @@ Auth::routes();
 
 // Home route
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/', 'HomeController@Color');
+Route::get('/', 'HomeController@color');
 
 // Laptops
 Route::get('/view/import', 'importController@importExportView')->name('import');
 Route::get('/viewall', 'importController@allView')->name('viewall');
 Route::get('/import/edit/{id}', 'importController@editCsv');
+Route::get('/import/export/{id}', 'importController@exportCsv');
 Route::any('/import', 'importController@handleImportLaptop');
 Route::post('/import/updatedata/{id}', 'importController@updateImportData');
 Route::post('/import/insertdata', 'importController@insertImportData')->name('insertdata');
