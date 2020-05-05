@@ -22,11 +22,14 @@ Route::get('/', 'HomeController@color');
 // Laptops
 Route::get('/view/import', 'importController@importExportView')->name('import');
 Route::get('/viewall', 'importController@allView')->name('viewall');
+Route::get('/view/importlaptops' , 'importController@importExportView1');
 Route::get('/import/edit/{id}', 'importController@editCsv');
 Route::get('/import/export/{id}', 'importController@exportCsv');
-Route::any('/import', 'importController@handleImportLaptop');
+Route::Post('/import', 'importController@handleImportLaptop');
+Route::Post('/importLaptop' , 'importController@handleImportLaptop1');
 Route::post('/import/updatedata/{id}', 'importController@updateImportData');
 Route::post('/import/insertdata', 'importController@insertImportData')->name('insertdata');
+Route::post('/check_serial_number', 'importController@check_serial_number');
 
 // Desktops
 Route::get('/desktop/view/import', 'desktopController@importExportView')->name('importDesktop');

@@ -11,6 +11,10 @@ use App\PowerSupply;
 use App\ScreenSize;
 use App\ThunderboltPorts;
 use App\Touchscreen;
+use App\Exports\UsersExport;
+use App\Imports\CSVImport;
+use Maatwebsite\Excel\Facades\Excel;
+
 
 use Complex\Exception;
 use Illuminate\Http\Request;
@@ -27,6 +31,9 @@ class importController extends Controller
     {
         return view('Laptops.importLaptop');
     }
+    public function importExportView1(){
+        return view('Laptops.importAllLaptop');
+    }
 
     public function allView()
     {
@@ -36,21 +43,16 @@ class importController extends Controller
 
     public function handleImportLaptop(Request $request)
     {
-
         $csvFullPath = null;
         if ($request->hasFile('csvfile')) {
             $file = request()->csvfile->getClientOriginalName();
             $csvFullPath = uniqid() . " " . $file;
             request()->csvfile->move(public_path('csv_data'), $csvFullPath);
         }
-
         //$this->importCsv($csvFullPath);
         $newCsv = new csv();
-
         //    return redirect('/viewall');
         $laptop = $this->importCsv($csvFullPath);
-
-
         $laptops = Accs::all();
         $colors = Color::all();
         $types = Type::all();
@@ -58,9 +60,16 @@ class importController extends Controller
         $screenSizes = screenSize::all();
         $thunderboltPorts = ThunderboltPorts::all();
         $touchscreens = Touchscreen::all();
-        
-        
         return view('Laptops.insertCsvdata', compact('laptop','laptops','colors', 'types', 'powerSupplys', 'screenSizes', 'thunderboltPorts', 'touchscreens'));
+        Excel::import(new CSVImport,request()->file('select_file'));
+        return back();
+    }
+
+    public function handleImportLaptop1(Request $request)
+    {
+        Excel::import(new CSVImport,request()->file('select_file'));
+           
+        return redirect()->back()->with('success','Successfully added');
     }
 
     public function exportCsvData($id)
@@ -257,7 +266,7 @@ class importController extends Controller
         fputcsv($f, $fields, $delimiter);
         $laptop = CsvData::getByid($id);
         //output each row of the data, format line as csv and write to file pointer
-        $filename = $laptop['manufacture'] . $laptop['com_brand_name'] . $laptop['com_serial_number']. ".csv";
+        $filename = $laptop['manufacture'] ."_". $laptop['com_brand_name'] ."_".  $laptop['com_serial_number']. ".csv";
 
         $lineData = array($laptop['id'],$laptop['manufacture'],$laptop['com_brand_name'],$laptop['colour'],$laptop['type'],$laptop['battery_cap'],$laptop['power_supply'],$laptop['power_supply_details'],$laptop['os'],$laptop['cpu_brand_name'],$laptop['cpu_power_limit'],$laptop['cpu_power_limit_2'],$laptop['total_mem_size'],$laptop['mem_type'],$laptop['mem_speed'],$laptop['mem_channels'],$laptop['screen_size'],$laptop['touchscreen_type'],$laptop['drive_capacity'],$laptop['com_serial_number'],$laptop['videocard'],$laptop['network'],$laptop['thunderbolt_ports'],$laptop['accessories'],$laptop['owner'],$laptop['location'],$laptop['comments'],$laptop['created_at'],$laptop['updated_at']);
         fputcsv($f, $lineData, $delimiter);
@@ -323,7 +332,7 @@ class importController extends Controller
             'screen_tech' => 'required',
             'touchscreen_type' => 'required',
             'drive_capacity' => 'required',
-            'com_serial_number' => 'required | unique:csv_data',
+            'com_serial_number' => 'required | unique:csv_data,com_serial_number,'.$id.',id',
             'videocard' => 'required',
             'network' => 'required',
             'thunderbolt_ports' => 'required',
@@ -339,9 +348,23 @@ class importController extends Controller
 
     public function insertImportData(Request $request)
     {
+
         logger("update call");
         CsvData::insertCsvdata($request);
         return redirect()->route('viewall')->with('success', 'Laptop imported successfully');
     }
+
+
+    public function check_serial_number(Request $request)
+    {
+
+        $serialNumberCheck = CsvData::where('com_serial_number', $request->com_serial_number)->first();
+        if(!is_null($serialNumberCheck)){
+            echo "error";
+        }else{
+            echo "success";
+       }
+    }
+
 
 }

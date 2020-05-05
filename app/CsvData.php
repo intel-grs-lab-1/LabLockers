@@ -4,12 +4,14 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use db;
+use Illuminate\Support\Facades\Input;
+
 use Response;
 
 class CsvData extends Model
 {
 
-    protected $fillable = ['manufacturer','com_brand_name' , 'colour','type','battery_cap', 'power_supply','power_supply_details', 'os', 'cpu_brand_name',  'cpu_power_limit','cpu_power_limit_2', 'total_mem_size','mem_type','mem_speed','mem_channels','screen_size','screen_rez','screen_tech','touchscreen_type', 'drive_capacity', 'com_serial_number','videocard','network','thunderbolt_ports','accessories','owner','location', 'comments'];
+    protected $fillable = ['manufacture','com_brand_name' , 'colour','type','battery_cap', 'power_supply','power_supply_details', 'os', 'cpu_brand_name',  'cpu_power_limit','cpu_power_limit_2', 'total_mem_size','mem_type','mem_speed','mem_channels','screen_size','screen_rez','screen_tech','touchscreen_type', 'drive_capacity', 'com_serial_number','videocard','network','thunderbolt_ports','accessories','owner','location', 'comments'];
 
     public static function getByid($id)
     {

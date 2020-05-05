@@ -109,6 +109,8 @@
       <a class="dropdown-item" href="{{ url('/view/import') }}">
        HWInfo Import
      </a>
+     <a class="dropdown-item" href="{{ url('/view/importlaptops') }}">
+     Import Laptops
    </div>
 
  </li>

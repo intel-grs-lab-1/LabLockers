@@ -85,12 +85,7 @@
         <th>ID</th>
         <th>Name</th>
     </tr>
-    @foreach ($colors as $product)
-    <tr style="text-transform:capitalize;">
-        <td>{{ $product->id }}</td>
-        <td>{{ $product->name }}</td>
-    </tr>
-    @endforeach
+   
 </table>
 </div> 
 
@@ -102,12 +97,7 @@
         <th>ID</th>
         <th>Name</th>
     </tr>
-    @foreach ($acces as $product)
-    <tr style="text-transform:capitalize;">
-        <td>{{ $product->id }}</td>
-        <td>{{ $product->name }}</td>
-    </tr>
-    @endforeach
+    
 </table> 
 </div>
 
@@ -119,12 +109,7 @@
         <th>ID</th>
         <th>Name</th>
     </tr>
-    @foreach ($types as $product)
-    <tr style="text-transform:capitalize;">
-        <td>{{ $product->id }}</td>
-        <td>{{ $product->name }}</td>
-    </tr>
-    @endforeach
+   
 </table>
 </div>
 
@@ -136,12 +121,7 @@
         <th>ID</th>
         <th>Name</th>
     </tr>
-    @foreach ($powersupply as $product)
-    <tr style="text-transform:capitalize;">
-        <td>{{ $product->id }}</td>
-        <td>{{ $product->name }}</td>
-    </tr>
-    @endforeach
+   
 </table>
 </div>
 
@@ -153,12 +133,7 @@
         <th>ID</th>
         <th>Name</th>
     </tr>
-    @foreach ($screensize as $product)
-    <tr style="text-transform:capitalize;">
-        <td>{{ $product->id }}</td>
-        <td>{{ $product->name }}</td>
-    </tr>
-    @endforeach
+    
 </table>
 </div>
 <div id="tp" class="tabcontent">
@@ -169,12 +144,7 @@
         <th>ID</th>
         <th>Name</th>
     </tr>
-    @foreach ($thunderbolt as $product)
-    <tr style="text-transform:capitalize;">
-        <td>{{ $product->id }}</td>
-        <td>{{ $product->name }}</td>
-    </tr>
-    @endforeach
+   
 </table>
 </div>
 <div id="tt" class="tabcontent">
@@ -185,12 +155,7 @@
         <th>ID</th>
         <th>Name</th>
     </tr>
-    @foreach ($touchscreen as $product)
-    <tr style="text-transform:capitalize;">
-        <td>{{ $product->id }}</td>
-        <td>{{ $product->name }}</td>
-    </tr>
-    @endforeach
+    
 </table>
 </div>
 <div id="brand" class="tabcontent">
@@ -201,12 +166,7 @@
         <th>ID</th>
         <th>Name</th>
     </tr>
-    @foreach ($brand as $product)
-    <tr style="text-transform:capitalize;">
-        <td>{{ $product->id }}</td>
-        <td>{{ $product->name }}</td>
-    </tr>
-    @endforeach
+    
 </table>
 </div>
 <div id="cpumanu" class="tabcontent">
@@ -217,12 +177,7 @@
         <th>ID</th>
         <th>Name</th>
     </tr>
-    @foreach ($cpuman as $product)
-    <tr style="text-transform:capitalize;">
-        <td>{{ $product->id }}</td>
-        <td>{{ $product->name }}</td>
-    </tr>
-    @endforeach
+    
 </table>
 </div>
 </div>

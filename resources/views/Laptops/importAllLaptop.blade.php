@@ -18,7 +18,7 @@
 
         <div class="card-body">
             <h2 style="color:red;" >DO NOT IMPORT PRE-RELEASE PRODUCTS!</h2>
-            <form action="{{ url('/import') }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ url('/importLaptop') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <input type="file" name="select_file" accept=".csv, .txt" class="form-control">
                 <br>

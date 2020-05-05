@@ -1,6 +1,7 @@
 @extends('layouts/app')
 
 @section('content')
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet"/>
 <div class="card uper">
 	<div class="card-header">
 		<h3>Insert CsvData</h3> 
@@ -122,7 +123,7 @@
 			</div>
 			<div class="form-group">
 				<label for="name">Serial Number</label>
-				<input type="text" class="form-control" name="com_serial_number" value="{{@$laptop['com_serial_number'] }}"/>
+				<input type="text" class="form-control" id="com_serial_number" name="com_serial_number" value="{{@$laptop['com_serial_number'] }}"/>
 			</div>
 			<div class="form-group">
 				<label for="name">Video Card</label>
@@ -163,16 +164,43 @@
 				<textarea type="text" class="form-control" name="comments">{{@$laptop['comments'] }}</textarea>
 			</div>
 			<!-- Insert button -->
-			<button type="submit" class="btn btn-primary">Insert</button>
+			<button class="btn btn-primary for_serial" id="check_serial">Insert</button>
+			<button type="submit" id="for_serial" style="display: none;">Insert</button>
 		</form>
 	</div>
 </div>
 @endsection
 
 @section('scripts')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 <script>
 	$(document).ready(function() {
+   
 		$('.js-example-basic-multiple').select2();
+
+
+        $("#check_serial").on('click', function(e) {
+        e.preventDefault();
+        var com_serial_number = $("#com_serial_number").val();
+
+
+		$.ajax({
+			url: "{{ url('/check_serial_number') }}",
+			type: "POST",
+			data: {'com_serial_number':com_serial_number, '_token': '{{ csrf_token() }}'},
+			success: function(result){
+		        if( result == 'error'){
+                    toastr["error"]("Serial Number Already Exit!");
+		        }else{
+		        	 $('#for_serial').click();
+		        }
+
+		}});
+
+        });
+
+
+
 	});
 </script>
 @endsection
