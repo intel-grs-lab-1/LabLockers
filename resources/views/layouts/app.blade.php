@@ -41,7 +41,7 @@
 
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-   @yield('style')
+  @yield('style')
 
 
 </head>
@@ -94,40 +94,41 @@
           <a class="dropdown-item" href="{{ route('tablets.index') }}">
             View All tablets
           </a>
-       </div>
+        </div>
 
-     </li>
-     <li class="nav-item dropdown">
-      <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-       Laptops <i class="fas fa-laptop"></i> <span class="caret"></span>
-     </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+         Laptops <i class="fas fa-laptop"></i> <span class="caret"></span>
+       </a>
 
-     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-      <a class="dropdown-item" href="{{ url('/viewall') }}">
-        View All Laptops
-      </a>
-      <a class="dropdown-item" href="{{ url('/view/import') }}">
-       HWInfo Import
-     </a>
-     <a class="dropdown-item" href="{{ url('/view/importlaptops') }}">
-     Import Laptops
-   </div>
+       <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="{{ url('/viewall') }}">
+          View All Laptops
+        </a>
+        <a class="dropdown-item" href="{{ url('/view/import') }}">
+         HWInfo Import
+       </a>
+       <a class="dropdown-item" href="{{ url('/view/importlaptops') }}">
+        Import all-Laptops CSV 
+       </a>
+     </div>
 
- </li>
-<li class="nav-item dropdown">
-  <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-    {{ Auth::user()->name }} <i class="far fa-user"></i><span class="caret"></span>
-  </a>
-  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-    <a class="dropdown-item" href="{{ route('logout') }}"
-    onclick="event.preventDefault();
-    document.getElementById('logout-form').submit();">
-    {{ __('Logout') }} <i class="fas fa-sign-out-alt"></i>
-  </a>
-  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-    @csrf
-  </form>
-</div>
+   </li>
+   <li class="nav-item dropdown">
+    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+      {{ Auth::user()->name }} <i class="far fa-user"></i><span class="caret"></span>
+    </a>
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item" href="{{ route('logout') }}"
+      onclick="event.preventDefault();
+      document.getElementById('logout-form').submit();">
+      {{ __('Logout') }} <i class="fas fa-sign-out-alt"></i>
+    </a>
+    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+      @csrf
+    </form>
+  </div>
 </li>
 @endguest
 </ul>

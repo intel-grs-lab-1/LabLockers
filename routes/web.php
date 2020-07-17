@@ -29,7 +29,7 @@ Route::Post('/import', 'importController@handleImportLaptop');
 Route::Post('/importLaptop' , 'importController@handleImportLaptop1');
 Route::post('/import/updatedata/{id}', 'importController@updateImportData');
 Route::post('/import/insertdata', 'importController@insertImportData')->name('insertdata');
-Route::post('/check_serial_number', 'importController@check_serial_number');
+Route::post('/check_serial_number', 'importController@check_serial_number'); 
 
 // Desktops
 Route::get('/desktop/view/import', 'desktopController@importExportView')->name('importDesktop');
@@ -44,6 +44,7 @@ Route::get('viewall/export', 'CsvFileExport@csv_export')->name('export');
 
 //Tablets
 Route::resource('tablets','TabletController');
+Route::get('/import/export/{id}', 'importController@exportCsv');
 
 // Dynamic drop-downs
 // Accs

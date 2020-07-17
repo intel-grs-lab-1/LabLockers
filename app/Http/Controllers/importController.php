@@ -44,14 +44,12 @@ class importController extends Controller
     public function handleImportLaptop(Request $request)
     {
         $csvFullPath = null;
-        if ($request->hasFile('csvfile')) {
-            $file = request()->csvfile->getClientOriginalName();
+        if ($request->hasFile('select_file')) {
+            $file = request()->select_file->getClientOriginalName();
             $csvFullPath = uniqid() . " " . $file;
-            request()->csvfile->move(public_path('csv_data'), $csvFullPath);
+            request()->select_file->move(public_path('csv_data'), $csvFullPath);
         }
-        //$this->importCsv($csvFullPath);
         $newCsv = new csv();
-        //    return redirect('/viewall');
         $laptop = $this->importCsv($csvFullPath);
         $laptops = Accs::all();
         $colors = Color::all();
@@ -68,7 +66,7 @@ class importController extends Controller
     public function handleImportLaptop1(Request $request)
     {
         Excel::import(new CSVImport,request()->file('select_file'));
-           
+
         return redirect()->back()->with('success','Successfully added');
     }
 
@@ -98,7 +96,6 @@ class importController extends Controller
         while (!feof($file)) {
             $fileData = fgetcsv($file);
 
-            //$key = substr($fileData[0], 0, -1);
             $key = $fileData[0];
             if ($key == "System Manufacturer:") {
                 $data['manufacture'] = $fileData[1];
@@ -207,10 +204,8 @@ class importController extends Controller
         $data['videocard'] = $videoDesc;
         $data['network'] = $netDesc;
         $data['drive_capacity'] = $hddData;
-        //$customerArr = $this->csvToArray($file);
         return $data;
 
-        //CsvData::insert($data);
     }
 
     function csvToArray($fileData)
@@ -221,12 +216,11 @@ class importController extends Controller
             echo "</pre>";
         }
     }
- 
+
     public function exportCsv($id)
     {
         $delimiter = ",";
-        
-    
+
         //create a file pointer
         $f = fopen('php://memory', 'w');
         $fields=[
@@ -259,7 +253,7 @@ class importController extends Controller
             'Owner',
             'Location',
             'Comments',
-			'Created at',
+            'Created at',
             'Updated at',
         ];
         //set column headers
@@ -279,7 +273,7 @@ class importController extends Controller
         
         //output all remaining data on a file pointer
         fpassthru($f);
-}
+    }
 
     public function editCsv($id)
     {
@@ -363,7 +357,7 @@ class importController extends Controller
             echo "error";
         }else{
             echo "success";
-       }
+        }
     }
 
 
